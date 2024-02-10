@@ -1,0 +1,4 @@
+msedgedriver
+data/processed
+.venv
+.DS_Store
