@@ -1,0 +1,1233 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="대구경북첨단의료산업진흥재단" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2024/01/31/2024013109923354/k-medi hub_jpg.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        대구경북첨단의료산업진흥재단
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        일반현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+        <option value="101">
+         k-medi hub_jpg.jpg
+        </option>
+        <option value="102">
+         조직도(2024.01 기준).jpg
+        </option>
+        <option value="103">
+         첨단의료복합단지 육성에 관한 특별법.hwp
+        </option>
+        <option value="104">
+         조직도(2024.01 기준).png
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년1분기
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <li>
+          <a href="javascript:void(0)">
+           2024.01.31 공시
+          </a>
+         </li>
+         <li id="leftList_2024013102754005">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.04.06 공시
+          </a>
+         </li>
+         <li id="leftList_2023041002600776" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="CORRECTION">
+         <a class="toc" href="#toc-132" name="toc-132" title="수 정 공 시">
+          수 정 공 시
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="275">
+           <col width="307">
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="MIDDLE" width="284">
+            1. 수정대상 공시서류의 최초제출일 :
+           </td>
+           <td align="LEFT" height="30" valign="MIDDLE" width="316">
+            2023년 04월 06일
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            2. 수정사항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="595">
+         <colgroup>
+          <col width="110">
+           <col width="110">
+            <col width="110">
+             <col width="110">
+              <col width="110">
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            항  목
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 전
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 후
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수정사유
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 일
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="54" valign="MIDDLE" width="119">
+            조직현황
+           </td>
+           <td align="CENTER" height="54" valign="MIDDLE" width="119">
+            조직도 참고
+           </td>
+           <td align="CENTER" height="54" valign="MIDDLE" width="119">
+            조직도 참고
+           </td>
+           <td align="CENTER" height="54" valign="MIDDLE" width="119">
+            조직개편
+           </td>
+           <td align="CENTER" height="54" valign="MIDDLE" width="119">
+            2024년
+            <br>
+             01월 31일
+            </br>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="pgbrk">
+        </p>
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="1. 일반현황">
+          1. 일반현황
+         </a>
+        </p>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="600">
+            (2023년 1/4분기)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            대구경북첨단의료산업진흥재단
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="일반현황">
+          일반현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="31" valign="TOP" width="600">
+            ◈ 기관소개
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            - CI
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <img height="147" src="/upload/report/2024/01/31/2024013109923354/k-medi hub_jpg.jpg" width="500">
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 기관설립일
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             2010년 12월 14일
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 설립근거
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             첨단의료복합단지 육성에 관한 특별법 제11조 (재단의 설립 및 지원)
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             <a href="javascript:report_attach_down('첨단의료복합단지 육성에 관한 특별법.hwp')">
+              첨단의료복합단지 육성에 관한 특별법.hwp
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 설립목적
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="76" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="76" valign="TOP" width="577">
+             기업,대학,연구기관,의료기관 등이 상호 협력하여 의료연구개발 및 연구 성과의
+             <br>
+              상품화를 촉진함으로써 대구경북첨단의료복합단지를 세계적인 의료연구개발
+              <br>
+               중심지로 육성하고 국내 의료산업의 발전에 이바지함
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 주무기관
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             보건복지부
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 홈페이지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             https://www.kmedihub.re.kr
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="13">
+            <col width="115">
+             <col width="445">
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="3" height="30" valign="TOP" width="600">
+             - 소재지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="22">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="124">
+             대구광역시
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="454">
+             동구 동내로88
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 사업자번호
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             502-82-19772
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 기관연혁
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="444" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="444" valign="TOP" width="577">
+             ○ 2008.03. 「첨단의료복합단지 지정 및 지원에 관한 특별법」 제정
+             <br>
+              ○ 2009.08. 입지 선정 및 지구, 지정 고시(대구 혁신도시 내 105만㎡
+              <br>
+               ○ 2010.12. 운영법인(재단)설립
+               <br>
+                ○ 2011.03. 첨단의료복합단지 제1차 종합계획 확정
+                <br>
+                 ○ 2011.10. 정부시설 및 커뮤니케이션센터 기공식
+                 <br>
+                  ○ 2013.08. 커뮤니케이션센터 완공 및 재단입주
+                  <br>
+                   ○ 2013.11. 정부 4개 핵심연구시설(4개센터) 준공
+                   <br>
+                    ○ 2013.12. 첨단의료복합단지 제2차 종합계획 확정
+                    <br>
+                     ○ 2015.01. 보건복지부 산하 기타공공기관 지정
+                     <br>
+                      ○ 2016.12. 식품의약품안전처 의료기기 시험검사기관 지정
+                      <br>
+                       ○ 2017.05. 첨단의료복합단지 제3차 종합계획 확정
+                       <br>
+                        ○ 2019.02. 연구개발목적기관 지정
+                        <br>
+                         ○ 2020.08. 제4차 첨단의료복합단지 종합계획 수립
+                         <br>
+                          ○ 2020.09. 보건복지부 경영실적평가 A등급
+                          <br>
+                           ○ 2021.08. 제4대 이사장(양진영)취임
+                           <br>
+                            ○ 2021.09. 보건복지부 경영실적평가 A등급
+                            <br>
+                             ○ 2021.12. 영문CI 공식 변경(K-MEDIhub)
+                             <br>
+                              ○ 2022.11.  보건복지부 경영실적평가 A등급
+                              <br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 주요 기능 및 역할
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="99" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="99" valign="TOP" width="577">
+             ○ 첨단제품 개발 인프라 구축으로 국가 의료산업 경쟁력 확보
+             <br>
+              ○ 의료산업 연구 성과제고 및 성과확산 지원
+              <br>
+               ○ 산.학.연.관 네트워크 구축으로 의료산업 커뮤니티 주도
+               <br>
+                ○ 지역 의료산업 활성화를 위한 연구기관 및 기업유치
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 경영목표 및 전략
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="76" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="76" valign="TOP" width="577">
+             ○ 미션 : R&amp;D 성과의 사업화 촉진으로 고부가 가치 의료산업화 구현
+             <br>
+              ○ 비전 : 첨단의료산업을 선도하는 혁신성장 파트너
+              <br>
+               ○ 핵신가치 : 도전, 혁신, 안전, 소통
+              </br>
+             </br>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             주요사업에 대해서는 공시항목 &lt;36. 주요사업&gt;을 참고하시기 바랍니다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="81">
+             <col width="47">
+              <col width="265">
+               <col width="148">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="5" height="31" valign="TOP" width="600">
+             ◈ 기관장
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="MIDDLE" width="90">
+             양진영
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="56">
+             (임기:
+            </td>
+            <td align="CENTER" height="30" valign="MIDDLE" width="274">
+             2021.08.17 ~ 2024.08.16
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="157">
+             )
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="30" valign="TOP" width="577">
+             [주요경력]
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="76" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="76" valign="TOP" width="577">
+             식품의약품안전처 차장
+             <br>
+              식품의약품안전처 의료기기안전국장
+              <br>
+               식품의약품안전처 기획조정관
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="591">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="32" valign="TOP" width="600">
+             ◈ 조직현황
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <img height="840" src="/upload/report/2024/01/31/2024013109923354/조직도(2024.01 기준).jpg" width="587">
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="599">
+           <colgroup>
+            <col width="141">
+             <col width="141">
+              <col width="141">
+               <col width="140">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              기준일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              2024년 01월 01일
+             </td>
+             <td align="CENTER" height="30" valign="TOP" width="150">
+              제출일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="149">
+              2024년 01월 31일
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="600">
+              기관 공시 담당자
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="601">
+           <colgroup>
+            <col width="96">
+             <col width="111">
+              <col width="228">
+               <col width="130">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <thead>
+            <tr>
+             <th align="CENTER" height="31" valign="MIDDLE" width="105">
+              구분
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="120">
+              담당자명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="237">
+              부서명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="139">
+              전화번호
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              작성자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              김찬미
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              기획예산팀
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              053-790-5116
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              감독자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              최우석
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              기획예산팀
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              053-790-5110
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              확인자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              송영애
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              감사팀
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              053-790-5080
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </img>
+        </img>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2024013109923354"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0894",
+                	disclosureNo:"2024013102754005",
+                	reportFormRootNo:"10101"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

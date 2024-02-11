@@ -18,12 +18,12 @@ def process_dataframe(data: pd.DataFrame):
 
 def main():
     output = {}
-    for f in Path("data/processed").glob("*.csv"):
+    for f in Path("data/raw/임직원수").glob("*.csv"):
         data = pd.read_csv(f)
         columns, values = process_dataframe(data)
         output[f.stem] = values
     df = pd.DataFrame(output, index=columns).T
-    df.to_excel("data/processed/임원현황.xlsx")
+    df.to_excel("data/processed/임직원수/임직원수.xlsx")
 
 
 if __name__ == "__main__":

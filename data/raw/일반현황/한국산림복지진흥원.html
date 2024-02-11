@@ -1,0 +1,1511 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="한국산림복지진흥원" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2024/01/09/2024010909914136/기관 ci.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        한국산림복지진흥원
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        일반현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+        <option value="101">
+         기관ci.jpg
+        </option>
+        <option value="102">
+         조직도(2024. 1. 1.).jpg
+        </option>
+        <option value="103">
+         설립법령 및 정관(230831).zip
+        </option>
+        <option value="104">
+         기관 ci.jpg
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년1분기
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <li>
+          <a href="javascript:void(0)">
+           2024.01.09 공시
+          </a>
+         </li>
+         <li id="leftList_2024010902743218">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.09.08 공시
+          </a>
+         </li>
+         <li id="leftList_2023090802686840" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.07.03 공시
+          </a>
+         </li>
+         <li id="leftList_2023070302651129" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.05.10 공시
+          </a>
+         </li>
+         <li id="leftList_2023051002624604" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.04.10 공시
+          </a>
+         </li>
+         <li id="leftList_2023041002600581" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="CORRECTION">
+         <a class="toc" href="#toc-132" name="toc-132" title="수 정 공 시">
+          수 정 공 시
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="275">
+           <col width="307">
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="MIDDLE" width="284">
+            1. 수정대상 공시서류의 최초제출일 :
+           </td>
+           <td align="LEFT" height="30" valign="MIDDLE" width="316">
+            2023. 4. 10.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            2. 수정사항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="595">
+         <colgroup>
+          <col width="110">
+           <col width="110">
+            <col width="110">
+             <col width="110">
+              <col width="110">
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            항  목
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 전
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 후
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수정사유
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 일
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="145" valign="MIDDLE" width="119">
+            설립
+            <br>
+             근거,
+             <br>
+              조직도
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="145" valign="MIDDLE" width="119">
+            설립법령 및
+            <br>
+             정관(220729),
+             <br>
+              조직도
+              <br>
+               (2021.12.31.)
+               <br>
+                기준
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="145" valign="MIDDLE" width="119">
+            설립법령 및
+            <br>
+             정관(230309)
+             <br>
+              조직도
+              <br>
+               (2023.1.1.)
+               <br>
+                기준
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="145" valign="MIDDLE" width="119">
+            최초 제출일
+            <br>
+             (2023.04.10.) 당시 기준일
+             <br>
+              (2022.12.31.)
+              <br>
+               이후 정관개정,
+               <br>
+                조직도 변경.
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="145" valign="MIDDLE" width="119">
+            2023.5.10.
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="119">
+            설립법령
+            <br>
+             및 정관,
+             <br>
+              조직도
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="122" valign="MIDDLE" width="119">
+            설립법령 및
+            <br>
+             정관(230309)
+             <br>
+              조직도
+              <br>
+               (2023.1.1.)
+               <br>
+                기준
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="122" valign="MIDDLE" width="119">
+            설립법령 및
+            <br>
+             정관(230629)
+             <br>
+              조직도
+              <br>
+               (2023.6.29.)
+               <br>
+                기준
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="122" valign="MIDDLE" width="119">
+            정관개정,
+            <br>
+             조직도 변경.
+            </br>
+           </td>
+           <td align="CENTER" height="122" valign="MIDDLE" width="119">
+            2023.7.3.
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            설립법령
+            <br>
+             및 정관
+            </br>
+           </td>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            설립법령 및
+            <br>
+             정관(230629)
+             <br>
+              기준
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            설립법령 및
+            <br>
+             정관(230831)
+             <br>
+              기준
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            정관개정
+           </td>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            2023.8.31.
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            조직도
+           </td>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            조직도
+            <br>
+             (2023.6.29.)
+             <br>
+              기준
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            조직도
+            <br>
+             (2024.1.1.)
+             <br>
+              기준
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            조직도 변경
+           </td>
+           <td align="CENTER" height="76" valign="MIDDLE" width="119">
+            2023.12.28.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="pgbrk">
+        </p>
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="1. 일반현황">
+          1. 일반현황
+         </a>
+        </p>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="600">
+            (2023년 1/4분기)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            한국산림복지진흥원
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="일반현황">
+          일반현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="31" valign="TOP" width="600">
+            ◈ 기관소개
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            - CI
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p>
+         <br>
+         </br>
+        </p>
+        <img height="110" src="/upload/report/2024/01/09/2024010909914136/기관ci.jpg" width="300">
+         <p>
+          <br>
+          </br>
+         </p>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="15">
+            <col width="567">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 기관설립일
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="24">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="576">
+             2016년 04월 18일
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 설립근거
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             「산림복지 진흥에 관한 법률」제49조
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             <a href="javascript:report_attach_down('설립법령 및 정관(230831).zip')">
+              설립법령 및 정관(230831).zip
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 설립목적
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="53" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="53" valign="TOP" width="577">
+             다양하고, 체계적인 산림복지서비스를 제공함으로써 산림복지진흥을 통하여 국민의 건강증진, 삶의 질 향상 및 행복 추구에 기여
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 주무기관
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             산림청
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 홈페이지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             https://www.fowi.or.kr
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="13">
+            <col width="115">
+             <col width="445">
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="3" height="30" valign="TOP" width="600">
+             - 소재지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="22">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="124">
+             대전광역시
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="454">
+             서구 둔산북로 121, 2층(둔산동 아너스빌)
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 사업자번호
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             598-82-00110
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 기관연혁
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="214" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="214" valign="TOP" width="577">
+             2013. 5. 29. 「산림복지단지 조성 및 지원에 관한 특별법」발의하여, 법명을
+             <br>
+              「산림복지 진흥에 관한 법률」로 개정 의결
+              <br>
+               - 산림복지문화재단 포괄 승계하여 설립(부칙 제4조)
+               <br>
+                2015. 3. 27. 「산림복지 진흥에 관한 법률」제정 공포
+                <br>
+                 2016. 4. 18. 한국산림복지진흥원 설립
+                 <br>
+                  2016. 7. 30. 「산림자원의 조성 및 관리에 관한 법률」개정 및 시행
+                  <br>
+                   - 녹색사업단을 포괄 승계(부칙 제2조)
+                   <br>
+                    2017. 2. 2. 기타공공기관 지정
+                    <br>
+                     2018. 2. 6. 준정부기관 지정
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 주요 기능 및 역할
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="191" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="191" valign="TOP" width="577">
+             - (시설 조성ㆍ운영) 산림복지시설 조성ㆍ운영 및 서비스제공
+             <br>
+              - (교육ㆍ치유) 산림교육ㆍ산림치유 서비스 활성화
+              <br>
+               - (전문업 등록) 산림복지전문업 등록ㆍ관리 및 교육
+               <br>
+                - (전문가 관리) 산림복지전문가 자격관리 및 연수
+                <br>
+                 - (교류ㆍ협력) 국내외 산림복지 관련 기관 및 단체 교류ㆍ협력
+                 <br>
+                  - (조사ㆍ연구) 산림복지 활성화 기반 마련을 위한 조사ㆍ연구
+                  <br>
+                   - (녹색자금운용) 산림환경 기능 증진 사업 시행
+                   <br>
+                    - (소외계층지원) 소외계층을 위한 서비스 체험 및 바우처 지원
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 경영목표 및 전략
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="605" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="605" valign="TOP" width="577">
+             O 경영목표
+             <br>
+              - 산림복지서비스 수혜인원 연120만명
+              <br>
+               - 국가 인증 프로그램 보유 전문업 비율 25%
+               <br>
+                - ESG 이행 지수 최우수 등급
+                <br>
+                 - 진흥원 혁신 지수 최우수 등급
+                 <br>
+                  <br>
+                   O 4대 전략방향 및 12대 전략과제
+                   <br>
+                    1. 맞춤형 산림복지로 국민 체감 확산
+                    <br>
+                     1.1 국민건강을 위한 산림치유 프로그램 체계화
+                     <br>
+                      1.2 생활 속 산림가치 실천을 위한 산림교육 활성화
+                      <br>
+                       1.3 대국민 산림자원활용 문화 확산
+                       <br>
+                        <br>
+                         2. 민간 주도의 산림복지서비스 경쟁력 확보
+                         <br>
+                          2.1 민간 서비스 공급 인프라 강화
+                          <br>
+                           2.2 산림복지업의 창업 ·성장 지원 다각화
+                           <br>
+                            2.3 차별화된 특화 서비스로 민간 수요 창출 확대
+                            <br>
+                             <br>
+                              3. ESG 중심의 지속가능경영 체계 확립
+                              <br>
+                               3.1 친환경 경영 모델 정립 및 실천 강화
+                               <br>
+                                3.2 재해 ·안전 ·보건 통합관리체계 고도화
+                                <br>
+                                 3.3 국민 소통 기반의 투명 경영 활성화
+                                 <br>
+                                  <br>
+                                   4. 경영혁신을 통한 생산성 ·효율성 향상
+                                   <br>
+                                    4.1 공공과 효율의 균형적 혁신 성과관리 고도화
+                                    <br>
+                                     4.2 성과와 직무 중심의 조직관리 강화
+                                     <br>
+                                      4.3 일하는 방식 개선을 통한 업무효율 증진
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             주요사업에 대해서는 공시항목 &lt;36. 주요사업&gt;을 참고하시기 바랍니다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="81">
+             <col width="47">
+              <col width="265">
+               <col width="148">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="5" height="31" valign="TOP" width="600">
+             ◈ 기관장
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="MIDDLE" width="90">
+             남태헌
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="56">
+             (임기:
+            </td>
+            <td align="CENTER" height="30" valign="MIDDLE" width="274">
+             2022.09.26 ~ 2025.09.25
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="157">
+             )
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="30" valign="TOP" width="577">
+             [주요경력]
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="76" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="76" valign="TOP" width="577">
+             - 산림청 차장
+             <br>
+              - 농림부 식품산업정책관
+              <br>
+               - 농림부 창조농식품정책관
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="591">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="32" valign="TOP" width="600">
+             ◈ 조직현황
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <img height="600" src="/upload/report/2024/01/09/2024010909914136/조직도(2024. 1. 1.).jpg" width="600">
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="599">
+           <colgroup>
+            <col width="141">
+             <col width="141">
+              <col width="141">
+               <col width="140">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              기준일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              2023년 12월 28일
+             </td>
+             <td align="CENTER" height="30" valign="TOP" width="150">
+              제출일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="149">
+              2024년 01월 09일
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="600">
+              기관 공시 담당자
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="601">
+           <colgroup>
+            <col width="96">
+             <col width="111">
+              <col width="228">
+               <col width="130">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <thead>
+            <tr>
+             <th align="CENTER" height="31" valign="MIDDLE" width="105">
+              구분
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="120">
+              담당자명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="237">
+              부서명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="139">
+              전화번호
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              작성자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              박혜준
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              전략기획팀
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              042-719-4018
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              감독자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              이충언
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              ESG경영혁신팀
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              042-719-4020
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              확인자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              박후성
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              청렴윤리감사실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              042-719-4005
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </img>
+        </img>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2024010909914136"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C1055",
+                	disclosureNo:"2024010902743218",
+                	reportFormRootNo:"10101"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

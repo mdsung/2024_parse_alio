@@ -1,0 +1,1348 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="한국석유공사" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2024/01/08/2024010809912292/시그니춰_상하조합_국영문.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        한국석유공사
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        일반현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+        <option value="101">
+         시그니춰_상하조합_국영문.jpg
+        </option>
+        <option value="102">
+         기구도_231228기준.jpg
+        </option>
+        <option value="103">
+         한국석유공사법(법률)(제16568호)(20200828).hwp
+        </option>
+        <option value="104">
+         기구도_231228기준.png
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년1분기
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <li>
+          <a href="javascript:void(0)">
+           2024.01.08 공시
+          </a>
+         </li>
+         <li id="leftList_2024010802742498">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.04.10 공시
+          </a>
+         </li>
+         <li id="leftList_2023041002600617" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="CORRECTION">
+         <a class="toc" href="#toc-132" name="toc-132" title="수 정 공 시">
+          수 정 공 시
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="275">
+           <col width="307">
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="MIDDLE" width="284">
+            1. 수정대상 공시서류의 최초제출일 :
+           </td>
+           <td align="LEFT" height="30" valign="MIDDLE" width="316">
+            2023.04.10.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            2. 수정사항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="595">
+         <colgroup>
+          <col width="110">
+           <col width="110">
+            <col width="110">
+             <col width="110">
+              <col width="110">
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            항  목
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 전
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 후
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수정사유
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 일
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="120" valign="MIDDLE" width="119">
+            조직현황
+           </td>
+           <td align="LEFT" height="120" valign="MIDDLE" width="119">
+            조직도 舊자료 등록
+           </td>
+           <td align="LEFT" height="120" valign="MIDDLE" width="119">
+            조직도 개정자료 등록
+           </td>
+           <td align="LEFT" height="120" valign="MIDDLE" width="119">
+            직제규정 개정
+           </td>
+           <td align="LEFT" height="120" valign="MIDDLE" width="119">
+            2024.01.08.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="pgbrk">
+        </p>
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="1. 일반현황">
+          1. 일반현황
+         </a>
+        </p>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="600">
+            (2023년 1/4분기)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            한국석유공사
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="일반현황">
+          일반현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="31" valign="TOP" width="600">
+            ◈ 기관소개
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            - CI
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <img height="352" src="/upload/report/2024/01/08/2024010809912292/시그니춰_상하조합_국영문.jpg" width="600">
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 기관설립일
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             1979년 03월 03일
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 설립근거
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             한국석유공사법
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             <a href="javascript:report_attach_down('한국석유공사법(법률)(제16568호)(20200828).hwp')">
+              한국석유공사법(법률)(제16568호)(20200828).hwp
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 설립목적
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="76" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="76" valign="TOP" width="577">
+             석유자원의 개발, 석유의 비축, 석유유통구조의 개선에 관한 사업을 효율적으로 수행함으로써 석유수급의 안정을 도모함과 아울러 국민경제 발전에 이바지함(한국석유공사법 제1조)
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 주무기관
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             산업통상자원부
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 홈페이지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             www.knoc.co.kr
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="13">
+            <col width="115">
+             <col width="445">
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="3" height="30" valign="TOP" width="600">
+             - 소재지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="22">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="124">
+             울산광역시
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="454">
+             중구 종가로 305
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 사업자번호
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             138-82-01727
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 기관연혁
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="1111" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="1111" valign="TOP" width="577">
+             ㅇ 1978.12월: 한국석유개발공사법 공포
+             <br>
+              ㅇ 1979. 3월: 공사 발족
+              <br>
+               ㅇ 1981. 7월: 구리지사 및 울산지사 설치
+               <br>
+                ㅇ 1981. 8월: 휴스턴지사 설치
+                <br>
+                 ㅇ 1982. 4월: 출자회사 한국석유시추(주) 설립
+                 <br>
+                  ㅇ 1985. 1월: 거제지사 설치
+                  <br>
+                   ㅇ 1986. 8월: 출자회사 한국송유관(주) 설립
+                   <br>
+                    ㅇ 1987.12월: 국내대륙붕에서 최초로 가스발견
+                    <br>
+                     ㅇ 1989. 7월: 평택지사 설치
+                     <br>
+                      ㅇ 1992.10월: 베트남지사 설치
+                      <br>
+                       ㅇ 1994.10월: 출자회사 한국석유시추(주) 통합
+                       <br>
+                        ㅇ 1994.12월: 한국송유관(주) 매각 및 (주)대한송유관공사 출자
+                        <br>
+                         ㅇ 1996. 2월: 영국 현지법인 KCCL 설립
+                         <br>
+                          ㅇ 1997. 1월: 페루지사 설치
+                          <br>
+                           ㅇ 1997.10월: 인도네시아 현지법인 KSL 설립
+                           <br>
+                            ㅇ 1998. 5월: 용인지사 설치
+                            <br>
+                             ㅇ 1998. 9월: 여수지사 설치
+                             <br>
+                              ㅇ 1999. 1월: 한국석유공사로 사명변경(법정자본금 3조원→5조원)
+                              <br>
+                               ㅇ 1999. 5월: 곡성지사 설치
+                               <br>
+                                ㅇ 2000. 2월: 국내대륙붕 제6-1광구 동해-1 가스전 개발 선언
+                                <br>
+                                 ㅇ 2000. 7월: 동해지사 설치
+                                 <br>
+                                  ㅇ 2001. 9월: 한국·베트남석유개발성공기념식및베트남15-1광구개발선언
+                                  <br>
+                                   ㅇ 2003.10월: 베트남15-1유전 SutuDen구조에서 원유생산개시
+                                   <br>
+                                    ㅇ 2004. 5월: 리비아 엘리펀트 유전 상업생산 개시
+                                    <br>
+                                     ㅇ 2004. 9월: 동해-1 가스전에서 천연가스 상업생산 개시
+                                     <br>
+                                      ㅇ 2005. 8월: 서산지사 설치
+                                      <br>
+                                       ㅇ 2005.10월: 카자흐스탄 사무소 개소
+                                       <br>
+                                        ㅇ 2006. 2월: 예멘, 나이지리아, 캐나다 사무소 개소·석유기술연구원 신설
+                                        <br>
+                                         ㅇ 2006.11월: 베트남11-2광구 생산기념식
+                                         <br>
+                                          ㅇ 2007. 8월: 한국석유공사법 개정(법정자본금 5조원→10조원)
+                                          <br>
+                                           ㅇ 2008. 5월: 미국 현지법인 ANKOR Energy 설립
+                                           <br>
+                                            ㅇ 2009. 2월: 페루 Petro-Tech사 인수
+                                            <br>
+                                             ㅇ 2009.10월: 캐나다 Harvest Energy사 인수계약 체결
+                                             <br>
+                                              ㅇ 2009.12월: 카자흐스탄 Sumbe사 인수
+                                              <br>
+                                               ㅇ 2010. 9월: 영국 Dana사 인수
+                                               <br>
+                                                ㅇ 2011. 2월: 캐나다 Hunt사 인수
+                                                <br>
+                                                 ㅇ 2011. 3월: 카자흐스탄 Altius사 인수
+                                                 <br>
+                                                  ㅇ 2011. 4월: 미국 Anadarko사 셰일오일 자산 인수
+                                                  <br>
+                                                   ㅇ 2012. 6월: 미국 EP Energy사 자산 인수
+                                                   <br>
+                                                    ㅇ 2012. 7월 : 아부다비사무소 설립 및 KADOC Ltd(현지법인) 사업허가서 취득
+                                                    <br>
+                                                     ㅇ 2013. 3월: 비전 선포식(에너지 그 이상의 가치를 실현하는 기업)
+                                                     <br>
+                                                      ㅇ 2013. 6월: 동북아오일허브 비전선포 및 여수저장시설 준공
+                                                      <br>
+                                                       ㅇ 2014. 1월:동북아 오일허브 울산북항사업 합작법인 ‘코리아오일터미널’ 출범
+                                                       <br>
+                                                        ㅇ 2014.11월: 신사옥 이전(울산광역시)
+                                                        <br>
+                                                         ㅇ 2017.10월: 여수 비축기지 추가 저장시설 준공
+                                                         <br>
+                                                          ㅇ 2018. 9월: 캐나다 블랙골드 오일샌드 생산개시
+                                                          <br>
+                                                           ㅇ 2019. 7월: UAE 할리바 유전 생산개시
+                                                           <br>
+                                                            ㅇ 2020. 4월: UAE ADNOC Onshore 생산광구 지분참여
+                                                           </br>
+                                                          </br>
+                                                         </br>
+                                                        </br>
+                                                       </br>
+                                                      </br>
+                                                     </br>
+                                                    </br>
+                                                   </br>
+                                                  </br>
+                                                 </br>
+                                                </br>
+                                               </br>
+                                              </br>
+                                             </br>
+                                            </br>
+                                           </br>
+                                          </br>
+                                         </br>
+                                        </br>
+                                       </br>
+                                      </br>
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 주요 기능 및 역할
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="191" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="191" valign="TOP" width="577">
+             ㅇ 석유자원의 탐사 및 개발
+             <br>
+              ㅇ 원유와 석유제품의 수출입ㆍ비축ㆍ수송ㆍ대여 및 판매
+              <br>
+               ㅇ 석유비축시설의 건설ㆍ관리ㆍ운영 및 대여
+               <br>
+                ㅇ 석유의 유통구조 개선
+                <br>
+                 ㅇ 에너지 및 자원 관련 사업을 하는 법인에 대한 투자ㆍ융자ㆍ채무보증 및 자재대여
+                 <br>
+                  ㅇ 상기의 사업에 대한 기술지원ㆍ조사연구 및 정보제공
+                  <br>
+                   ㅇ 상기의 사업에 딸린 사업
+                   <br>
+                    ㅇ 그 밖에 정부로부터 위탁받은 사업
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 경영목표 및 전략
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="237" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="237" valign="TOP" width="577">
+             ㅇ 경영목표('23~'27년)
+             <br>
+              - 매장량 확보 : 38.5백만 배럴('27년)
+              <br>
+               - 전략비축물량 : 1억 배럴('27년)
+               <br>
+                - EBITDA : 17,214억원('27년)
+                <br>
+                 - 탄소감축 : 73만톤/년('27년)
+                 <br>
+                  ㅇ 중장기 전략방향
+                  <br>
+                   - 자원개발 안보기능 강화
+                   <br>
+                    - 비축ㆍ유통 공공기능 강화
+                    <br>
+                     - 경영혁신을 통한 가치 제고
+                     <br>
+                      - ESG 경영 확산
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             주요사업에 대해서는 공시항목 &lt;36. 주요사업&gt;을 참고하시기 바랍니다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="81">
+             <col width="47">
+              <col width="265">
+               <col width="148">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="5" height="31" valign="TOP" width="600">
+             ◈ 기관장
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="MIDDLE" width="90">
+             김동섭
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="56">
+             (임기:
+            </td>
+            <td align="CENTER" height="30" valign="MIDDLE" width="274">
+             2021.06.08 ~ 2024.06.07
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="157">
+             )
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="30" valign="TOP" width="577">
+             [주요경력]
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="99" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="99" valign="TOP" width="577">
+             울산과학기술원 산업공학과 교수/정보바이오융합대학장/AI Innovation Park 사업단장
+             <br>
+              SK이노베이션 기술원장, 기술총괄 사장 겸 CTO
+              <br>
+               Royal Dutch Shell Global Solutions 아-태지역 Regional Manager
+               <br>
+                영남대학교 박용기계과 조교수
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="591">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="32" valign="TOP" width="600">
+             ◈ 조직현황
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <img height="594" src="/upload/report/2024/01/08/2024010809912292/기구도_231228기준.jpg" width="600">
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="599">
+           <colgroup>
+            <col width="141">
+             <col width="141">
+              <col width="141">
+               <col width="140">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              기준일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              2023년 12월 28일
+             </td>
+             <td align="CENTER" height="30" valign="TOP" width="150">
+              제출일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="149">
+              2024년 01월 08일
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="600">
+              기관 공시 담당자
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="601">
+           <colgroup>
+            <col width="96">
+             <col width="111">
+              <col width="228">
+               <col width="130">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <thead>
+            <tr>
+             <th align="CENTER" height="31" valign="MIDDLE" width="105">
+              구분
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="120">
+              담당자명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="237">
+              부서명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="139">
+              전화번호
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              작성자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              정을래
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              ESG추진실 ESG경영팀
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              052-216-5521
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              감독자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              안범희
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              ESG추진실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              052-216-5500
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              확인자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              한일봉
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              감사실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              052-216-2100
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </img>
+        </img>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2024010809912292"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0214",
+                	disclosureNo:"2024010802742498",
+                	reportFormRootNo:"10101"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

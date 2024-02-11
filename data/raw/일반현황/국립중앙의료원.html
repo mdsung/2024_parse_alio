@@ -1,0 +1,2100 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="국립중앙의료원" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2024/01/04/2024010409909343/국립중앙의료원 ci.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        국립중앙의료원
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        일반현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+        <option value="101">
+         국립중앙의료원 ci.jpg
+        </option>
+        <option value="102">
+         국립중앙의료원 조직도(231229).jpg
+        </option>
+        <option value="103">
+         국립중앙의료원의 설립 및 운영에 관한 법률.hwp
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년1분기
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <li>
+          <a href="javascript:void(0)">
+           2024.01.04 공시
+          </a>
+         </li>
+         <li id="leftList_2024010402741377">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.11.21 공시
+          </a>
+         </li>
+         <li id="leftList_2023112102723289" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.08.21 공시
+          </a>
+         </li>
+         <li id="leftList_2023082102678040" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.07.05 공시
+          </a>
+         </li>
+         <li id="leftList_2023070502652500" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.05.08 공시
+          </a>
+         </li>
+         <li id="leftList_2023050802623152" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.05.03 공시
+          </a>
+         </li>
+         <li id="leftList_2023050302621434" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.04.03 공시
+          </a>
+         </li>
+         <li id="leftList_2023041002600857" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="CORRECTION">
+         <a class="toc" href="#toc-132" name="toc-132" title="수 정 공 시">
+          수 정 공 시
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="275">
+           <col width="307">
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="MIDDLE" width="284">
+            1. 수정대상 공시서류의 최초제출일 :
+           </td>
+           <td align="LEFT" height="30" valign="MIDDLE" width="316">
+            2023년 04월 03일
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            2. 수정사항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="595">
+         <colgroup>
+          <col width="69">
+           <col width="157">
+            <col width="157">
+             <col width="84">
+              <col width="83">
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="30" valign="MIDDLE" width="78">
+            항  목
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="166">
+            수 정 전
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="166">
+            수 정 후
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="93">
+            수정사유
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="92">
+            수 정 일
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="310" rowspan="10" valign="MIDDLE" width="78">
+            조직현황
+           </td>
+           <td align="LEFT" height="47" valign="MIDDLE" width="166">
+            진료부원장 직속
+            <br>
+             11개의 팀
+            </br>
+           </td>
+           <td align="LEFT" height="47" valign="MIDDLE" width="166">
+            진료부원장 직속
+            <br>
+             -
+            </br>
+           </td>
+           <td align="LEFT" height="310" rowspan="10" valign="MIDDLE" width="93">
+            직제규정 시행규칙 개정
+           </td>
+           <td align="LEFT" height="310" rowspan="10" valign="MIDDLE" width="92">
+            2023.05.03
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            -
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            진료기획실
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            진료협력팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            적정진료팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            사회사업팀
+           </td>
+           <td align="LEFT" height="54" rowspan="2" valign="MIDDLE" width="166">
+            공공사회사업팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            공공의료사업팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            흉부외과
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            심장혈관흉부외과
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            -
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            새병원정보화전략팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            소통기획팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            홍보팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="47" valign="MIDDLE" width="166">
+            안전관리처 산하
+            <br>
+             안전보건팀
+            </br>
+           </td>
+           <td align="LEFT" height="47" valign="MIDDLE" width="166">
+            안전관리처 산하
+            <br>
+             <span>
+              안
+             </span>
+             전보건팀, 시설팀
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            치매연구개발팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            치매의료지원팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="519" rowspan="17" valign="MIDDLE" width="78">
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+             조직현황
+            </span>
+           </td>
+           <td align="LEFT" height="67" valign="MIDDLE" width="166">
+            원장 직속
+            <br>
+             1본부, 2처, 1팀, 1실,
+             <span>
+              1국,
+             </span>
+             1센터
+            </br>
+           </td>
+           <td align="LEFT" height="67" valign="MIDDLE" width="166">
+            <span>
+             원장 직속
+             <br>
+             </br>
+            </span>
+            1본부, 2처, 1팀, 1실,
+            <span>
+             1국,
+            </span>
+            2센터
+            <span>
+            </span>
+           </td>
+           <td align="LEFT" height="519" rowspan="17" valign="MIDDLE" width="93">
+            <span style="font-size:9pt ;">
+             직제규정 및
+             <br>
+              시행규칙 개정
+             </br>
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+           </td>
+           <td align="LEFT" height="519" rowspan="17" valign="MIDDLE" width="92">
+            2023.05.08.
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="47" valign="MIDDLE" width="166">
+            진료부원장 직속
+            <br>
+             -
+            </br>
+           </td>
+           <td align="LEFT" height="47" valign="MIDDLE" width="166">
+            <span>
+             진료부원장 직속
+             <br>
+              2개의 팀
+             </br>
+            </span>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            약제부
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            약제실
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            남북국제보건의료센터
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            삭제
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            일차의료지원센터
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            삭제
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            지역심뇌센터지원팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            심뇌센터지원팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            일차의료정책개발팀
+           </td>
+           <td align="LEFT" height="81" rowspan="3" valign="MIDDLE" width="166">
+            정책평가팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            일차의료사업지원팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            정책통계개발팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            남북보건의료팀
+           </td>
+           <td align="LEFT" height="54" rowspan="2" valign="MIDDLE" width="166">
+            남북국제보건팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            국제보건의료팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            응급의료정책연구실
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            응급의료정책실
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            중앙응급의료상황실
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            재난의료정책실
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <p>
+             지역네트워크사업팀
+            </p>
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <p>
+             응급취약지·지역협력팀
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <p>
+             외상체계관리팀
+            </p>
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <p>
+             외상·필수의료관리팀
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <p>
+             응급의료교육사업팀
+            </p>
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <p>
+             응급의료교육·홍보팀
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            닥터헬기·응급취약지관리팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            닥터헬기·현장이송팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="54" rowspan="2" valign="MIDDLE" width="78">
+            <span style="font-size:9pt ;">
+             조직현황
+            </span>
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            기부금기획팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            기부금총괄팀
+           </td>
+           <td align="LEFT" height="54" rowspan="2" valign="MIDDLE" width="93">
+            <span style="font-size:9pt ;">
+             직제규정 시행규칙 개정
+            </span>
+           </td>
+           <td align="LEFT" height="54" rowspan="2" valign="MIDDLE" width="92">
+            <span style="font-size:9pt ;">
+             2023.07.05
+            </span>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            -
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            기부금사업팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="81" rowspan="3" valign="MIDDLE" width="78">
+            <span style="font-size:9pt ;">
+             조직현황
+            </span>
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            감염의학센터 외 6개 센터
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            감염내과 외 6개 진료과 통합
+           </td>
+           <td align="LEFT" height="81" rowspan="3" valign="MIDDLE" width="93">
+            <span style="font-size:9pt ;">
+             직제규정 시행규칙 개정
+            </span>
+           </td>
+           <td align="LEFT" height="81" rowspan="3" valign="MIDDLE" width="92">
+            <span style="font-size:9pt ;">
+             2023.08.21
+            </span>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            감염관리팀
+           </td>
+           <td align="LEFT" height="54" rowspan="2" valign="MIDDLE" width="166">
+            감염관리팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            감염병대응팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="519" rowspan="17" valign="MIDDLE" width="78">
+            <span style="font-size:9pt ;">
+             조직현황
+            </span>
+           </td>
+           <td align="LEFT" height="87" valign="MIDDLE" width="166">
+            -
+           </td>
+           <td align="LEFT" height="87" valign="MIDDLE" width="166">
+            중앙감염병병원 설립추진단
+            <br>
+             - 감염병병원설립기획팀
+             <br>
+              - 감염병연구기획팀
+              <br>
+               - 감염병정보통계팀
+              </br>
+             </br>
+            </br>
+           </td>
+           <td align="LEFT" height="519" rowspan="17" valign="MIDDLE" width="93">
+            <span style="font-size:9pt ;">
+             직제규정 및
+             <br>
+              시행규칙 개정
+             </br>
+            </span>
+           </td>
+           <td align="LEFT" height="519" rowspan="17" valign="MIDDLE" width="92">
+            <span>
+             2023.11.21
+            </span>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <span>
+             기획운영실
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <span>
+             삭제
+            </span>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <span style="font-size:9pt ;">
+             중앙감염병병원운영센터
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <span style="font-size:9pt ;">
+             삭제
+            </span>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            기부금사업팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <span style="font-size:9pt ;">
+             인프라
+            </span>
+            <span style="font-size:9pt ;">
+             ·
+            </span>
+            <span style="font-size:9pt ;">
+             연구지원팀
+            </span>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            인사팀
+           </td>
+           <td align="LEFT" height="54" rowspan="2" valign="MIDDLE" width="166">
+            인사팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            인재채용팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            교육정책개발팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            교육전략기획팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            교육혁신팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            의료임상교육팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            -
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            인력지원교육팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            공공의료평가운영팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            공공의료기획평가팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            공공의료정보통계팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            공공의료정보운영팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            공공의료연계질향샹팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            책임의료기관지원팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            공공의료강화지원팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <span style="font-size:9pt ;">
+             삭제
+            </span>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            -
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            감염병사업지원팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            정책평가팀
+           </td>
+           <td align="LEFT" height="54" rowspan="2" valign="MIDDLE" width="166">
+            데이터기반정책연구팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            남북국제보건팀
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            심뇌센터지원팀
+           </td>
+           <td align="LEFT" height="27" valign="MIDDLE" width="166">
+            <span style="font-size:9pt ;">
+             삭제
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+            <span style="font-size:9pt ;">
+            </span>
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="50" valign="MIDDLE" width="78">
+            <span style="font-size:9pt ;">
+             조직현황
+            </span>
+           </td>
+           <td align="LEFT" height="50" valign="MIDDLE" width="166">
+            -
+           </td>
+           <td align="LEFT" height="50" valign="MIDDLE" width="166">
+            4개 광역응급의료상황팀
+           </td>
+           <td align="LEFT" height="50" valign="MIDDLE" width="93">
+            <span style="font-size:9pt ;">
+             직제규정 시행규칙 개정
+            </span>
+           </td>
+           <td align="LEFT" height="50" valign="MIDDLE" width="92">
+            <span style="font-size:9pt ;">
+             2024.01.04
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="pgbrk">
+        </p>
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="1. 일반현황">
+          1. 일반현황
+         </a>
+        </p>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="600">
+            (2023년 1/4분기)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            국립중앙의료원
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="일반현황">
+          일반현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="31" valign="TOP" width="600">
+            ◈ 기관소개
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            - CI
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <img height="139" src="/upload/report/2024/01/04/2024010409909343/국립중앙의료원 ci.jpg" width="600">
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 기관설립일
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             2010년 04월 02일
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 설립근거
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             국립중앙의료원의 설립 및 운영에 관한 법률
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             <a href="javascript:report_attach_down('국립중앙의료원의 설립 및 운영에 관한 법률.hwp')">
+              국립중앙의료원의 설립 및 운영에 관한 법률.hwp
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 설립목적
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="76" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="76" valign="TOP" width="577">
+             공공의료의 효율성과 만족도를 높이고 수준 높은 공공보건의료기관으로 육성하여 공공의료를 선도하게 함으로써 국민건강증진과 국가보건의료의 발전에 이바지함을 목적으로 한다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 주무기관
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             보건복지부
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 홈페이지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             www.nmc.or.kr
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="13">
+            <col width="115">
+             <col width="445">
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="3" height="30" valign="TOP" width="600">
+             - 소재지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="22">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="124">
+             서울특별시
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="454">
+             서울특별시 중구 을지로 245
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 사업자번호
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             104-82-11329
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 기관연혁
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="1548" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="1548" valign="TOP" width="577">
+             1951.06 병원 설립을 위한 스칸디나비아 의료진 대표 및 UNKRA, UNCACK 공동사업회의 및 UNKRA,와의 공동성안
+             <br>
+              1952.01 스칸디나비아 정부대표 [스칸디나비아 위원회] 구성, 스칸디나비아 정부 동의 및 UNKRA와의 공동성안
+              <br>
+               1953.10 한국정부 스칸디나비아 3개국 대표 방한시찰 및 UNKRA - 한국 정부 대표자와 중앙의료원 건립계획 합의
+               <br>
+                1956.03 국립중앙의료원의 설립 및 운영에 관한 협정 체결
+                <br>
+                 1958.06 대통령 령 제1377호 국립중앙의료원 한국측 직제 공포
+                 <br>
+                  1958.10 의료원 건물 준공, 국립중앙의료원 낙성식
+                  <br>
+                   1958.11 국립중앙의료원 개원
+                   <br>
+                    1959.07 간호학교 신설(1979. 1. 1 간호전문대학으로 개편)
+                    <br>
+                     1968.01 정부 운영권 가인수, 국립의료원 특별회계설치
+                     <br>
+                      1968.10 정부에서 운영권 인수
+                      <br>
+                       1968.10 한스재단 설립
+                       <br>
+                        1983.10 미얀마 아웅산 폭발사건 시, 의료단 파견
+                        <br>
+                         1983.12 중/개축 공사 완공
+                         <br>
+                          1991.05 한방진료부 개설
+                          <br>
+                           2000.02 국립장기이식관리센터 개소
+                           <br>
+                            2000.07 중앙응급의료센터 지정
+                            <br>
+                             2001.02 김포공항분원 개원
+                             <br>
+                              2002.01 중앙응급의료센터 업무개시
+                              <br>
+                               2002.02 국립의료원 직영 장례식장 신축
+                               <br>
+                                2003.06 국가중앙의료원 설립추진단 발족
+                                <br>
+                                 2003.06 김포공항분원 폐원
+                                 <br>
+                                  2009.04 국립중앙의료원의 설립 및 운영에 관한 법률 재정, 공포
+                                  <br>
+                                   2010.04 국립중앙의료원, 공공의학연구소 출범 / 박재갑 초대원장 취임
+                                   <br>
+                                    2011.12 윤여규 2대원장 취임
+                                    <br>
+                                     2013.02 지역의약품안전센터 개소
+                                     <br>
+                                      2013.03 결핵안심밸트 구축 업무협약
+                                      <br>
+                                       2014.01 국회, 국립중앙의료원 현대화(신축, 이전) 사업 확정
+                                       <br>
+                                        2014.04 외상센터 개소, 외상사업관리단 출범
+                                        <br>
+                                         2014.12 안명옥 3대원장 취임
+                                         <br>
+                                          2015.02 세계보건기구(WHO) 국제건강증진병원 회원 인증
+                                          <br>
+                                           2015,03 응급의료연구센터, 의약품 유해반응 관리센터 개소
+                                           <br>
+                                            2015.04 국립중앙의료원 스칸디나비아 기념관 개관
+                                            <br>
+                                             2015.06 메르스 전담 중앙거점 의료기관 지정
+                                             <br>
+                                              2015.07 공공보건의료교육훈련센터 운영 위탁
+                                              <br>
+                                               2015.09 국립중앙의료원 호스피스완화의료센터 개소
+                                               <br>
+                                                2015.12 음압수술실 개소식
+                                                <br>
+                                                 2015.12 여성가족부 가족친화 인증기관 선정
+                                                 <br>
+                                                  2016.03 공공보건의료연구소 개소(기존 공공의학연구소 기능 확대 및 명칭변경)
+                                                  <br>
+                                                   2016.08 난임 센터 개소
+                                                   <br>
+                                                    2016.12 해바라기센터 개소
+                                                    <br>
+                                                     2017.02 국립중앙의료원 중앙감염병 병원으로 지정
+                                                     <br>
+                                                      2018.01 정기현 4대원장 취임
+                                                      <br>
+                                                       2018.06 중앙난임ㆍ우울증 상담센터 개소
+                                                       <br>
+                                                        2018.10 공공보건의료 발전 종합대책 발표
+                                                        <br>
+                                                         2018.10 국립공공의료대학(원) 설립준비지원 본부 신설
+                                                         <br>
+                                                          2019.04 국립중앙의료원, 3주기 의료기관 인증 획득
+                                                          <br>
+                                                           2019.04 국립중앙의료원, 미래기획단 출범
+                                                           <br>
+                                                            2019.12 국립중앙의료원 신규 CI 선포
+                                                            <br>
+                                                             2019.12 국립중앙의료원 미션ㆍ비전 선포
+                                                             <br>
+                                                              2020.01 국립중앙의료원, 중앙치매센터 위탁 운영
+                                                              <br>
+                                                               2020.01 코로나19 대응 중앙감염병병원 역할 수행
+                                                               <br>
+                                                                2020.02 신종감염병 중앙임상위원회 설치
+                                                                <br>
+                                                                 2020.04 미공병단부지 신축 이전 계획 발표
+                                                                 <br>
+                                                                  2020.07 국립중앙의료원 방산동 미공병단부지 이전 업무협약(보건복지부-서울시)
+                                                                  <br>
+                                                                   2020.10 중앙감염병병원 음압격리벽동 개소
+                                                                   <br>
+                                                                    2021.01 부지 유상 관리전환 착수를 위한 업무협약(보건복지부-국방부)
+                                                                    <br>
+                                                                     2021.01 코로나19 격리치료병동 개소
+                                                                     <br>
+                                                                      2021.01 코로나19 중앙예방접종센터 설치
+                                                                      <br>
+                                                                       2021.06 복지부-국립중앙의료원, 중앙치매센터 운영위탁 협약 체결
+                                                                       <br>
+                                                                        2022.01 국립중앙의료원 제5대 주영수 원장 취임
+                                                                        <br>
+                                                                         2022.02 중앙치매센터 정규조직 편입
+                                                                         <br>
+                                                                          2022.03 코로나19대응 백서II 대국민 공개 배포
+                                                                          <br>
+                                                                           2022.06 국립중앙의료원 ‘대한민국 해외긴급구호대(KDRT)’, 세계보건기구 긴급의료팀 인증 획득
+                                                                          </br>
+                                                                         </br>
+                                                                        </br>
+                                                                       </br>
+                                                                      </br>
+                                                                     </br>
+                                                                    </br>
+                                                                   </br>
+                                                                  </br>
+                                                                 </br>
+                                                                </br>
+                                                               </br>
+                                                              </br>
+                                                             </br>
+                                                            </br>
+                                                           </br>
+                                                          </br>
+                                                         </br>
+                                                        </br>
+                                                       </br>
+                                                      </br>
+                                                     </br>
+                                                    </br>
+                                                   </br>
+                                                  </br>
+                                                 </br>
+                                                </br>
+                                               </br>
+                                              </br>
+                                             </br>
+                                            </br>
+                                           </br>
+                                          </br>
+                                         </br>
+                                        </br>
+                                       </br>
+                                      </br>
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 주요 기능 및 역할
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="414" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="414" valign="TOP" width="577">
+             <p>
+              1. 공공보건의료에 관한 임상진료지침의 개발 및 보급
+             </p>
+             <p>
+              2. 노인성질환의 예방 및 관리
+             </p>
+             <p>
+              3. 희귀난치질환 등 국가가 특별히 관리할 필요가 있다고 인정되는 질병에 대한 관리
+             </p>
+             <p>
+              4. 감염병 및 비감염병 또는 재난으로 인한 환자의 진료 등의 예방과 관리
+             </p>
+             <p>
+              5. 남북의 보건의료 협력과 국제 보건의료 관련 국내외 협력
+             </p>
+             <p>
+              6. 민간 및 공공보건의료기관에 대한 기술 지원
+             </p>
+             <p>
+              7. 진료 및 의학계, 한방진료 및 한의학계 관련 연구
+             </p>
+             <p>
+              8. 전공의의 수련 및 의료 인력의 훈련
+             </p>
+             <p>
+              9. 「응급의료에 관한 법률」 제25조에 따른 응급의료에 관한 각종 사업의 지원
+             </p>
+             <p>
+              10. 「모자보건법」 제10조의6에 따른 고위험 임산부 및 미숙아등의 의료지원에 필요한 각종 사업의 지원
+             </p>
+             <p>
+              11.「공공보건의료에 관한 법률」 제21조에 따른 공공보건의료에 관한 각종 업무의 지원
+             </p>
+             <p>
+              12. 공공보건의료에 관하여 보건복지부장관이 위탁하는 사업
+             </p>
+             <p>
+              13. 제1호 내지 제12호의 사업에 부대되는 사업
+             </p>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 경영목표 및 전략
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="231" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="231" valign="TOP" width="577">
+             <p>
+              1. 미션 : 더 건강한 미래, 함께 healthier together, healthier tomorrow
+             </p>
+             <p>
+              2. 비전 : 사람 지역 미래를 잇는 국립중앙의료원
+              <br>
+               국민 모두의 건강을 함께 꿈꾸고, 내일의 변화를 위해 한 발 앞서 움직입니다.
+              </br>
+             </p>
+             <p>
+              ○ 국가중앙병원 - 국가가 책임지는 필수의료 부문을 총괄합니다.
+             </p>
+             <p>
+              ○ 공공보건의료 체계의 중추 - 지역과 계층을 넘어 의료불평등을 해소합니다.
+             </p>
+             <p>
+              ○ 공공의료 교육병원 - 공공보건의료에 꼭 필요한 의료인을 양성합니다.
+             </p>
+             <p>
+              ○ 보건의료문화 혁신센터 - 사람 중심 의료서비스 혁신을 이끌어 갑니다.
+             </p>
+             <p>
+              ○ 국가 표준 공공병원 - 전국의 공공병원에 모범과 기준을 제시합니다
+             </p>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             주요사업에 대해서는 공시항목 &lt;36. 주요사업&gt;을 참고하시기 바랍니다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="81">
+             <col width="47">
+              <col width="265">
+               <col width="148">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="5" height="31" valign="TOP" width="600">
+             ◈ 기관장
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="MIDDLE" width="90">
+             주영수
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="56">
+             (임기:
+            </td>
+            <td align="CENTER" height="30" valign="MIDDLE" width="274">
+             2022.01.23 ~ 2025.01.22
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="157">
+             )
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="30" valign="TOP" width="577">
+             [주요경력]
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="149" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="149" valign="TOP" width="577">
+             <p>
+              ○ 국립중앙의료원 원장(2022.1.~)
+             </p>
+             <p>
+              ○ 국립중앙의료원 공공보건의료본부 본부장(2021.2.~2022.1.)
+             </p>
+             <p>
+              ○ 국립중앙의료원 기획조정실장(2020.7.~2021.2.)
+              <br>
+               ○ 대통령직속 정책기획위원회 위원(2019.12.~2022.5.)
+              </br>
+             </p>
+             <p>
+              ○ 한림대학교 의과대학 사회의학교실 교수(1999.3.~2020.2.)
+             </p>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="591">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="32" valign="TOP" width="600">
+             ◈ 조직현황
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <img height="337" src="/upload/report/2024/01/04/2024010409909343/국립중앙의료원 조직도(231229).jpg" width="600">
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="599">
+           <colgroup>
+            <col width="141">
+             <col width="141">
+              <col width="141">
+               <col width="140">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              기준일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              2023년 12월 29일
+             </td>
+             <td align="CENTER" height="30" valign="TOP" width="150">
+              제출일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="149">
+              2024년 01월 04일
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="600">
+              기관 공시 담당자
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="601">
+           <colgroup>
+            <col width="96">
+             <col width="111">
+              <col width="228">
+               <col width="130">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <thead>
+            <tr>
+             <th align="CENTER" height="31" valign="MIDDLE" width="105">
+              구분
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="120">
+              담당자명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="237">
+              부서명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="139">
+              전화번호
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              작성자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              문혜경
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              기획예산팀
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              02-2260-7048
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              감독자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              강진숙
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              재무팀
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              02-2260-7020
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              확인자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              이홍석
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              감사팀
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              02-2276-2306
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </img>
+        </img>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2024010409909343"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0446",
+                	disclosureNo:"2024010402741377",
+                	reportFormRootNo:"10101"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

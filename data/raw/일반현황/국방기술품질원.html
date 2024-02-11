@@ -1,0 +1,1612 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="국방기술품질원" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2023/05/09/2023050909779362/국방기술품질원(국영문가로조합).jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        국방기술품질원
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        일반현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+        <option value="101">
+         국영문가로조합.jpg
+        </option>
+        <option value="102">
+         기품원 조직도.jpg
+        </option>
+        <option value="103">
+         방위사업법(법률)(제18805호)(20220504).pdf
+        </option>
+        <option value="104">
+         국방기술품질원(국영문가로조합).jpg
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년1분기
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <li>
+          <a href="javascript:void(0)">
+           2023.05.09 공시
+          </a>
+         </li>
+         <li id="leftList_2023050902623901">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.04.10 공시
+          </a>
+         </li>
+         <li id="leftList_2023041002600566" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="CORRECTION">
+         <a class="toc" href="#toc-132" name="toc-132" title="수 정 공 시">
+          수 정 공 시
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="275">
+           <col width="307">
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="MIDDLE" width="284">
+            1. 수정대상 공시서류의 최초제출일 :
+           </td>
+           <td align="LEFT" height="30" valign="MIDDLE" width="316">
+            2023.04.10.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            2. 수정사항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="595">
+         <colgroup>
+          <col width="110">
+           <col width="110">
+            <col width="110">
+             <col width="110">
+              <col width="110">
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            항  목
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 전
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 후
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수정사유
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 일
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="53" valign="MIDDLE" width="119">
+            조직도 변경
+           </td>
+           <td align="LEFT" height="53" valign="MIDDLE" width="119">
+            조직도
+            <br>
+             (변경전)
+            </br>
+           </td>
+           <td align="LEFT" height="53" valign="MIDDLE" width="119">
+            조직도
+            <br>
+             (변경후)
+            </br>
+           </td>
+           <td align="LEFT" height="53" valign="MIDDLE" width="119">
+            조직개편으로 인한 조직도 변경
+           </td>
+           <td align="LEFT" height="53" valign="MIDDLE" width="119">
+            2023.05.09.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="pgbrk">
+        </p>
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="1. 일반현황">
+          1. 일반현황
+         </a>
+        </p>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="600">
+            (2023년 1/4분기)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            국방기술품질원
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="일반현황">
+          일반현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="31" valign="TOP" width="600">
+            ◈ 기관소개
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            - CI
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <img height="239" src="/upload/report/2023/05/09/2023050909779362/국영문가로조합.jpg" width="600">
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 기관설립일
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             2006년 02월 06일
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 설립근거
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="53" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="53" valign="TOP" width="577">
+             방위사업법 제 32조 국방기술품질원의 설립
+             <br>
+              (2006.1.2 공표 : 법률 제 7845호, 2020.3.31. 일부개정 : 법률 제 17165호)
+             </br>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             <a href="javascript:report_attach_down('방위사업법(법률)(제18805호)(20220504).pdf')">
+              방위사업법(법률)(제18805호)(20220504).pdf
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 설립목적
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="76" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="76" valign="TOP" width="577">
+             국방기술품질원은 국방과학기술에 관한 기술기획·연구와 기술정보의 확보·유통·관리, 품질보증 업무 및 이와 관련된 연구업무를 효율적으로 수행함으로써 국방력의 강화와 자주국방의 완수에 이바지함을 목적으로 한다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 주무기관
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             방위사업청
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 홈페이지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             www.dtaq.re.kr
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="13">
+            <col width="115">
+             <col width="445">
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="3" height="30" valign="TOP" width="600">
+             - 소재지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="22">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="124">
+             경상남도
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="454">
+             52851 경상남도 진주시 동진로 420(충무공동) 국방기술품질원
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 사업자번호
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             204-82-09119
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="618">
+          <colgroup>
+           <col width="14">
+            <col width="586">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="618">
+             ◈ 기관연혁
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="907" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="907" valign="TOP" width="595">
+             <p>
+              ○ 1981.07.01 국방품질검사소' 창설
+             </p>
+             <p>
+              <span style="font-size:GL10pt ;">
+               ○ 1983.11.10 조달본부(서울 용산)에서 서울 홍릉으로 이전
+               <br>
+                ○ 1984.11.08 최초 국제 품질보증 협정 체결(한·캐나다 )
+                <br>
+                 ○ 1989.10.01 업무 확대로 '국방품질관리소'로 개칭
+                 <br>
+                  ○ 1995.01.03 항공분야 품질보증 업무 개시
+                  <br>
+                   ○ 1995.03.15 국가공인 시험분석기관(KOLAS) 지정
+                   <br>
+                    ○ 1996.01.01 함정분야 품질보증 업무 개시
+                    <br>
+                     ○ 1996.10.01 '국방품질연구소'로 개칭
+                     <br>
+                      ○ 1998.10.01 '국방품질관리소'로 개칭
+                      <br>
+                       ○ 1999.04.10 국방품질시스템 인증업무 시행
+                       <br>
+                        ○ 2003.09.05 서울 국방벤처센터 최초 개소
+                        <br>
+                         ○ 2006.02.02
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+              </span>
+              <span style="font-size:GL10pt ;">
+               방위사업법 제32조에의거 법적기구인 '국방기술품질원'으로 확대 개편
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○ 2008.02.04 국방과학기술정보통합시스템 구축
+               <br>
+                ○ 2010.07.29 강원도 인제군 서화 ASRP 시험장 준공
+                <br>
+                </br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2012.02.01 DQ마크 인증기관 지정
+               <br>
+                ○ 2013.06.27 국방품질연구회(DQS) 창립
+                <br>
+                 ○ 2014.05.21 본원 경남 진주혁신도시 이전
+                 <br>
+                  ○ 2014.06.17 진주 신청사 준공식
+                  <br>
+                   ○ 2015.07.08 강원도 인제군 다릿골 전천후 시험장 개장
+                   <br>
+                    ○ 2015.09.08 ISO 9001 인증기관 지정
+                    <br>
+                     ○ 2016.07.20 무기체계 선행연구 기관 지정
+                     <br>
+                      ○ 2017.10.24 방탄방호성능시험 KOLAS 인증 획득
+                      <br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2018.10.09 경영관리본부 신설, 3본부 체제
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2018.12.13 유도무기·탄약류 지상연소시험장(강원도 인제군) 준공
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2019.04.10 양성평등 조직문화 발전을 위한 '여성협의회' 발족
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2019.04.22 2019 정보통신(ICT) 발전 유공 대통령 기관 표창
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2019.07.08 사회적 가치 실현을 위한 '인권경영' 선언
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2019.08.05 방산수출지원센터, 감항인증연구센터 신설
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2019.11.13 국방품질경영분야 최초로 '2019 품질경쟁력 우수기업' 수상(산업통상자원부 장관상)
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2020.01.13 국방신뢰성연구센터 개편(대전)
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2020.11.10 노사발전을 위한 '직원협의회' 발족
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2020.11.25 국가산업 표준화 발전에 기여한 공로로 '세계 표준의 날' 유공 수상(국무총리 표창)
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2021.01.01 (부설) 국방기술진흥연구소 신설
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2021.01.08 국제공인 안전보건경영시스템(ISO45001) 인증 획득
+               <br>
+               </br>
+              </span>
+              <span style="font-size:GL10pt ;">
+               ○
+              </span>
+              <span style="font-size:GL10pt ;">
+               2021.04.07 제24대 허건영 국방기술품질원장 취임
+              </span>
+             </p>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 주요 기능 및 역할
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="790" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="790" valign="TOP" width="577">
+             <p>
+              <span>
+               □ 국방기술품질원
+               <br>
+               </br>
+              </span>
+              <span>
+               ○「방위사업법」제32조, 시행령 제37조, 시행령71조
+               <br>
+               </br>
+              </span>
+              <span>
+               - 군수품 품질보증 및 방산물자 품질경영 등에 대한 업무지원
+               <br>
+               </br>
+              </span>
+              <span>
+              </span>
+              <span>
+               - 이
+              </span>
+              <span>
+               에 관하여
+              </span>
+              <span style="text-decoration: underline;">
+               방위사업청장이 위탁하는 사업
+              </span>
+              <span>
+               <br>
+               </br>
+              </span>
+              <span style="font-size:10pt ;">
+              </span>
+              <span>
+               · 무기체계 연구개발사업 품질관리 기술지원
+               <br>
+                · 무기체계 전력지원체계 검사조서 발급 및 품질보증(양산/운영유지)
+                <br>
+                 · 함정무기체계 기성검사 등 품질보증(연구개발/양산/운영유지)
+                 <br>
+                  · 국제품질보증협정 체결
+                  <br>
+                   · 위조 및 단종 부품 관리
+                   <br>
+                    · 품질인증 심사 및 사후관리
+                    <br>
+                     · 함정무기체계 기성검사 등 형상관리 기술지원(연구개발/양산/운영유지)
+                     <br>
+                      · 2급 형상통제(양산/운영유지)
+                      <br>
+                       · 군용총포등의 운반 및 폐기에 대한 감독
+                       <br>
+                        · 비축원자재의 종류 및 수량의 확인
+                        <br>
+                         -  방위사업을 수행하는 과정에서 요구되는 군수품의 표준화 등에 대한 업무지원
+                         <br>
+                          -  군수품의 품질관리 등과 관련하여
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </span>
+              <span style="text-decoration: underline;">
+              </span>
+              <span style="text-decoration: underline;">
+               대통령령이 정하는 사항
+              </span>
+              <span>
+               <br>
+               </br>
+              </span>
+              <span>
+              </span>
+              <span>
+              </span>
+              <span style="font-size:10pt ;">
+              </span>
+              <span>
+               · 국제협력 지원 업무
+               <br>
+                · 방위사업청장의 전략물자 판정과 관련된 기술지원 업무
+                <br>
+                </br>
+               </br>
+              </span>
+              <span>
+              </span>
+              <span>
+               ○「국방과학기술혁신 촉진법」
+              </span>
+              <span>
+               제16조, 시행령 제37조, 시행령 제71조
+               <br>
+                - 무기체계 시험평가 지원 및 시험평가 방법에 관한 연구
+                <br>
+                 - 무기체계 연구개발 성실수행 인정 여부 결정에 관한 업무 지원
+                 <br>
+                 </br>
+                </br>
+               </br>
+              </span>
+              <span>
+              </span>
+              <span>
+               ○「군용항공기 비행안전성 인증에 관한 법률」제10조
+               <br>
+               </br>
+              </span>
+              <span>
+               - 군용항공기 감항인증 전문기관
+              </span>
+              <span>
+               <br>
+               </br>
+              </span>
+             </p>
+             <p>
+              □ (부설)국방기술진흥연구소
+              <br>
+               <span>
+                ○「국방과학기술혁신 촉진법」제16조
+               </span>
+               <span>
+                <br>
+                 - 국
+                </br>
+               </span>
+               <span>
+                방과학기술혁신 촉진의 지원 등
+                <br>
+                 ○「방위산업 발전 및 지원에 관한 법률」제18조
+                </br>
+               </span>
+               <span>
+                <br>
+                </br>
+               </span>
+               <span>
+               </span>
+               <span>
+                - 방위산업 발전의 지원 등
+               </span>
+              </br>
+             </p>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 경영목표 및 전략
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="467" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="467" valign="TOP" width="577">
+             <span>
+              ○ 임무 : 완벽한 군수품 품질실현을 위한 품질혁신 선도
+              <br>
+               ○ 비전 : 군수품 품질관리 및 신회성 전문연구기관
+               <br>
+                ○ 목표 : 군수품의 품질 신뢰성 향상 및 글로벌 경쟁력 강화
+                <br>
+                 ○ 전략목표 :
+                 <br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </span>
+             <span>
+              -
+             </span>
+             <span>
+              연구개발 품질관리 체계구축 및 발전
+              <br>
+              </br>
+             </span>
+             <span>
+              ·
+             </span>
+             <span>
+              연구개발단계 품질관리 체계화
+              <br>
+              </br>
+             </span>
+             <span>
+              · 전문성 기반의 내실있는 조직확보
+              <br>
+               · 획득절차 혁신에 맞춘 기술지원
+               <br>
+               </br>
+              </br>
+             </span>
+             <span>
+              -
+             </span>
+             <span>
+              양산/운영유지 단계 품질관리 효율화
+              <br>
+              </br>
+             </span>
+             <span>
+              · 최초양산 품질관리 체계화
+              <br>
+               · 후속 양산단계 품질관리 효율화
+               <br>
+                · 운영유지단계 기술지원 강화
+                <br>
+                </br>
+               </br>
+              </br>
+             </span>
+             <span>
+              -
+             </span>
+             <span>
+              전순기 신뢰성 보장
+              <br>
+              </br>
+             </span>
+             <span>
+              · 군수품 전순기 신뢰성 보장
+              <br>
+               · 국방 표준관리 선진화
+               <br>
+                · 감항인증 연구 내실화
+                <br>
+                </br>
+               </br>
+              </br>
+             </span>
+             <span>
+              -
+             </span>
+             <span>
+              조직경영 선진화
+              <br>
+              </br>
+             </span>
+             <span>
+              · 현장 중심의 열린경영 실현
+              <br>
+               · 인재양성 및 연구몰입도 향상
+               <br>
+                · 투명경영 및 만족도 제고
+               </br>
+              </br>
+             </span>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             주요사업에 대해서는 공시항목 &lt;36. 주요사업&gt;을 참고하시기 바랍니다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="81">
+             <col width="47">
+              <col width="265">
+               <col width="148">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="5" height="31" valign="TOP" width="600">
+             ◈ 기관장
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="MIDDLE" width="90">
+             허건영
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="56">
+             (임기:
+            </td>
+            <td align="CENTER" height="30" valign="MIDDLE" width="274">
+             2021.04.07 ~ 2024.04.06
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="157">
+             )
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="30" valign="TOP" width="577">
+             [주요경력]
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="168" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="168" valign="TOP" width="577">
+             ○ 합동참모본부 전략기획본부 전략기획부장('19.5.~'21.1.)
+             <br>
+              ○ 육군 항공작전사령부 사령관('18.1.~'19.5.)
+              <br>
+               ○ 육군 항공작전사령부 참모장('17.1.~'17.12.)
+               <br>
+                ○ 합동참모본부 화력항공전력과장('15.1.~'16.12.)
+                <br>
+                 ○ 육군 항공작전사령부 작전참모('14.1.~'14.12.)
+                 <br>
+                  ○ 육군 항공작전사령부 2항공여단장('13.1. ~'13.12.)
+                  <br>
+                   ○ 한미연합군사령부 지휘통제실장('11.8.~'12.12.)
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="591">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="32" valign="TOP" width="600">
+             ◈ 조직현황
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <img height="826" src="/upload/report/2023/05/09/2023050909779362/기품원 조직도.jpg" width="594">
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="599">
+           <colgroup>
+            <col width="141">
+             <col width="141">
+              <col width="141">
+               <col width="140">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              기준일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              2023년 01월 02일
+             </td>
+             <td align="CENTER" height="30" valign="TOP" width="150">
+              제출일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="149">
+              2023년 05월 09일
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="600">
+              기관 공시 담당자
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="601">
+           <colgroup>
+            <col width="96">
+             <col width="111">
+              <col width="228">
+               <col width="130">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <thead>
+            <tr>
+             <th align="CENTER" height="31" valign="MIDDLE" width="105">
+              구분
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="120">
+              담당자명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="237">
+              부서명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="139">
+              전화번호
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              작성자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              이지현
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              정책기획실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              055-751-5012
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              감독자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              이일람
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              정책기획실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              055-751-5010
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              확인자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              윤석재
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              감사실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              055-751-5025
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </img>
+        </img>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2023050909779362"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0347",
+                	disclosureNo:"2023050902623901",
+                	reportFormRootNo:"10101"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

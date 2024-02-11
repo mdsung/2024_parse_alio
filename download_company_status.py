@@ -1,10 +1,14 @@
 import collections
+import datetime
 import json
 import time
 
-import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from tqdm import tqdm
 
 collections.Callable = collections.abc.Callable
 driver = webdriver.Edge()
@@ -20,25 +24,34 @@ def create_url(apbaId):
     return f"https://alio.go.kr/item/itemReportTerm.do?apbaId={apbaId}&reportFormRootNo=10101"
 
 
+def click_nolink_for_scrollDown(driver, scrollDown_num=100):
+    body = driver.find_element(By.TAG_NAME, "body")
+    body.click()
+    time.sleep(0.1)
+    for _ in range(scrollDown_num):
+        time.sleep(0.1)
+        body.send_keys(Keys.PAGE_DOWN)
+
+
 def get_html(url):
     driver.get(url)
+    time.sleep(0.5)
+    click_nolink_for_scrollDown(driver, 10)
     return BeautifulSoup(driver.page_source, "html.parser")
 
 
 def main():
     jsons = read_json()
-    for d in jsons:
+    target_raw_folder = "data/raw/일반현황"
+    for d in tqdm(jsons):
         apbaId = d["apbaId"]
         apbaNa = d["apbaNa"]
+        print(apbaNa)
         url = create_url(apbaId)
         soup = get_html(url)
-        with open("output.html", "w") as file:
+        time.sleep(1)
+        with open(f"{target_raw_folder}/{apbaNa}.html", "w") as file:
             file.write(soup.prettify())
-        # tables = soup.find_all("table")
-        # for i, table in enumerate(tables):
-        #     print(f"{i+1}" + "=" * 100)
-        #     print(table)
-        break
     driver.quit()
 
 

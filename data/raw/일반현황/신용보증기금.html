@@ -1,0 +1,1568 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="신용보증기금" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2024/01/12/2024011209916684/신용보증기금 ci.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        신용보증기금
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        일반현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+        <option value="101">
+         신용보증기금 ci.jpg
+        </option>
+        <option value="102">
+         신용보증기금 조직도_수정공시.jpg
+        </option>
+        <option value="103">
+         신용보증기금법(법률 제19866호, 2024.01.01. 시행).hwp
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년1분기
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <li>
+          <a href="javascript:void(0)">
+           2024.01.12 공시
+          </a>
+         </li>
+         <li id="leftList_2024011502747978">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.10.20 공시
+          </a>
+         </li>
+         <li id="leftList_2023102002707592" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.05.08 공시
+          </a>
+         </li>
+         <li id="leftList_2023050802623143" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.04.10 공시
+          </a>
+         </li>
+         <li id="leftList_2023041002600651" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="CORRECTION">
+         <a class="toc" href="#toc-132" name="toc-132" title="수 정 공 시">
+          수 정 공 시
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="275">
+           <col width="307">
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="MIDDLE" width="284">
+            1. 수정대상 공시서류의 최초제출일 :
+           </td>
+           <td align="LEFT" height="30" valign="MIDDLE" width="316">
+            2023.4.10.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            2. 수정사항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="603">
+         <colgroup>
+          <col width="110">
+           <col width="110">
+            <col width="110">
+             <col width="110">
+              <col width="118">
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            항  목
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 전
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수 정 후
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="119">
+            수정사유
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="127">
+            수 정 일
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="53" valign="MIDDLE" width="119">
+            일반현황
+            <br>
+             ◈ 조직현황
+            </br>
+           </td>
+           <td align="LEFT" height="53" valign="MIDDLE" width="119">
+            그림파일 참고
+           </td>
+           <td align="LEFT" height="53" valign="MIDDLE" width="119">
+            그림파일 참고
+           </td>
+           <td align="LEFT" height="53" valign="MIDDLE" width="119">
+            조직도 변경에 따른 수정공시
+           </td>
+           <td align="LEFT" height="53" valign="MIDDLE" width="127">
+            2023년 5월 8일
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="99" valign="MIDDLE" width="119">
+            일반현황
+            <br>
+             ◈ 경영목표 및 전략
+            </br>
+           </td>
+           <td align="LEFT" height="99" valign="MIDDLE" width="119">
+            중장기 경영목표(2023~2027년)에 따른 경영목표 및 전략
+           </td>
+           <td align="LEFT" height="99" valign="MIDDLE" width="119">
+            중장기 경영목표(2024~2028년)에 따른 경영목표 및 전략
+           </td>
+           <td align="LEFT" height="99" valign="MIDDLE" width="119">
+            중장기 경영목표(2024~2028년)수립에 따른 수정공시
+           </td>
+           <td align="LEFT" height="99" valign="MIDDLE" width="127">
+            2023년 10월 20일
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="99" valign="MIDDLE" width="119">
+            일반현황
+            <br>
+             ◈ 기관소개
+             <br>
+              - 설립근거
+             </br>
+            </br>
+           </td>
+           <td align="LEFT" height="99" valign="MIDDLE" width="119">
+            - 신용보증기금법(법률 제18667호, 2022.04.01. 시행)
+           </td>
+           <td align="LEFT" height="99" valign="MIDDLE" width="119">
+            - 신용보증기금법(법률 제19866호, 2024.01.01. 시행)
+           </td>
+           <td align="LEFT" height="99" valign="MIDDLE" width="119">
+            신용보증기금법 개정에 따른 수정공시
+           </td>
+           <td align="LEFT" height="99" valign="MIDDLE" width="127">
+            2024년 01월 12일.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="pgbrk">
+        </p>
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="1. 일반현황">
+          1. 일반현황
+         </a>
+        </p>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="600">
+            (2023년 1/4분기)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            신용보증기금
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="일반현황">
+          일반현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="31" valign="TOP" width="600">
+            ◈ 기관소개
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            - CI
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <img height="110" src="/upload/report/2024/01/12/2024011209916684/신용보증기금 ci.jpg" width="300">
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 기관설립일
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             1976년 06월 01일
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 설립근거
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             신용보증기금법(법률 제 2695호, 1974.12.21. 제정)
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             <a href="javascript:report_attach_down('신용보증기금법(법률 제19866호, 2024.01.01. 시행).hwp')">
+              신용보증기금법(법률 제19866호, 2024.01.01. 시행).hwp
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 설립목적
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="76" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="76" valign="TOP" width="577">
+             담보능력이 미약한 기업의 채무를 보증하여 기업의 자금융통을 원활히 하고, 신용정보의 효율적인 관리 및 운용을 통하여 건전한 신용질서를 확립함으로써 균형 있는 국민경제의 발전에 이바지함
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 주무기관
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             금융위원회
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 홈페이지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             http://www.kodit.co.kr
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="13">
+            <col width="115">
+             <col width="445">
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="3" height="30" valign="TOP" width="600">
+             - 소재지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="22">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="124">
+             대구광역시
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="454">
+             동구 첨단로 7 (신서동)
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 사업자번호
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             105-82-06004
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 기관연혁
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="996" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="996" valign="TOP" width="577">
+             － 1961. 07. 01. 신용보증기금 준비금제도 실시
+             <br>
+              － 1967. 03. 03.「중소기업신용보증법」시행
+              <br>
+               － 1972. 08. 03.「8. 3 긴급명령」에 따라 신용보증제도 확충
+               <br>
+                전 금융기관에 신용보증기금 설치
+                <br>
+                 － 1974. 12. 21.「신용보증기금법」 제정·공포
+                 <br>
+                  － 1975. 03. 01.「신용보증기금법」 시행
+                  <br>
+                   － 1976. 06. 01. 신용보증기금 창립
+                   <br>
+                    － 1995. 05. 30. 산업기반신용보증기금 설치
+                    <br>
+                     － 1996. 12. 30.「신용보증기금법」 개정
+                     <br>
+                      정부출연 예산 소관을 중소기업청으로 변경
+                      <br>
+                       － 1997. 04. 10.「소기업 지원을 위한 특별조치법」제정
+                       <br>
+                        신용보증기금이 어음보험업무를 취급토록 규정
+                        <br>
+                         － 1998. 05. 25.「근로자의 주거안정과 목돈마련지원에 관한 법률」개정
+                         <br>
+                          주택금융신용보증기금의 관리기관으로 지정
+                          <br>
+                           － 1999. 01. 01. 산업은행, 기술신용보증기금의 산업기반신용보증기금을 신용보증      기금의 산업기반신용보증기금에 통합
+                           <br>
+                            － 2000. 12. 30.「신용보증기금법」 개정, 금융기관 출연시한 폐지
+                            <br>
+                             － 2004. 03. 01. 한국주택금융공사로 주택금융신용보증업무 이관
+                             <br>
+                              － 2004. 03. 02. 매출채권보험업무 취급 개시
+                              <br>
+                               「소기업 및 소상공인지원을 위한 특별조치법 시행령」개정 시행 (2004. 01. 01.)
+                               <br>
+                                － 2006. 06. 01. 신용보증기금 NEW CI 선포
+                                <br>
+                                 － 2007. 01. 11.「신용보증기금법」 개정
+                                 <br>
+                                  중소기업진흥공단에 대한 제한적 출연 근거 마련
+                                  <br>
+                                   － 2007. 12. 27.「중소기업진흥 및 제품구매촉진에 관한 법률」개정
+                                   <br>
+                                    중소기업매출채권보험계정 설치근거법 이전
+                                    <br>
+                                     － 2009. 02. 06.「신용보증기금법」 개정
+                                     <br>
+                                      유동화회사보증업무 취급 및 성과보증료 수취 근거 마련
+                                      <br>
+                                       － 2009. 05. 21.「중소기업진흥 및 제품구매촉진에 관한 법률」이「중소기업의 진      흥에 관한 법률」로 개정
+                                       <br>
+                                        － 2013. 05. 28.「신용보증기금법」개정
+                                        <br>
+                                         보증연계투자업무 취급 및 구상채권 매각 및 회생·파산 추진
+                                         <br>
+                                          기업의 연대보증인에 대한 채무 감면 근거 마련
+                                          <br>
+                                           － 2014. 12. 21. 신용보증기금 본점 대구 이전
+                                           <br>
+                                            － 2016. 03. 29. 중소기업매출채권보험에 관한 주요내용(계정의 재원·용도 및
+                                            <br>
+                                             운용 등)의 위임근거를「중소기업진흥에 관한 법률」시행령에서「중소기업진흥      에 관한 법률」로 상향(시행 2016. 09. 30.)
+                                             <br>
+                                              － 2019. 06. 18. 문화산업완성보증 업무 취급
+                                              <br>
+                                               － 2020. 03. 18. 신용정보업 면허 취득
+                                               <br>
+                                                － 2020. 12. 24. 벤처확인 전문 평가기관 지정(연구개발유형)
+                                                <br>
+                                                 － 2021. 05. 24. 녹색보증계정 업무 수탁
+                                                 <br>
+                                                  － 2021. 12. 31.「신용보증기금법」개정
+                                                  <br>
+                                                   중소기업팩토링 법제화
+                                                   <br>
+                                                    － 2022. 06. 30. 녹색 공정전환 보증계정 업무 수탁
+                                                   </br>
+                                                  </br>
+                                                 </br>
+                                                </br>
+                                               </br>
+                                              </br>
+                                             </br>
+                                            </br>
+                                           </br>
+                                          </br>
+                                         </br>
+                                        </br>
+                                       </br>
+                                      </br>
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 주요 기능 및 역할
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="766" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="766" valign="TOP" width="577">
+             □ 신용보증
+             <br>
+              ㅇ 일반보증 : 기업이 사업상 필요로 하는 자금의 융통을 원활히 하고, 상거래에 따른 기업의 자금부담을 낮추기 위하여 물적담보가 부족한 기업에 대하여 신용보증을 지원합니다.
+              <br>
+               * 대출, 제2금융, 지급보증, 사채, 납세, 어음보증 등 11종류
+               <br>
+                <br>
+                 ㅇ 유동화회사보증 : 기업의 자금난 완화 및 자본시장 안정화를 위해 유동화회사가 개별회사의 회사채 등을 매입하여 발행하는 유동화증권에 대한 신용보증을 지원합니다.
+                 <br>
+                  <br>
+                   □ 보증연계투자: 신용보증을 이용하고 있는 기업의 유가증권(주식, 전환사채, 신주인수권부사채)을 인수하여 기업에 필요한 투자자금을 지원합니다.
+                   <br>
+                    <br>
+                     □ 창업기업지원: 창업상담부터 창업 후 자금지원, 컨설팅서비스까지 맞춤형 서비스를 제공합니다.(창업상담 → 창업스쿨 → 창업자금보증 → 창업기업컨설팅)
+                     <br>
+                      <br>
+                       □ 신용정보 종합관리: 보증기업의 신용정보를 수집ㆍ분석하여 체계적으로 종합관리합니다.
+                       <br>
+                        <br>
+                         □ 신용보험: 중소기업이 정상적인 상거래에서 취득하게 된 매출채권 및 받을어음을 보험에 가입하고 매출채권을 회수하지 못하게 되거나 어음의 부도발생시 손실을 보상하는 제도입니다.
+                         <br>
+                          <br>
+                           □ 산업기반신용보증(SOC보증) : SOC 민간투자사업자가 금융기관으로부터 대출을 받거나 사회기반시설채권을 발행할 경우 신용보증을 지원함으로써 사회기반시설 확충 및 국민생활의 편익을 증진합니다.
+                           <br>
+                            <br>
+                             □ 경영지도: 중소기업의 생산성 향상과 경쟁력 제고를 위한 각종 경영컨설팅 및 기업연수를 지원합니다.
+                             <br>
+                              <br>
+                               □ 중소기업팩토링: 신용보증기금이 상거래 매출채권을 매입하면서 판매기업에 자금을 제공하고, 채권 만기일에 구매기업으로부터 대금을 회수하는 제도로, 중소기업의 조기 자금조달을 지원하며 연쇄부도 방지를 위한 안전망을 제공합니다.
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 경영목표 및 전략
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="1203" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="1203" valign="TOP" width="577">
+             □ 미션 : 기업의 미래 성장동력 확충과 국민경제 균형발전에 기여
+             <br>
+              <br>
+               □ 비전 : 기업의 도전과 성장에 힘이 되는 동반자(Beyond Guarantee)
+               <br>
+                <br>
+                 □ 핵심가치 : 고객, 성장, 혁신, 협력
+                 <br>
+                  <br>
+                   □ 전략목표
+                   <br>
+                    ① 고객지향 혁신성장 기반 구축
+                    <br>
+                     - 혁신성장분야 100조원 공급
+                     <br>
+                      ② 초연결 혁신금융 서비스 선도
+                      <br>
+                       - 데이터 연합기관 25개 신규 발굴
+                       <br>
+                        ③ 지속가능 협력생태계 조성
+                        <br>
+                         - 동반성장평가 최우수 등급 달성
+                         <br>
+                          <br>
+                           □ 전략과제
+                           <br>
+                            ① 혁신 스케일업 지원역량 강화
+                            <br>
+                             - 혁신성장기업 지원체계 고도화
+                             <br>
+                              - 스케일업 선도기업 지원 프로세스 구축
+                              <br>
+                               - 직접금융 활성화를 통한 스케일업 지원 다변화
+                               <br>
+                                ② 공공 안전망 지원체계 내실화
+                                <br>
+                                 - 위기극복 지원체계 고도화
+                                 <br>
+                                  - 시장안정기능 수행기반 확충
+                                  <br>
+                                   - 사전·사후 구조조정 역할 강화
+                                   <br>
+                                    ③ 사업 간 연계를 통한 시너지 창출
+                                    <br>
+                                     - 상거래 기반의 융·복합 금융지원 확대
+                                     <br>
+                                      - 사업 간 연계를 통한 종합 솔루션 제공
+                                      <br>
+                                       - 기술 역량 기반의 중소기업 지원체계 고도화
+                                       <br>
+                                        ④ 기업데이터 시장 활성화 촉진
+                                        <br>
+                                         - 데이터 중심 사업역량 확보
+                                         <br>
+                                          - 수요자 맞춤형 데이터 개방
+                                          <br>
+                                           - 데이터 유통 및 데이터 사업화 지원
+                                           <br>
+                                            ⑤ DT기반 미래지향적 사업체계 혁신
+                                            <br>
+                                             - 비대면·자동화 신용보증 업무체계 구축
+                                             <br>
+                                              - 디지털 기반 신용보험 업무 효율성 제고
+                                              <br>
+                                               - 채권관리 업무 시스템 고도화
+                                               <br>
+                                                ⑥ 다자간 협력기반 정책지원 플랫폼 구축
+                                                <br>
+                                                 - 기업지원 서비스 종합제공 플랫폼 구축
+                                                 <br>
+                                                  - 플랫폼 기반의 기업금융 연계 서비스 제공
+                                                  <br>
+                                                   - 협력 기반 데이터 활용 플랫폼 구축
+                                                   <br>
+                                                    ⑦ ESG경영 강화 및 내부통제체계 고도화
+                                                    <br>
+                                                     - 고객과 함께하는 ESG경영 선도
+                                                     <br>
+                                                      - 전사적 리스크관리 및 내부통제 고도화
+                                                      <br>
+                                                       - 지속가능성 제고를 위한 사업운영체계 효율화
+                                                       <br>
+                                                        ⑧ 민간·공공·지역·글로벌 협력 강화
+                                                        <br>
+                                                         - 지역 허브 조성 및 글로벌 협력체계 구축
+                                                         <br>
+                                                          - 대·중소기업 동반성장 및 일자리 지원 강화
+                                                          <br>
+                                                           - 그린 파이낸스 통합 지원체계 구축
+                                                           <br>
+                                                            ⑨ 국민에게 신뢰받는 행복한 일터 조성
+                                                            <br>
+                                                             - 일과 삶이 조화로운 활력있는 일터 조성
+                                                             <br>
+                                                              - 고객 소통 기반의 서비스 역량 향상
+                                                              <br>
+                                                               - 인권·윤리, 안전관리 체계 강화
+                                                               <br>
+                                                               </br>
+                                                              </br>
+                                                             </br>
+                                                            </br>
+                                                           </br>
+                                                          </br>
+                                                         </br>
+                                                        </br>
+                                                       </br>
+                                                      </br>
+                                                     </br>
+                                                    </br>
+                                                   </br>
+                                                  </br>
+                                                 </br>
+                                                </br>
+                                               </br>
+                                              </br>
+                                             </br>
+                                            </br>
+                                           </br>
+                                          </br>
+                                         </br>
+                                        </br>
+                                       </br>
+                                      </br>
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             주요사업에 대해서는 공시항목 &lt;36. 주요사업&gt;을 참고하시기 바랍니다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="81">
+             <col width="47">
+              <col width="265">
+               <col width="148">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="5" height="31" valign="TOP" width="600">
+             ◈ 기관장
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="MIDDLE" width="90">
+             최원목
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="56">
+             (임기:
+            </td>
+            <td align="CENTER" height="30" valign="MIDDLE" width="274">
+             2022.08.29 ~ 2025.08.28
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="157">
+             )
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="30" valign="TOP" width="577">
+             [주요경력]
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="76" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="76" valign="TOP" width="577">
+             2018년   5월  금융결제원(사) 상임감사
+             <br>
+              2014년 12월  아시아개발은행(ADB) 상임이사
+              <br>
+               2013년   4월  기획재정부 기획조정실장
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="591">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="32" valign="TOP" width="600">
+             ◈ 조직현황
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <img height="600" src="/upload/report/2024/01/12/2024011209916684/신용보증기금 조직도_수정공시.jpg" width="600">
+          <p>
+           □ 본부부서: 4부문 14부 5실
+           <br>
+            □ 영업조직: 9영업본부, 109영업점, 15재기지원단, 11채권관리단
+           </br>
+          </p>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="599">
+           <colgroup>
+            <col width="141">
+             <col width="141">
+              <col width="141">
+               <col width="140">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              기준일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              2024년 01월 01일
+             </td>
+             <td align="CENTER" height="30" valign="TOP" width="150">
+              제출일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="149">
+              2024년 01월 12일
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="600">
+              기관 공시 담당자
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="601">
+           <colgroup>
+            <col width="96">
+             <col width="111">
+              <col width="228">
+               <col width="130">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <thead>
+            <tr>
+             <th align="CENTER" height="31" valign="MIDDLE" width="105">
+              구분
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="120">
+              담당자명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="237">
+              부서명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="139">
+              전화번호
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              작성자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              강형모
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              경영기획부
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              053-430-4103
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              감독자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              안정열
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              성과관리부
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              053-430-4131
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              확인자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              김진도
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              감사실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              053-430-4521
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </img>
+        </img>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2024011209916684"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0091",
+                	disclosureNo:"2024011502747978",
+                	reportFormRootNo:"10101"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

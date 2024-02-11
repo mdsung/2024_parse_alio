@@ -1,0 +1,2529 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="국민건강보험공단" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2024/01/12/2024011209916998/ci_건강보험.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        국민건강보험공단
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        일반현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+        <option value="101">
+         ci_건강보험.jpg
+        </option>
+        <option value="102">
+         조직도(240101).jpg
+        </option>
+        <option value="103">
+         국민건강보험법.pdf
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년1분기
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <li>
+          <a href="javascript:void(0)">
+           2024.01.12 공시
+          </a>
+         </li>
+         <li id="leftList_2024011502747976">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.07.21 공시
+          </a>
+         </li>
+         <li id="leftList_2023072102665666" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.05.18 공시
+          </a>
+         </li>
+         <li id="leftList_2023051802629411" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.04.10 공시
+          </a>
+         </li>
+         <li id="leftList_2023041002600621" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="CORRECTION">
+         <a class="toc" href="#toc-132" name="toc-132" title="수 정 공 시">
+          수 정 공 시
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="275">
+           <col width="307">
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="MIDDLE" width="284">
+            1. 수정대상 공시서류의 최초제출일 :
+           </td>
+           <td align="LEFT" height="30" valign="MIDDLE" width="316">
+            2023년 4월 10일
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            2. 수정사항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="595">
+         <colgroup>
+          <col width="40">
+           <col width="210">
+            <col width="168">
+             <col width="69">
+              <col width="63">
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="53" valign="MIDDLE" width="49">
+            항  목
+           </th>
+           <th align="CENTER" height="53" valign="MIDDLE" width="219">
+            수 정 전
+           </th>
+           <th align="CENTER" height="53" valign="MIDDLE" width="177">
+            수 정 후
+           </th>
+           <th align="CENTER" height="53" valign="MIDDLE" width="78">
+            수정사유
+           </th>
+           <th align="CENTER" height="53" valign="MIDDLE" width="72">
+            수 정 일
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="1899" valign="MIDDLE" width="49">
+            경영목표 및
+            <br>
+             전략
+            </br>
+           </td>
+           <td align="CENTER" height="1899" valign="TOP" width="219">
+            <span style="font-size:10pt ;font-weight: bold;">
+             &lt;비전&gt;
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             - 행복한 국민, 건강한 대한민국, 든든한 국민건강보험
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+             &lt;핵심가치&gt;
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             - 건강과 행복
+             <br>
+              - 공정과 신뢰
+              <br>
+               - 혁신과 전문성
+               <br>
+                - 청렴과 윤리
+                <br>
+                 - 소통과 화합
+                 <br>
+                  <br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+             &lt;5대 전략목표&gt;
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             1. 국민의 평생건강을
+             <br>
+              책임지는 건강보장체계
+              <br>
+               2. 건강수명 향상을 위한
+               <br>
+                맞춤형 건강관리
+                <br>
+                 3. 국민이 안심하는
+                 <br>
+                  장기요양보험
+                  <br>
+                   4. 건강보험 재정 안정성
+                   <br>
+                    강화
+                    <br>
+                     5. 혁신, 책임 기반의
+                     <br>
+                      신뢰경영
+                      <br>
+                       <br>
+                        <br>
+                         <br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+             &lt;전략목표별 전략과제&gt;
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+             1. 국민의 평생건강을
+             <br>
+              책임지는 건강보장체계
+              <br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             1-1. 건강보험 보장영역 확대
+             <br>
+              1-2. 공적 의료안전망 강화
+              <br>
+               1-3. 합리적 보건의료체계
+               <br>
+                조성
+                <br>
+                 1-4. 건강보장 연구 및
+                 <br>
+                  국제협력 강화
+                  <br>
+                   <br>
+                    <br>
+                     <br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+             2. 건강수명 향상을 위한 맞춤형 건강관리
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             2-1. 생애주기 건강관리
+             <br>
+              체계 구축
+              <br>
+               2-2. 지역중심 의료,
+               <br>
+                건강서비스 제공체계 강화
+                <br>
+                 2-3. 보건의료이용 지원 강화
+                 <br>
+                  2-4. 데이터 기반 민간혁신, 성장지원 확대
+                  <br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+             <br>
+              3. 국민이 안심하는
+              <br>
+               장기요양보험
+               <br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             3-1. 장기요양 운영체계
+             <br>
+              효율화
+              <br>
+               3-2. 지역사회 거주
+               <br>
+                돌봄지원 강화
+                <br>
+                 3-3. 장기요양서비스
+                 <br>
+                  품질 향상
+                  <br>
+                   3-4. 장기요양보험 재정
+                   <br>
+                    지속가능성 확보
+                    <br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+             <br>
+              <br>
+               4. 건강보험 재정 안정성 강화
+               <br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             4-1. 공정하고 공평한
+             <br>
+              부과체계 설계
+              <br>
+               4-2. 건강보험 징수기반 강화
+               <br>
+                4-3. 보험급여 지출관리
+                <br>
+                 효율화
+                 <br>
+                  4-4. 안정적 재정관리체계
+                  <br>
+                   구축
+                   <br>
+                    <br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;font-weight: bold;">
+             5. 혁신, 책임 기반의 신뢰경영
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             5-1. 국민참여 소통경영 강화
+             <br>
+              5-2. 조직, 인력 경쟁력 강화
+              <br>
+               5-3. 디지털 경영환경 고도화
+               <br>
+                5-4. 청렴, 책임의 조직체계 확립
+               </br>
+              </br>
+             </br>
+            </span>
+           </td>
+           <td align="CENTER" height="1899" valign="TOP" width="177">
+            <span style="font-weight: bold;">
+             &lt;비전&gt;
+             <br>
+             </br>
+            </span>
+            - 행복한 국민, 건강한 대한민국, 든든한 국민건강보험
+            <br>
+             <br>
+              <span style="font-weight: bold;">
+               &lt;핵심가치&gt;
+               <br>
+               </br>
+              </span>
+              - 소통과 배려
+              <br>
+               - 건강과 행복
+               <br>
+                - 공정과 신뢰
+                <br>
+                 - 혁신과 전문성
+                 <br>
+                  - 청렴과 윤리
+                  <br>
+                   <br>
+                    <span style="font-weight: bold;">
+                     &lt;5대 전략목표&gt;
+                     <br>
+                     </br>
+                    </span>
+                    1. 국민의 평생건강을
+                    <br>
+                     책임지는 건강보장체계
+                     <br>
+                      2. 건강수명 향상을 위한
+                      <br>
+                       맞춤형 건강관리
+                       <br>
+                        3. 초고령사회 대비
+                        <br>
+                         국민이 안심하는
+                         <br>
+                          장기요양보험
+                          <br>
+                           4. 건강보험 재정 안정성
+                           <br>
+                            강화
+                            <br>
+                             5. 소통, 혁신, 청렴 기반의 신뢰경영
+                             <br>
+                              <br>
+                               <br>
+                                <span style="font-weight: bold;">
+                                 &lt;전략목표별 전략과제&gt;
+                                 <br>
+                                 </br>
+                                </span>
+                                <span style="font-weight: bold;">
+                                </span>
+                                <span style="font-weight: bold;">
+                                 1. 국민의 평생건강을
+                                 <br>
+                                  책임지는 건강보장체계
+                                  <br>
+                                  </br>
+                                 </br>
+                                </span>
+                                1-1. 필수의료 중심의
+                                <br>
+                                 보장영역 구축
+                                 <br>
+                                  1-2. 건강약자
+                                  <br>
+                                   의료안전망 강화
+                                   <br>
+                                    1-3. 합리적 보건의료체계
+                                    <br>
+                                     조성
+                                     <br>
+                                      1-4. 건강보장 연구 및
+                                      <br>
+                                       국제협력 강화
+                                       <br>
+                                        <br>
+                                         <span style="font-weight: bold;">
+                                          2. 건강수명 향상을 위한 맞춤형 건강관리
+                                          <br>
+                                          </br>
+                                         </span>
+                                         2-1. 생애주기 건강관리
+                                         <br>
+                                          체계 구축
+                                          <br>
+                                           2-2. 지역중심 의료,
+                                           <br>
+                                            건강서비스 제공체계 강화
+                                            <br>
+                                             2-3. 합리적 의료이용 지원
+                                             <br>
+                                              2-4. 데이터 기반 민간혁신, 성장지원 확대
+                                              <br>
+                                               <br>
+                                                <span style="font-weight: bold;">
+                                                 3. 초고령사회 대비
+                                                 <br>
+                                                  국민이 안심하는
+                                                  <br>
+                                                   장기요양보험
+                                                   <br>
+                                                   </br>
+                                                  </br>
+                                                 </br>
+                                                </span>
+                                                3-1. 맞춤형 장기요양 서비스 이용체계 구축
+                                                <br>
+                                                 3-2. 지역사회 거주
+                                                 <br>
+                                                  돌봄지원 강화
+                                                  <br>
+                                                   3-3. 장기요양서비스
+                                                   <br>
+                                                    품질 향상
+                                                    <br>
+                                                     3-4. 장기요양보험 제도
+                                                     <br>
+                                                      지속가능성 제고
+                                                      <br>
+                                                       <br>
+                                                        <span style="font-weight: bold;">
+                                                         4. 건강보험 재정 안정성 강화
+                                                         <br>
+                                                         </br>
+                                                        </span>
+                                                        4-1. 공정하고 공평한
+                                                        <br>
+                                                         부과체계 설계
+                                                         <br>
+                                                          4-2. 건강보험 징수기반 강화
+                                                          <br>
+                                                           4-3. 보험급여 지출관리
+                                                           <br>
+                                                            혁신
+                                                            <br>
+                                                             4-4. 전략적 재정관리 강화
+                                                             <br>
+                                                              <br>
+                                                               <span style="font-weight: bold;">
+                                                                5. 소통, 혁신, 청렴
+                                                                <br>
+                                                                 기반의 신뢰경영
+                                                                 <br>
+                                                                 </br>
+                                                                </br>
+                                                               </span>
+                                                               5-1. 국민참여 소통경영 강화
+                                                               <br>
+                                                                5-2. 조직, 인력 경쟁력 강화
+                                                                <br>
+                                                                 5-3. 디지털 경영환경 고도화
+                                                                 <br>
+                                                                  5-4. 청렴, 소통의 조직체계 확립
+                                                                 </br>
+                                                                </br>
+                                                               </br>
+                                                              </br>
+                                                             </br>
+                                                            </br>
+                                                           </br>
+                                                          </br>
+                                                         </br>
+                                                        </br>
+                                                       </br>
+                                                      </br>
+                                                     </br>
+                                                    </br>
+                                                   </br>
+                                                  </br>
+                                                 </br>
+                                                </br>
+                                               </br>
+                                              </br>
+                                             </br>
+                                            </br>
+                                           </br>
+                                          </br>
+                                         </br>
+                                        </br>
+                                       </br>
+                                      </br>
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="1899" valign="MIDDLE" width="78">
+            2024~2028 중장기
+            <br>
+             경영목표
+             <br>
+              시행
+             </br>
+            </br>
+           </td>
+           <td align="CENTER" height="1899" valign="MIDDLE" width="72">
+            2024.1.12.
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="120" valign="MIDDLE" width="49">
+            조직
+            <br>
+             현황
+            </br>
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="219">
+            조직도(23년 1월 1일 기준)
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="177">
+            조직도(24년 1월 1일 기준)
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="78">
+            직제개편에 따른 조직 변경
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="72">
+            2024.1.12.
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="120" valign="MIDDLE" width="49">
+            기관장
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="219">
+            공석
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="177">
+            정기석
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="78">
+            기관장
+            <br>
+             취임
+            </br>
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="72">
+            2023.7.21.
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="120" valign="MIDDLE" width="49">
+            기관장
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="219">
+            강도태
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="177">
+            공석
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="78">
+            기관장
+            <br>
+             사임
+            </br>
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="72">
+            2023.5.18.
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="1582" valign="MIDDLE" width="49">
+            경영목표 및
+            <br>
+             전략
+            </br>
+           </td>
+           <td align="CENTER" height="1582" valign="TOP" width="219">
+            <span style="font-weight: bold;">
+             &lt;비전&gt;
+             <br>
+             </br>
+            </span>
+            <span>
+             - 평생건강, 국민행복,
+             <br>
+              글로벌 건강보장 리더
+              <br>
+               <br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             &lt;핵심가치&gt;
+             <br>
+             </br>
+            </span>
+            <span>
+             - 희망과 행복(Happiness)
+             <br>
+              - 소통과 화합(Harmony)
+              <br>
+               - 변화와 도전(Challenge)
+               <br>
+                - 창의와 전문성(Creativity)
+                <br>
+                 - 청렴과 윤리(Clarity)
+                 <br>
+                  <br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             &lt;5대 전략목표&gt;
+             <br>
+             </br>
+            </span>
+            <span>
+             1. 건강보험 하나로 의료비를
+             <br>
+              해결하는 건강보장체계
+              <br>
+               2. 생명ㆍ안전 가치 기반의 건강수명 향상을 위한 맞춤형 건강관리
+               <br>
+                3. 노후 삶의 질 향상을 위한
+                <br>
+                 품격 높은 장기요양보험
+                 <br>
+                  4. 보험자 역량 강화로 글로벌
+                  <br>
+                   표준이 되는 K-건강보험
+                   <br>
+                    5. 국민신뢰와 투명성 제고로
+                    <br>
+                     지속가능한 청렴공단
+                     <br>
+                      <br>
+                       <br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             &lt;전략목표별 전략과제&gt;
+             <br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             1. 건강보험 하나로 의료비를
+             <br>
+              해결하는 건강보장체계
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             1-1. 건강보험 보장성 강화
+             <br>
+              1-2. 보험료 부과체계 2단계 개편 등 신뢰기반 재원조성
+              <br>
+               1-3. 합리적 진료비 관리체계 수립
+               <br>
+                1-4. 효율적 재정 관리체계 구축
+                <br>
+                 <br>
+                  <br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             2. 생명ㆍ안전 가치 기반의
+             <br>
+              건강수명 향상을 위한 맞춤형
+              <br>
+               건강관리
+               <br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             2-1. 1차의료 중심의 건강증진
+             <br>
+              연계 강화
+              <br>
+               2-2. 감염병 대응 고도화 및
+               <br>
+                의료이용 안전 강화
+                <br>
+                 2-3. 건강검진체계 고도화
+                 <br>
+                  2-4. ICT 기반 건강 정보
+                  <br>
+                   활용체계 정립
+                   <br>
+                    <br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             3. 노후 삶의 질 향상을 위한
+             <br>
+              품격 높은 장기요양보험
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             3-1. 장기요양보험 보장성 확대
+             <br>
+              3-2. 지역사회 중심의 돌봄 강화
+              <br>
+               3-3. 서비스 제공기반 선진화 및
+               <br>
+                서비스 내실화
+                <br>
+                 3-4. 안정적 장기요양 재정관리
+                 <br>
+                  <br>
+                   <br>
+                    <br>
+                     <br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             4. 보험자 역량 강화로
+             <br>
+              글로벌 표준이 되는 K-건강보험
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             4-1. 전문화 고도화를 통한
+             <br>
+              조직역량 강화
+              <br>
+               4-2. 국제협력, 연구 등 미래대비
+               <br>
+                4-3. 보건의료 산업 성장 지원
+                <br>
+                 4-4. 디지털뉴딜 기반의
+                 <br>
+                  정보시스템 혁신
+                  <br>
+                   <br>
+                    <br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             5. 국민신뢰와 투명성 제고로
+             <br>
+              지속가능한 청렴 공단
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             5-1. 국민안전ㆍ환경보호를 위한
+             <br>
+              책임강화
+              <br>
+               5-2. 좋은 일자리 창출 및
+               <br>
+                상생협력 강화
+                <br>
+                 5-3. 청렴하고 유연한 직장문화 조성
+                 <br>
+                  5-4. 국민 참여 기반의
+                  <br>
+                   거버넌스 확대
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+           </td>
+           <td align="CENTER" height="1582" valign="TOP" width="177">
+            <span style="font-weight: bold;">
+             &lt;비전&gt;
+             <br>
+             </br>
+            </span>
+            <span>
+             - 행복한 국민, 건강한 대한민국, 든든한 국민건강보험
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             &lt;핵심가치&gt;
+             <br>
+             </br>
+            </span>
+            <span>
+             - 건강과 행복
+             <br>
+              - 공정과 신뢰
+              <br>
+               - 혁신과 전문성
+               <br>
+                - 청렴과 윤리
+                <br>
+                 - 소통과 화합
+                 <br>
+                  <br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             &lt;5대 전략목표&gt;
+             <br>
+             </br>
+            </span>
+            <span>
+             1. 국민의 평생건강을
+             <br>
+              책임지는 건강보장체계
+              <br>
+               2. 건강수명 향상을 위한
+               <br>
+                맞춤형 건강관리
+                <br>
+                 3. 국민이 안심하는
+                 <br>
+                  장기요양보험
+                  <br>
+                   4. 건강보험 재정 안정성
+                   <br>
+                    강화
+                    <br>
+                     5. 혁신, 책임 기반의
+                     <br>
+                      신뢰경영
+                      <br>
+                       <br>
+                        <br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             &lt;전략목표별 전략과제&gt;
+             <br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+            </span>
+            <span style="font-weight: bold;">
+            </span>
+            <span style="font-weight: bold;">
+             1. 국민의 평생건강을
+             <br>
+              책임지는 건강보장체계
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             1-1. 건강보험 보장영역 확대
+             <br>
+              1-2. 공적 의료안전망 강화
+              <br>
+               1-3. 합리적 보건의료체계
+               <br>
+                조성
+                <br>
+                 1-4. 건강보장 연구 및
+                 <br>
+                  국제협력 강화
+                  <br>
+                   <br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             2. 건강수명 향상을 위한 맞춤형 건강관리
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             2-1. 생애주기 건강관리
+             <br>
+              체계 구축
+              <br>
+               2-2. 지역중심 의료,
+               <br>
+                건강서비스 제공체계 강화
+                <br>
+                 2-3. 보건의료이용 지원 강화
+                 <br>
+                  2-4. 데이터 기반 민간혁신, 성장지원 확대
+                  <br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             <br>
+              3. 국민이 안심하는
+              <br>
+               장기요양보험
+               <br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             3-1. 장기요양 운영체계
+             <br>
+              효율화
+              <br>
+               3-2. 지역사회 거주
+               <br>
+                돌봄지원 강화
+                <br>
+                 3-3. 장기요양서비스
+                 <br>
+                  품질 향상
+                  <br>
+                   3-4. 장기요양보험 재정
+                   <br>
+                    지속가능성 확보
+                    <br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             <br>
+              4. 건강보험 재정 안정성 강화
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             4-1. 공정하고 공평한
+             <br>
+              부과체계 설계
+              <br>
+               4-2. 건강보험 징수기반 강화
+               <br>
+                4-3. 보험급여 지출관리
+                <br>
+                 효율화
+                 <br>
+                  4-4. 안정적 재정관리체계
+                  <br>
+                   구축
+                   <br>
+                    <br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-weight: bold;">
+             5. 혁신, 책임 기반의 신뢰경영
+             <br>
+             </br>
+            </span>
+            <span>
+             5-1. 국민참여 소통경영 강화
+             <br>
+              5-2. 조직, 인력 경쟁력 강화
+              <br>
+               5-3. 디지털 경영환경 고도화
+               <br>
+                5-4. 청렴, 책임의 조직체계 확립
+               </br>
+              </br>
+             </br>
+            </span>
+           </td>
+           <td align="CENTER" height="1582" valign="MIDDLE" width="78">
+            2023~2027 중장기 경영목표 및 뉴비전 시행
+           </td>
+           <td align="CENTER" height="1582" valign="MIDDLE" width="72">
+            2023.5.18.
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="120" valign="MIDDLE" width="49">
+            조직
+            <br>
+             현황
+            </br>
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="219">
+            조직도(22년 1월 1일 기준)
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="177">
+            조직도(23년 1월 1일 기준)
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="78">
+            직제개편에 따른 조직 변경
+           </td>
+           <td align="CENTER" height="120" valign="MIDDLE" width="72">
+            2023.5.18.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="pgbrk">
+        </p>
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="1. 일반현황">
+          1. 일반현황
+         </a>
+        </p>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="600">
+            (2023년 1/4분기)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            국민건강보험공단
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="일반현황">
+          일반현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="31" valign="TOP" width="600">
+            ◈ 기관소개
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            - CI
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <img height="241" src="/upload/report/2024/01/12/2024011209916998/ci_건강보험.jpg" width="600">
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 기관설립일
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             2000년 07월 01일
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 설립근거
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="191" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="191" valign="TOP" width="577">
+             「국민건강보험법」제13조(보험자)
+             <br>
+              건강보험의 보험자는 국민건강보험공단(이하 "공단"이라 한다)으로 한다.
+              <br>
+               <br>
+                국민건강보험공단「정관」제1조(목적)
+                <br>
+                 이 법인은「국민건강보험법」에 따른 건강보험사업,「노인장기요양보험법」에 따른장기요양사업, 그 밖의 다른 법령에 따라 위탁받은 사업을 합리적이고 효율적으로 수행하여 국민보건 및 사회보장을 증진함으로써 국민의 삶의 질 향상에 기여함을 목적으로 한다.
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             <a href="javascript:report_attach_down('국민건강보험법.pdf')">
+              국민건강보험법.pdf
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 설립목적
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="99" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="99" valign="TOP" width="577">
+             국민의 질병ㆍ부상에 대한 예방ㆍ진단ㆍ치료ㆍ재활과 출산ㆍ사망 및 건강증진에 대하여 보험급여를 실시함으로써 국민보건 향상과 사회보장 증진에 기여함은 물론 일상생활을 혼자서 수행하기 어려운 노인에게 신체활동 또는 가사활동 지원 등의 장기요양급여를 실시함으로써 노후의 건강증진과 생활안정 도모를 목적으로 설립
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 주무기관
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             보건복지부
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 홈페이지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             www.nhis.or.kr
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="13">
+            <col width="115">
+             <col width="445">
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="3" height="30" valign="TOP" width="600">
+             - 소재지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="22">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="124">
+             강원도
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="454">
+             원주시 건강로 32(반곡동, 국민건강보험공단)
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 사업자번호
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             105-82-11133
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 기관연혁
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="352" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="352" valign="TOP" width="577">
+             1963.12.06. 의료보험법 제정
+             <br>
+              1977.07.01. 최초의료보험 실시(종업원 500인 이상 사업장)
+              <br>
+               1979.01.01. 공무원 및 사립학교 교직원 의료보험 실시
+               <br>
+                1981.01.01. 100인 이상 사업장 의료보험 적용 확대
+                <br>
+                 1988.01.01. 농어촌 지역의료보험 확대 실시
+                 <br>
+                  1989.07.01. 도시지역의료보험 시행, 전 국민 의료보험 실시
+                  <br>
+                   1998.10.01. 국민의료보험관리공단 출범(공.교공단과 227개 지역의료보험 통합)
+                   <br>
+                    1999.02.08. 국민건강보험법 제정
+                    <br>
+                     2000.07.01. 국민건강보험공단 출범(국민의료보험관리공단과 139개 직장조합 통합)
+                     <br>
+                      2001.07.01. 5인 미만 사업장 근로자 직장가입자 편입
+                      <br>
+                       2002.01.19. 국민건강보험재정건전화특별법 제정
+                       <br>
+                        2003.07.01. 보험재정통합(직장재정과 지역재정 통합)
+                        <br>
+                         2008.07.01. 노인장기요양보험 실시
+                         <br>
+                          2011.01.01. 사회보험 징수통합(건강보험, 국민연금, 고용보험, 산재보험)
+                          <br>
+                           2016.01.21. 국민건강보험공단 본사 원주(강원혁신도시) 이전
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 주요 기능 및 역할
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="651" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="651" valign="TOP" width="577">
+             <span style="font-weight: bold;">
+              &lt;건강보험 사업&gt;
+              <br>
+              </br>
+             </span>
+             -가입자 및 피부양자의 자격관리
+             <br>
+              -보험료 기타 국민건강보험법에 의한 징수금의 부과ㆍ징수
+              <br>
+               -보험급여의 관리, 보험급여비용의 지급 및 사후관리
+               <br>
+                -가입자 및 피부양자의 질병의 조기발견ㆍ예방 및 건강관리를 위하여 요양급여 실시 현황과 건강검진 결과 등을 활용하여 실시하는 예방사업
+                <br>
+                 -자산의 관리ㆍ운영 및 증식사업, 의료시설의 운영
+                 <br>
+                  -건강보험에 관한 교육훈련, 홍보, 조사ㆍ연구 및 국제협력
+                  <br>
+                   -국민건강보험법 또는 다른 법령에 의하여 위탁받은 업무
+                   <br>
+                    -기타 건강보험과 관련하여 보건복지부장관이 필요하다고 인정한 업무
+                    <br>
+                     <br>
+                      <span style="font-weight: bold;">
+                       &lt;장기요양 사업&gt;
+                       <br>
+                       </br>
+                      </span>
+                      -장기요양보험가입자 및 그 피부양자와 의료급여수급권자의 자격관리
+                      <br>
+                       -장기요양보험료 등의 부과ㆍ징수
+                       <br>
+                        -신청인에 대한 조사, 등급판정위원회의 운영 및 장기요양등급 판정
+                        <br>
+                         -장기요양인정서의 작성 및 표준장기요양이용계획서의 제공
+                         <br>
+                          -장기요양급여의 관리 및 평가
+                          <br>
+                           -장기요양급여 관련 이용지원에 관한 사항
+                           <br>
+                            -재가 및 시설 급여비용의 심사 및 지급과 특별현금급여의 지급
+                            <br>
+                             -장기요양급여 제공내용 확인
+                             <br>
+                              -장기요양사업에 관한 조사ㆍ연구 및 홍보
+                              <br>
+                               -노인성질환예방사업
+                               <br>
+                                -장기요양기관의 설치 및 운영
+                                <br>
+                                 -그 밖에 장기요양사업과 관련하여 보건복지부장관이 위탁한 업무
+                                 <br>
+                                  <br>
+                                   <span style="font-weight: bold;">
+                                    &lt;사회보험 통합징수 사업&gt;
+                                    <br>
+                                    </br>
+                                   </span>
+                                   -사회보험료 통합고지, 징수
+                                   <br>
+                                    -체납 사회보험료 징수, 보험료 수납ㆍ정산 및 기금별 이체
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 경영목표 및 전략
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="1111" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="1111" valign="TOP" width="577">
+             <span style="font-weight: bold;">
+              &lt;비전&gt;
+              <br>
+              </br>
+             </span>
+             - 행복한 국민, 건강한 대한민국, 든든한 국민건강보험
+             <br>
+              <br>
+               <span>
+                &lt;핵심가치&gt;
+                <br>
+                </br>
+               </span>
+               - 소통과 배려
+               <br>
+                - 건강과 행복
+                <br>
+                 - 공정과 신뢰
+                 <br>
+                  - 혁신과 전문성
+                  <br>
+                   - 청렴과 윤리
+                   <br>
+                    <br>
+                     <span style="font-weight: bold;">
+                      &lt;5대 전략목표&gt;
+                      <br>
+                      </br>
+                     </span>
+                     1. 국민의 평생건강을 책임지는 건강보장체계
+                     <br>
+                      2. 건강수명 향상을 위한 맞춤형 건강관리
+                      <br>
+                       3. 초고령사회 대비 국민이 안심하는 장기요양보험
+                       <br>
+                        4. 건강보험 재정 안정성 강화
+                        <br>
+                         5. 소통, 혁신, 청렴 기반의 신뢰경영
+                         <br>
+                          <br>
+                           <span style="font-weight: bold;">
+                            &lt;전략목표별 전략과제&gt;
+                            <br>
+                            </br>
+                           </span>
+                           1. 국민의 평생건강을 책임지는 건강보장체계
+                           <br>
+                            1-1. 필수의료 중심의 보장영역 구축
+                            <br>
+                             1-2. 건강약자 의료안전망 강화
+                             <br>
+                              1-3. 합리적 보건의료체계 조성
+                              <br>
+                               1-4. 건강보장 연구 및 국제협력 강화
+                               <br>
+                                <br>
+                                 2. 건강수명 향상을 위한 맞춤형 건강관리
+                                 <br>
+                                  2-1. 생애주기 건강관리체계 구축
+                                  <br>
+                                   2-2. 지역중심 의료, 건강서비스 제공체계 강화
+                                   <br>
+                                    2-3. 합리적 의료이용 지원
+                                    <br>
+                                     2-4. 데이터 기반 민간혁신, 성장지원 확대
+                                     <br>
+                                      <br>
+                                       3. 초고령사회 대비 국민이 안심하는 장기요양보험
+                                       <br>
+                                        3-1. 맞춤형 장기요양 서비스 이용체계 구축
+                                        <br>
+                                         3-2. 지역사회 거주 돌봄지원 강화
+                                         <br>
+                                          3-3. 장기요양서비스 품질 향상
+                                          <br>
+                                           3-4. 장기요양보험 제도 지속가능성 제고
+                                           <br>
+                                            <br>
+                                             4. 건강보험 재정 안정성 강화
+                                             <br>
+                                              4-1. 공정하고 공평한 부과체계 설계
+                                              <br>
+                                               4-2. 건강보험 징수기반 강화
+                                               <br>
+                                                4-3. 보험급여 지출관리 혁신
+                                                <br>
+                                                 4-4. 전략적 재정관리 강화
+                                                 <br>
+                                                  <br>
+                                                   5. 소통, 혁신, 청렴 기반의 신뢰경영
+                                                   <br>
+                                                    5-1. 국민참여 소통경영 강화
+                                                    <br>
+                                                     5-2. 조직, 인력 경쟁력 강화
+                                                     <br>
+                                                      5-3. 디지털 경영환경 고도화
+                                                      <br>
+                                                       5-4. 청렴, 소통의 조직체계 확립
+                                                       <br>
+                                                       </br>
+                                                      </br>
+                                                     </br>
+                                                    </br>
+                                                   </br>
+                                                  </br>
+                                                 </br>
+                                                </br>
+                                               </br>
+                                              </br>
+                                             </br>
+                                            </br>
+                                           </br>
+                                          </br>
+                                         </br>
+                                        </br>
+                                       </br>
+                                      </br>
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             주요사업에 대해서는 공시항목 &lt;36. 주요사업&gt;을 참고하시기 바랍니다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="81">
+             <col width="47">
+              <col width="265">
+               <col width="148">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="5" height="31" valign="TOP" width="600">
+             ◈ 기관장
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="MIDDLE" width="90">
+             정기석
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="56">
+             (임기:
+            </td>
+            <td align="CENTER" height="30" valign="MIDDLE" width="274">
+             2023.07.10 ~ 2026.07.09
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="157">
+             )
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="30" valign="TOP" width="577">
+             [주요경력]
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="99" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="99" valign="TOP" width="577">
+             - 중앙안전대책본부 코로나19특별대응단장
+             <br>
+              - 국가감염병위기대응 자문위원회 위원장
+              <br>
+               - 보건복지부 질병관리본부 본부장
+               <br>
+                - 한림대학교 의료원장
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="591">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="32" valign="TOP" width="600">
+             ◈ 조직현황
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <img height="253" src="/upload/report/2024/01/12/2024011209916998/조직도(240101).jpg" width="600">
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="600">
+              기관 세부 작성기준
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="41" valign="TOP" width="600">
+              ◈ 조직현황(직제규정 개정일 2023.12.27. 시행일 2024.1.1.)
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="599">
+           <colgroup>
+            <col width="141">
+             <col width="141">
+              <col width="141">
+               <col width="140">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              기준일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              2024년 01월 01일
+             </td>
+             <td align="CENTER" height="30" valign="TOP" width="150">
+              제출일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="149">
+              2024년 01월 12일
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="600">
+              기관 공시 담당자
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="601">
+           <colgroup>
+            <col width="96">
+             <col width="111">
+              <col width="228">
+               <col width="130">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <thead>
+            <tr>
+             <th align="CENTER" height="31" valign="MIDDLE" width="105">
+              구분
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="120">
+              담당자명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="237">
+              부서명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="139">
+              전화번호
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              작성자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              정호정
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              기획조정실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              033-736-1110
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              감독자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              박철용
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              기획조정실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              033-736-1100
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              확인자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              박애순
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              감사실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              033-736-1700
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </img>
+        </img>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2024011209916998"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0026",
+                	disclosureNo:"2024011502747976",
+                	reportFormRootNo:"10101"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

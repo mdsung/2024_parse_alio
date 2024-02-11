@@ -1,0 +1,1376 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="한국산업인력공단" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2023/06/15/2023061509798397/한국산업인력공단 ci.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        한국산업인력공단
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        일반현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+        <option value="101">
+         한국산업인력공단 ci.jpg
+        </option>
+        <option value="102">
+         본부 및 부설기관 조직도.jpg
+        </option>
+        <option value="103">
+         소속기관 조직도.jpg
+        </option>
+        <option value="104">
+         한국산업인력공단법(법률)(제18425호)(20220218).pdf
+        </option>
+        <option value="105">
+         전체 조직도.jpg
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년1분기
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <li>
+          <a href="javascript:void(0)">
+           2023.06.15 공시
+          </a>
+         </li>
+         <li id="leftList_2023061502642976">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.04.07 공시
+          </a>
+         </li>
+         <li id="leftList_2023041002600686" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="CORRECTION">
+         <a class="toc" href="#toc-132" name="toc-132" title="수 정 공 시">
+          수 정 공 시
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="275">
+           <col width="307">
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="MIDDLE" width="284">
+            1. 수정대상 공시서류의 최초제출일 :
+           </td>
+           <td align="LEFT" height="30" valign="MIDDLE" width="316">
+            2023년 4월 7일
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            2. 수정사항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="595">
+         <colgroup>
+          <col width="72">
+           <col width="115">
+            <col width="160">
+             <col width="123">
+              <col width="80">
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="30" valign="MIDDLE" width="81">
+            항  목
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="124">
+            수 정 전
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="169">
+            수 정 후
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="132">
+            수정사유
+           </th>
+           <th align="CENTER" height="30" valign="MIDDLE" width="89">
+            수 정 일
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="97" valign="MIDDLE" width="81">
+            조직현황
+           </td>
+           <td align="LEFT" height="97" valign="MIDDLE" width="124">
+            - 홍보실
+            <br>
+             - 훈련품질센터
+            </br>
+           </td>
+           <td align="LEFT" height="97" valign="MIDDLE" width="169">
+            - 홍보미디어실(변경)
+            <br>
+             - 훈련품질관리국(변경)
+             <br>
+              <span style="text-decoration: underline;font-size:DU9pt ;">
+               * 세부내역 조직현황 표 참조
+              </span>
+             </br>
+            </br>
+           </td>
+           <td align="LEFT" height="97" valign="MIDDLE" width="132">
+            직제규정시행규칙 개정으로 인한
+            <br>
+             조직도 변경
+            </br>
+           </td>
+           <td align="CENTER" height="97" valign="MIDDLE" width="89">
+            '23.06.14.
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="97" valign="MIDDLE" width="81">
+            기관장
+           </td>
+           <td align="CENTER" height="97" valign="MIDDLE" width="124">
+            어수봉 이사장
+           </td>
+           <td align="CENTER" height="97" valign="MIDDLE" width="169">
+            공석
+           </td>
+           <td align="CENTER" height="97" valign="MIDDLE" width="132">
+            정부인사발령
+            <br>
+             ('23.06.12.)
+            </br>
+           </td>
+           <td align="CENTER" height="97" valign="MIDDLE" width="89">
+            '23.06.14.
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="pgbrk">
+        </p>
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="1. 일반현황">
+          1. 일반현황
+         </a>
+        </p>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="600">
+            (2023년 1/4분기)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            한국산업인력공단
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="일반현황">
+          일반현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="31" valign="TOP" width="600">
+            ◈ 기관소개
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            - CI
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <img height="110" src="/upload/report/2023/06/15/2023061509798397/한국산업인력공단 ci.jpg" width="300">
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 기관설립일
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             1982년 03월 18일
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 설립근거
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             한국산업인력공단법(법률 제3506호, 1981.12.31.)
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             <a href="javascript:report_attach_down('한국산업인력공단법(법률)(제18425호)(20220218).pdf')">
+              한국산업인력공단법(법률)(제18425호)(20220218).pdf
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 설립목적
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="99" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="99" valign="TOP" width="577">
+             근로자의 평생학습 지원, 직업능력개발훈련의 실시, 자격검정, 숙련기술 장려 사업 및 고용촉진 등에 관한 사업을 하게 함으로써 산업인력의 양성 및 수급의 효율화를 도모하고 국민경제의 건전한 발전과 국민복지 증진에 이바지
+             <br>
+              (한국산업인력공단법 제1조)
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 주무기관
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             고용노동부
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 홈페이지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             www.hrdkorea.or.kr
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="13">
+            <col width="115">
+             <col width="445">
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="3" height="30" valign="TOP" width="600">
+             - 소재지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="22">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="124">
+             울산광역시
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="454">
+             중구 종가로 345(교동)
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 사업자번호
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             105-82-02779
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 기관연혁
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="743" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="743" valign="TOP" width="577">
+             ○ 1981.12.31. 한국직업훈련관리공단법 공포
+             <br>
+              ○ 1982.03.18. 한국직업훈련관리공단 설립
+              <br>
+               ○ 1989.07.22. 학교법인 한국기술교육대 설립
+               <br>
+                ○ 1994.04.01. 공단 산하 8개 훈련원 대한상공회의소로 이관
+                <br>
+                 ○ 1998.01.01. 한국산업인력공단으로 명칭 변경
+                 <br>
+                  ○ 1998.02.05. 학교법인 기능대학 설립
+                  <br>
+                   ○ 2001.01.01. 중앙고용정보관리소(중앙고용정보원) 인수
+                   <br>
+                    ○ 2004.08.17. 외국인고용지원사업 개시
+                    <br>
+                     ○ 2006.03.01. 23개 직업전문학교를 학교법인 기능대학으로 이관
+                     <br>
+                      ○ 2006.03.31. 중앙고용정보원 별도 법인화
+                      <br>
+                       ○ 2008.01.01. 자격출제원 설립, 변리사 등 타부처 국가자격 인수
+                       <br>
+                        ○ 2010.01.04. 한국직업방송(work tv) 개국
+                        <br>
+                         ○ 2012.01.01. 사업주능력개발지원금 사업을 고용노동부로부터 인수, 국가기술자격 12종목을 민간위탁
+                         <br>
+                          ○ 2014.01.01. 국정과제 주요수행기관으로 지정(일학습병행제, 지역산업맞춤형 인력양성체계 구축, 국가직무능력표준(NCS)개발 및 활용확산 등 6개 과제)
+                          <br>
+                           ○ 2014.05.08. 공단본부 울산 혁신도시 이전
+                           <br>
+                            ○ 2015.01.01. 산업계 중심 직업능력개발 및 국정과제 효율적 추진 위한 자격혁신국 및 일학습지원국, 지역ㆍ 산업별 지원단 신설
+                            <br>
+                             ○ 2015.08.16. 제43회 브라질국제기능올림픽대회 종합우승(1위, 통산 19회 우승)
+                             <br>
+                              ○ 2016.01.01. 구미ㆍ 군산 일학습지원센터, 서울 K-Move센터 신설
+                              <br>
+                               ○ 2017.01.01. 라오스ESP센터, 진주ㆍ 안성 일학습지원센터 신설
+                               <br>
+                                ○ 2018.01.01. 부산 해외취업센터, 일학습과정개발센터 개설
+                                <br>
+                                 ○ 2019.08.27. 산업현장 일학습병행 지원에 관한 법률(일학습병행법) 제정
+                                 <br>
+                                  ○ 2020.01.01. 경북서부, 경기남부, 세종 3개 지사 신설
+                                  <br>
+                                   ○ 2021.01.05. 한국산업인력공단법 일부개정으로 국가직무능력표준 및 글로벌 인재양성 사업 수행 근거 마련
+                                   <br>
+                                    ○ 2021.02.26. 경남서부, 경기서부 2개 지사신설
+                                    <br>
+                                     ○ 2022.05.16. 산업전환 공동훈련센터, 일학습병행, 기업직업훈련카드, 능력개발전담주치의, 청년친화형 기업ESG 사업, 직무능력은행제, 공정채용 등 국정과제 선정·수행
+                                     <br>
+                                      ○ 2022.07.01. 서울강남, 전북서부, 충북북부 3개 지사신설
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 주요 기능 및 역할
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="651" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="651" valign="TOP" width="577">
+             □ 능력개발
+             <br>
+              ○ 일학습병행, 지역ㆍ산업 맞춤형 인력양성체계 등 기업 현장 수요를 반영한 맞춤형 인력양성 지원
+              <br>
+               ○ 사업주 직업능력개발 지원 등 재직근로자 직업능력개발 지원
+               <br>
+                ○ 국가인적자원개발 컨소시엄, 학습조직화 등을 통한 중소기업의 HRD 지원
+                <br>
+                 ○ 한국직업방송, HRD4U를 통한 전국민 대상 직업능력개발 관련 정보 지원
+                 <br>
+                  ○ 국가간 교류협력, 국제회의 개최 및 참가, 국제기구와 협력사업(ILO, APEC 등)
+                  <br>
+                   ○ 국제 HRD 용역사업 및 외국인 연수 실시
+                   <br>
+                    □ 능력평가
+                    <br>
+                     ○ 국가기술자격법, 개별법에 의한 국가자격 시행ㆍ관리
+                     <br>
+                      ○ 국가직무능력표준(NCS) 개발ㆍ활용, 확산
+                      <br>
+                       ○ 국가직무능력표준(NCS)에 기반한 출제기준, 훈련기준 개발ㆍ운용
+                       <br>
+                        ○ 국가기술자격취득자 계속교육 등 사후관리
+                        <br>
+                         ○ 자격 수탁기관, 사내 자격 등 지원
+                         <br>
+                          □ 숙련기술진흥 및 기능경기대회
+                          <br>
+                           ○ 대한민국 명장, 우수숙련기술자, 숙련기술장려 모범사업체 등 선정ㆍ포상
+                           <br>
+                            ○ 이달의 기능한국인 발굴ㆍ홍보, 우수숙련기술인 작품박람회 등을 통한 숙련기술인 우대 풍토 조성
+                            <br>
+                             ○ 국내기능경기대회 운영 및 국제기능올림픽대회 참가
+                             <br>
+                              □ 외국인 고용지원
+                              <br>
+                               ○ 외국인근로자 선발을 위한 한국어능력시험 및 기능수준 평가 시행
+                               <br>
+                                ○ 외국인 구직자명부 작성 및 외국인근로자 도입(16개국)
+                                <br>
+                                 ○ 외국인고용 사업장 모니터링, 사업주 지원 등 고용체류지원
+                                 <br>
+                                  ○ 불법체류 예방을 위한 자발적 귀환 프로그램 운영
+                                  <br>
+                                   □ 해외취업(K-Move)
+                                   <br>
+                                    ○ 해외 구인업체 개척, 해외구직자 풀(pool) 관리 및 취업알선
+                                    <br>
+                                     ○ 해외취업 연수기관 모집ㆍ선정ㆍ관리
+                                     <br>
+                                      ○ 해외취업 촉진을 위한 종합정보 제공
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 경영목표 및 전략
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="513" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="513" valign="TOP" width="577">
+             □ 미션 : 우리는 인적자원개발을 통해 함께 잘사는 나라를 만든다
+             <br>
+              □ 비전 : K-HRD를 짓는 글로벌 인적자원개발 파트너
+              <br>
+               □ 핵심가치 : 미래 / 상생 / 청렴 / 안전
+               <br>
+                □ 전략목표 및 과제
+                <br>
+                 ○ 수요자 맞춤형 직업능력개발 지원 강화
+                 <br>
+                  - 기업 맞춤형 직업능력개발 지원 강화
+                  <br>
+                   - 근로자 능력개발 및 일터학습 지원
+                   <br>
+                    - 미래 대응 직업능력개발훈련 강화
+                    <br>
+                     - 직업능력개발 대국민 인식 제고
+                     <br>
+                      ○ 디지털 평가체계 기반 직업능력평가 효용성 제고
+                      <br>
+                       - 스마트 국가자격서비스 확대로 국민 편의 제고
+                       <br>
+                        - 자격체계 개편을 통한 현장성 통용성 확대
+                        <br>
+                         - 국가자격 공정평가체계 강화
+                         <br>
+                          - NCS를 활용한 직무능력평가 내실화
+                          <br>
+                           ○ 글로벌 플랫폼 활용 일자리 지원 강화
+                           <br>
+                            - 외국인력 안정적 도입을 통한 중소기업 성장 지원
+                            <br>
+                             - 글로벌 네트워크 연계 해외취업 내실화
+                             <br>
+                              - 국제교류협력을 통한 인적교류 지원 강화
+                              <br>
+                               ○ 경영혁신 기반 기관운영 효율성 강화
+                               <br>
+                                - 기관 혁신역량 강화를 통한 성과 창출 지원
+                                <br>
+                                 - ESG 책임경영을 통한 공공성 제고
+                                 <br>
+                                  - 일하는 방식 개선을 통한 지속가능경영 지원
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             주요사업에 대해서는 공시항목 &lt;36. 주요사업&gt;을 참고하시기 바랍니다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 기관장
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="MIDDLE" width="577">
+             공석
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="591">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="32" valign="TOP" width="600">
+             ◈ 조직현황
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <img height="840" src="/upload/report/2023/06/15/2023061509798397/본부 및 부설기관 조직도.jpg" width="595">
+          <img height="840" src="/upload/report/2023/06/15/2023061509798397/소속기관 조직도.jpg" width="596">
+           <table class="nb" width="21">
+            <colgroup>
+             <col width="12">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td align="LEFT" height="30" valign="TOP" width="21">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table class="nb" width="21">
+            <colgroup>
+             <col width="12">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td align="LEFT" height="30" valign="TOP" width="21">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table class="nb" width="21">
+            <colgroup>
+             <col width="12">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td align="LEFT" height="30" valign="TOP" width="21">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table border="1" width="599">
+            <colgroup>
+             <col width="141">
+              <col width="141">
+               <col width="141">
+                <col width="140">
+                </col>
+               </col>
+              </col>
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td align="CENTER" height="30" valign="MIDDLE" width="150">
+               기준일
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="150">
+               2023년 06월 12일
+              </td>
+              <td align="CENTER" height="30" valign="TOP" width="150">
+               제출일
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="149">
+               2023년 06월 14일
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table class="nb" width="21">
+            <colgroup>
+             <col width="12">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td align="LEFT" height="30" valign="TOP" width="21">
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table class="nb" width="600">
+            <colgroup>
+             <col width="591">
+             </col>
+            </colgroup>
+            <tbody>
+             <tr>
+              <td align="LEFT" height="30" valign="TOP" width="600">
+               기관 공시 담당자
+              </td>
+             </tr>
+            </tbody>
+           </table>
+           <table border="1" width="601">
+            <colgroup>
+             <col width="96">
+              <col width="111">
+               <col width="228">
+                <col width="130">
+                </col>
+               </col>
+              </col>
+             </col>
+            </colgroup>
+            <thead>
+             <tr>
+              <th align="CENTER" height="31" valign="MIDDLE" width="105">
+               구분
+              </th>
+              <th align="CENTER" height="31" valign="MIDDLE" width="120">
+               담당자명
+              </th>
+              <th align="CENTER" height="31" valign="MIDDLE" width="237">
+               부서명
+              </th>
+              <th align="CENTER" height="31" valign="MIDDLE" width="139">
+               전화번호
+              </th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+              <td align="CENTER" height="30" valign="MIDDLE" width="105">
+               작성자
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="120">
+               금교승
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="237">
+               전략기획부
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="139">
+               052-714-8039
+              </td>
+             </tr>
+             <tr>
+              <td align="CENTER" height="30" valign="MIDDLE" width="105">
+               감독자
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="120">
+               문현태
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="237">
+               기획조정실
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="139">
+               052-714-8030
+              </td>
+             </tr>
+             <tr>
+              <td align="CENTER" height="30" valign="MIDDLE" width="105">
+               확인자
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="120">
+               홍제용
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="237">
+               감사실
+              </td>
+              <td align="CENTER" height="30" valign="MIDDLE" width="139">
+               052-714-8520
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </img>
+         </img>
+        </img>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2023061509798397"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0211",
+                	disclosureNo:"2023061502642976",
+                	reportFormRootNo:"10101"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

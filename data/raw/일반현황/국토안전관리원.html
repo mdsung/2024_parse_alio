@@ -1,0 +1,5732 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="국토안전관리원" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2024/01/05/2024010509910724/국토안전관리원 ci.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        국토안전관리원
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        일반현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+        <option value="101">
+         국토안전관리원ci.jpg
+        </option>
+        <option value="102">
+         국토안전관리원 조직도.jpg
+        </option>
+        <option value="103">
+         국토안전관리원법.hwp
+        </option>
+        <option value="104">
+         국토안전관리원 ci.jpg
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년1분기
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <li>
+          <a href="javascript:void(0)">
+           2024.01.05 공시
+          </a>
+         </li>
+         <li id="leftList_2024010502741976">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2024.01.04 공시
+          </a>
+         </li>
+         <li id="leftList_2024010402741375" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2024.01.03 공시
+          </a>
+         </li>
+         <li id="leftList_2024010302740710" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.09.08 공시
+          </a>
+         </li>
+         <li id="leftList_2023090802686841" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.08.31 공시
+          </a>
+         </li>
+         <li id="leftList_2023083102683032" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.08.09 공시
+          </a>
+         </li>
+         <li id="leftList_2023080902673819" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.05.04 공시
+          </a>
+         </li>
+         <li id="leftList_2023050402622499" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-132" title="수 정 공 시">
+              수 정 공 시
+             </a>
+            </li>
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+         <li>
+          <a href="javascript:void(0)">
+           2023.04.10 공시
+          </a>
+         </li>
+         <li id="leftList_2023041002600595" style="display: none;">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="1. 일반현황">
+              1. 일반현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="일반현황">
+              일반현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="CORRECTION">
+         <a class="toc" href="#toc-132" name="toc-132" title="수 정 공 시">
+          수 정 공 시
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="275">
+           <col width="307">
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="MIDDLE" width="284">
+            1. 수정대상 공시서류의 최초제출일 :
+           </td>
+           <td align="LEFT" height="30" valign="MIDDLE" width="316">
+            2023.04.10
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            2. 수정사항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="595">
+         <colgroup>
+          <col width="48">
+           <col width="203">
+            <col width="202">
+             <col width="61">
+              <col width="36">
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="76" valign="MIDDLE" width="57">
+            항  목
+           </th>
+           <th align="CENTER" height="76" valign="MIDDLE" width="212">
+            수 정 전
+           </th>
+           <th align="CENTER" height="76" valign="MIDDLE" width="211">
+            수 정 후
+           </th>
+           <th align="CENTER" height="76" valign="MIDDLE" width="70">
+            수정사유
+           </th>
+           <th align="CENTER" height="76" valign="MIDDLE" width="45">
+            수 정 일
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="3407" valign="MIDDLE" width="57">
+            경영목표 및 전략
+           </td>
+           <td align="LEFT" height="3407" valign="MIDDLE" width="212">
+            <span>
+             □ 중장기 경영목표(2023∼2027)
+             <br>
+              <br>
+               ㅇ미션 : 안전하고 편리한 국토를 조성하여 국민의 행복을 책임진다
+               <br>
+                <br>
+                 ㅇ비전 : 국민의 안전한 삶을 만들어가는 국토안전 선도기관
+                 <br>
+                  <br>
+                   ㅇ핵심가치 : 안전, 전문성, 상생, 신뢰
+                   <br>
+                    <br>
+                     ㅇ경영방침 : 현장중심, 창의혁신, 소통협력, 투명경영
+                     <br>
+                      <br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략방향
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             사각지대 없는 건설 및 지하 안전관리 선도
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 지속가능한 시설물 안전관리 강화
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 미래지향 국토안전 생태계 조성
+             <br>
+             </br>
+            </span>
+            <span>
+             - 책임있는 경영혁신으로 국민 신뢰 확보
+            </span>
+            <span>
+             <br>
+              <br>
+               □ 경영목표(핵심성과지표)
+               <br>
+                <br>
+                 ㅇ경영목표 1. 건설현장 안전사고 감축
+                 <br>
+                  <br>
+                   - 지표 1. 건설공사 사고 사망자 절반 감축
+                   <br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·건설공사 현장의 사고사망자 '22년 대비 50% 감축
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(명): ('23년)362, ('24년)318, ('25년)280, ('26년)238, ('27년)201
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 2. 공동(空洞) 발견 성과 2.5배 확대
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             지하함몰 예방을 위하여 지반탐사를 통해 발견한 공동의 개수
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(개):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)175, ('24년)210, ('25년)252, ('26년)303,
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             363
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 2. 시설물 안전도 확보
+              <br>
+               <br>
+                - 지표 3. 시설물 안전도 95% 달성
+                <br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             「시설물안전법」에 따른 제1
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             2종 시설물의 A
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             B등급 시설물 95%, 제3종 시설물의 A·B등급 시설물 80% 이상 유지
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             제
+            </span>
+            <span style="font-size:10pt ;">
+             1
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·2종 시설물 ('23년) ~
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             95, 제3종시설물
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)78,
+            </span>
+            <span style="font-size:10pt ;">
+             ('24년)79, ('25년)80, ('26년)81
+            </span>
+            <span style="font-size:10pt ;">
+             , ('27년)82
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             - 지표 4. 취약 시설물 안전율 2배 향상
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             소규모 취약시설의 안전조치 완료율
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%): ('23년)47.81, ('24년)55.56, ('25년)63.34, ('26년)69.04, ('27년)73.18
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 3. 안전산업 민간성장 지원 선도
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 5. 국토안전 빅데이터 플랫폼 활성화
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·국토안전 빅데이터 플랫폼 활성화를 위해 4가지 성과목표 (예산확보, 분석서비스 개발, 인프라 구축률, 데이터기반 행정실태점검)
+            </span>
+            <span>
+             달성률
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(비계량): 4가
+            </span>
+            <span style="font-size:10pt ;">
+             지 성과목표 연도별 로드맵에 따라 추진
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 6. 동반성장 평가 최우수 유지
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             중소벤처기업부 동반성장위원회 주관 공공기관 동반성장 평가 결과
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(등급):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년) ~
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             최
+            </span>
+            <span style="font-size:10pt ;">
+             우
+            </span>
+            <span>
+             수
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 4. 국민신뢰 최우수 기관
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             지표 7. 국민소통 S등급 달성
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·기획재정부 고객만족도 평가 결과 “만족(S)” 달성 사업 비중
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%) : ('23년)70, ('24년)80, ('25년)90, ('26년)90, ('27년)100
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              - 지표 8. 종합청렴도 1등급 달성
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·국민권익위원회 주관 공공기관 청렴도 평가에서 1등급 달성
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(등급):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)2, ('24년)2, ('25년)1, ('26년)1,
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             1
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             □ 중장기 경영전략(전략과제)
+             <br>
+              <br>
+               ㅇ전략방향 1.
+              </br>
+             </br>
+            </span>
+            <span>
+             사각지대 없는 건설 및 지하 안전관리 선도
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             촘촘한 건설현장 안전망 구축
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             선제적 지하공간 안전관리 내실화
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             신속한 사고대응과 재발사고 예방
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 2. 지속가능한 시설물 안전관리 강화
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             예방중심 시설물 안전 및 성능관리 강화
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             시설물 유지관리 디지털화
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             국민참여형 건축물 관리체계 정착
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             국민 생활 속 건축품질 갈등 해소
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 3.
+            </span>
+            <span>
+            </span>
+            <span>
+             미래지향 국토안전 생태계 조성
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             국토안전산업 민간성장 지원 확대
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             국토안전 연구개발 및 안전정책 확산
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             디지털 플랫폼 및 신성장동력 확보
+             <br>
+              - 탄소중립 건축물 전환 지원 확대
+              <br>
+               <br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표4.
+            </span>
+            <span>
+             책임있는 경영혁신으로 국민 신뢰 확보
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             경영자원 효율화로 조직경쟁력 제고
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             일하는 방식 혁신과 상생문화 정착
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             공정하고 투명한 ESG 경영 실천
+            </span>
+           </td>
+           <td align="LEFT" height="3407" valign="MIDDLE" width="211">
+            <span>
+             □ 중장기 경영목표(2024∼2028)
+             <br>
+              <br>
+               ㅇ미션 : 안전하고 편리한 국토를 조성하여 국민의 행복을 책임진다
+               <br>
+                <br>
+                 ㅇ비전 : 국민의 안전한 삶을 만들어가는 국토안전 선도기관
+                 <br>
+                  <br>
+                   ㅇ핵심가치 : 안전, 전문성, 상생, 신뢰
+                   <br>
+                    <br>
+                     ㅇ경영방침 : 현장중심, 창의혁신, 소통협력, 투명경영
+                     <br>
+                      <br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략방향
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             사각지대 없는 건설 및 지하 안전관리 선도
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 지속가능한 시설물 안전관리 강화
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 미래지향 국토안전 생태계 조성
+             <br>
+             </br>
+            </span>
+            <span>
+             - 책임있는 경영혁신으로 국민 신뢰 확보
+            </span>
+            <span>
+             <br>
+              <br>
+               □ 경영목표(핵심성과지표)
+               <br>
+                <br>
+                 ㅇ경영목표 1. 건설현장 안전사고 감축
+                 <br>
+                  <br>
+                   - 지표 1. 건설공사 사고 사망자 절반 감축
+                   <br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·건설공사 현장의 사고사망자 '23년 대비 50% 감축
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(명): ('24년)318, ('25년)280, ('26년)238, ('27년)201
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             , ('28년)181
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 2. 공동(空洞) 발견 성과 2.5배 확대
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             지하함몰 예방을 위하여 지반탐사를 통해 발견한 공동의 개수
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(개):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('24년)210, ('25년)252, ('26년)303,
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             363
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ,
+            </span>
+            <span style="font-size:10pt ;">
+             ('28년)
+            </span>
+            <span style="font-size:10pt ;">
+             363
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 2. 시설물 안전도 확보
+              <br>
+               <br>
+                - 지표 3. 시설물 안전도 95% 달성
+                <br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             「시설물안전법」에 따른 제1
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             2종 시설물의 A
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             B등급 시설물 95%, 제3종 시설물의 A·B등급 시설물 80% 이상 유지
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             제
+            </span>
+            <span style="font-size:10pt ;">
+             1
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·2종 시설물 ('24년) ~
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('28년)
+            </span>
+            <span style="font-size:10pt ;">
+             95, 제3종시설물
+            </span>
+            <span style="font-size:10pt ;">
+             ('24년)79, ('25년)80, ('26년)81
+            </span>
+            <span style="font-size:10pt ;">
+             , ('27년)82,
+            </span>
+            <span style="font-size:10pt ;">
+             ('28년)82.5
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             - 지표 4. 취약 시설물 안전율 2배 향상
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             소규모 취약시설의 안전조치 완료율
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%): ('24년)55.56, ('25년)63.34, ('26년)69.04, ('27년)73.18
+            </span>
+            <span style="font-size:10pt ;">
+             , ('28년)76.11
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 3. 안전산업 민간성장 지원 선도
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 5. 국토안전 빅데이터 플랫폼 활성화
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·국토안전 빅데이터 플랫폼 활성화를 위해 4가지 성과목표 (예산확보, 분석서비스 개발, 인프라 구축률, 데이터기반 행정실태점검)
+            </span>
+            <span>
+             달성률
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(비계량): 4가
+            </span>
+            <span style="font-size:10pt ;">
+             지 성과목표 연도별 로드맵에 따라 추진
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 6. 동반성장 평가 최우수 유지
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             중소벤처기업부 동반성장위원회 주관 공공기관 동반성장 평가 결과
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(등급):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('24년) ~
+            </span>
+            <span style="font-size:10pt ;">
+             ('28년)
+            </span>
+            <span style="font-size:10pt ;">
+             최
+            </span>
+            <span style="font-size:10pt ;">
+             우
+            </span>
+            <span>
+             수
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 4. 국민신뢰 최우수 기관
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             지표 7. 국민소통 S등급 달성
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·기획재정부 고객만족도 평가 결과 “만족(S)” 달성 사업 비중
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%) : ('24년)80, ('25년)90, ('26년)90, ('27년)100, ('28년)100
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              - 지표 8. 종합청렴도 1등급 달성
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·국민권익위원회 주관 공공기관 청렴도 평가에서 1등급 달성
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(등급):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('24년)2, ('25년)1, ('26년)1,
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             1
+            </span>
+            <span style="font-size:10pt ;">
+             ,
+            </span>
+            <span style="font-size:10pt ;">
+             ('28년)
+            </span>
+            <span style="font-size:10pt ;">
+             1
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             □ 중장기 경영전략(전략과제)
+             <br>
+              <br>
+               ㅇ전략방향 1.
+              </br>
+             </br>
+            </span>
+            <span>
+             사각지대 없는 건설 및 지하 안전관리 선도
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             촘촘한 건설현장 안전망 구축
+             <br>
+              - 건설공사 품질관리 강화
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             선제적 지하공간 안전관리 내실화
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             신속한 사고대응과 재발사고 예방
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 2. 지속가능한 시설물 안전관리 강화
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             예방중심 시설물 안전 및 성능관리 강화
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             시설물 유지관리 디지털화
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             국민참여형 건축물 관리체계 정착
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             국민 생활 속 건축품질 갈등 해소
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 3.
+            </span>
+            <span>
+            </span>
+            <span>
+             미래지향 국토안전 생태계 조성
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             국토안전산업 민간성장 지원 확대
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             국토안전 연구개발 및 안전정책 확산
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             디지털 플랫폼 및 신성장동력 확보
+             <br>
+              - 탄소중립 건축물 전환 지원 확대
+              <br>
+               <br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표4.
+            </span>
+            <span>
+             책임있는 경영혁신으로 국민 신뢰 확보
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             경영자원 효율화로 조직경쟁력 제고
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             일하는 방식 혁신과 상생문화 정착
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             공정하고 투명한 ESG 경영 실천
+            </span>
+           </td>
+           <td align="LEFT" height="3407" valign="MIDDLE" width="70">
+            중장기 경영목표(2024~2028) 수립
+           </td>
+           <td align="LEFT" height="3407" valign="MIDDLE" width="45">
+            24.01.05
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="76" valign="MIDDLE" width="57">
+            조직현황(조직도)
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="212">
+            기존 조직도
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="211">
+            변경 조직도
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="70">
+            조직위계조정
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="45">
+            24.01.03
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="76" valign="MIDDLE" width="57">
+            조직현황(조직도)
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="212">
+            기존 조직도
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="211">
+            변경 조직도
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="70">
+            조직개편
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="45">
+            23.09.08
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="3428" valign="MIDDLE" width="57">
+            경영목표 및 전략
+           </td>
+           <td align="LEFT" height="3428" valign="MIDDLE" width="212">
+            <span>
+             □ 중장기 경영목표(2023∼2027)
+             <br>
+              <br>
+               ㅇ미션 : 안전하고 편리한 국토를 조성하여 국민의 행복을 책임진다
+               <br>
+                <br>
+                 ㅇ비전 : 국민의 안전한 삶을 만들어가는 국토안전 선도기관
+                 <br>
+                  <br>
+                   ㅇ핵심가치 : 안전, 소통, 신뢰, 전문성
+                   <br>
+                    <br>
+                     ㅇ경영방침 : 국민이 안심하는 안전관리, 국민과 소통하는 열린경영, 자율기반 혁신문화 조성, 국토안전 책임기관 위상확립
+                     <br>
+                      <br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략방향
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             국민 생명을 지키는 건설·지하 안전관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 안심하고 오래 사용하는 기반시설관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 안전하고 쾌적한 건축물 생애관리
+             <br>
+             </br>
+            </span>
+            <span>
+             - 국민이 공감하는 경영혁신
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              □ 경영목표(핵심성과지표)
+              <br>
+               <br>
+                ㅇ경영목표 1. 건설현장사고 감소
+                <br>
+                 <br>
+                  - 지표 1. 건설공사 사고사망자 감소
+                  <br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·건설공사 사고사망자 만인율=(근로자 사망자수+일반국민 사고사망자수)/전체 국민 수×10,000
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(만인율): ('23년)0.069, ('24년)0.065, ('25년)0.057, ('26년)0.054, ('27년)0.050
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 2. 건설안전 부실업체 연 20% 저감
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             건설안전 부실업체 저감률(%) = (평가점수 60점 미만 최종평가 업체수/전체 평가 업체수)×100
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)29.7, ('24년)23.7, ('25년)18.8, ('26년)15.0,
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             12.0
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 2. 기반시설 안전관리 강화
+              <br>
+               <br>
+                - 지표 3. 국가 주요시설물 A·B등급 95% 이상 확보
+                <br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             1·2종 국가 주요시설물의 안전관리 수준(안전등급 목표 달성도)을 95% 이상 유지
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표:
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년) ~ ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             1·2종 국가 주요시설물
+            </span>
+            <span style="font-size:10pt ;">
+             A·B등급 95% 이상 확보
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 4. 시설물 점검·진단 부실 시정률 99% 이상 확보
+              <br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             점검·진단 부실예방 투입 대비 성과×20% + 점검·진단 부실 시정률 개선×80%
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표:
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년) ~ ('27년) 시설물 점검·진단 부실 시정률 99% 이
+            </span>
+            <span style="font-size:10pt ;">
+             상 확보
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 3. 건축물 안전 및 사용가치 확대
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 5. 사회적 취약계층 이용 시설 안전도 향상
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·사회적 취약계층 이용 시설 안전도 향상(%) = 안전점검 시정률×50% + 안전조치 완료율×50%
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%): ('23년)39.7, ('24년)49.8, ('25년)65.5, ('26년)73.4, ('27년)75.7
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 6. 그린리모델링 에너지 성능 확보 및 복합 성능 개선
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             에너지 성능 확보 및 복합 성능 개선율(%)=녹색건축물 전환율×50% + 복합성능개선율×50%
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)28.8, ('24년)34.7, ('25년)41.7, ('26년)50.0
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             60.1
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 4. 국민신뢰 최고수준 달성
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             지표 7. 고객만족도 최고등급 달성
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·기획재정부 주관 고객만족도 평가에서 사업별 평가 모두 “S”(만족) 100% 달성
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(개) : ('23년)7, ('24년)8, ('25년)9, ('26년)9, ('27년)9
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              - 지표 8. 청렴도 및 반부패 등급 상향
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             국민권익위원회 주관 공공기관 청렴도 평가에서 전년 대비 등급 상향
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(등급):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)2, ('24년)2, ('25년)1, ('26년)1
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             1
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             □ 중장기 경영전략(전략과제)
+             <br>
+              <br>
+               ㅇ전략방향 1.
+              </br>
+             </br>
+            </span>
+            <span>
+             국민 생명을 지키는 건설·지하 안전관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             건설안전과 품질을 책임지는 관리
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             현장중심 건설·지하안전 관리
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             재난·재해에도 빈틈없는 안전관리
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 2.
+            </span>
+            <span>
+            </span>
+            <span>
+             안심하고 오래 사용하는 기반시설관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             지속가능한 기반시설관리
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             스마트·데이터 기반 현장 이행력 강화
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             국민이 체감하는 안전문화 확산
+            </span>
+            <span>
+            </span>
+            <span>
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 3.
+            </span>
+            <span>
+            </span>
+            <span>
+             안전하고 쾌적한 건축물 생애관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             건축물 안전관리체계 혁신
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             환경을 생각하는 건축물 성능관리
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             안전한 생활환경 조성과 분쟁 해소
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표4.
+            </span>
+            <span>
+             국민이 공감하는 경영혁신
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             환경변화에 유연한 경영인프라 구축
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             투명하고 청렴한 인권·윤리문화 확산
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             민·관 협력으로 안전산업과 지역경제 활성화
+            </span>
+           </td>
+           <td align="LEFT" height="3428" valign="MIDDLE" width="211">
+            <span>
+             □ 중장기 경영목표(2023∼2027)
+             <br>
+              <br>
+               ㅇ미션 : 안전하고 편리한 국토를 조성하여 국민의 행복을 책임진다
+               <br>
+                <br>
+                 ㅇ비전 : 국민의 안전한 삶을 만들어가는 국토안전 선도기관
+                 <br>
+                  <br>
+                   ㅇ핵심가치 : 안전, 전문성, 상생, 신뢰
+                   <br>
+                    <br>
+                     ㅇ경영방침 : 현장중심, 창의혁신, 소통협력, 투명경영
+                     <br>
+                      <br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략방향
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             사각지대 없는 건설 및 지하 안전관리 선도
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 지속가능한 시설물 안전관리 강화
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 미래지향 국토안전 생태계 조성
+             <br>
+             </br>
+            </span>
+            <span>
+             - 책임있는 경영혁신으로 국민 신뢰 확보
+            </span>
+            <span>
+             <br>
+              <br>
+               □ 경영목표(핵심성과지표)
+               <br>
+                <br>
+                 ㅇ경영목표 1. 건설현장 안전사고 감축
+                 <br>
+                  <br>
+                   - 지표 1. 건설공사 사고 사망자 절반 감축
+                   <br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·건설공사 현장의 사고사망자 '22년 대비 50% 감축
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(명): ('23년)362, ('24년)318, ('25년)280, ('26년)238, ('27년)201
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 2. 공동(空洞) 발견 성과 2.5배 확대
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             지하함몰 예방을 위하여 지반탐사를 통해 발견한 공동의 개수
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(개):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)175, ('24년)210, ('25년)252, ('26년)303,
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             363
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 2. 시설물 안전도 확보
+              <br>
+               <br>
+                - 지표 3. 시설물 안전도 95% 달성
+                <br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             「시설물안전법」에 따른 제1
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             2종 시설물의 A
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             B등급 시설물 95%, 제3종 시설물의 A·B등급 시설물 80% 이상 유지
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             제
+            </span>
+            <span style="font-size:10pt ;">
+             1
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·2종 시설물 ('23년) ~
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             95, 제3종시설물
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)78,
+            </span>
+            <span style="font-size:10pt ;">
+             ('24년)79, ('25년)80, ('26년)81
+            </span>
+            <span style="font-size:10pt ;">
+             , ('27년) 82
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             - 지표 4. 취약 시설물 안전율 2배 향상
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             소규모 취약시설의 안전조치 완료율
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%): ('23년)47.81, ('24년)55.56, ('25년)63.34, ('26년)69.04, ('27년)73.18
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 3. 안전산업 민간성장 지원 선도
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 5. 국토안전 빅데이터 플랫폼 활성화
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·국토안전 빅데이터 플랫폼 활성화를 위해 4가지 성과목표 (예산확보, 분석서비스 개발, 인프라 구축률, 데이터기반 행정실태점검)
+            </span>
+            <span>
+             달성률
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(비계량): 4가
+            </span>
+            <span style="font-size:10pt ;">
+             지 성과목표 연도별 로드맵에 따라 추진
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 6. 동반성장 평가 최우수 유지
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             중소벤처기업부 동반성장위원회 주관 공공기관 동반성장 평가 결과
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(등급):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년) ~
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             최
+            </span>
+            <span style="font-size:10pt ;">
+             우
+            </span>
+            <span>
+             수
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 4. 국민신뢰 최우수 기관
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             지표 7. 국민소통 S등급 달성
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·기획재정부 고객만족도 평가 결과 “만족(S)” 달성 사업 비중
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%) : ('23년)70, ('24년)80, ('25년)90, ('26년)90, ('27년)100
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              - 지표 8. 종합청렴도 1등급 달성
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·국민권익위원회 주관 공공기관 청렴도 평가에서 1등급 달성
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(등급):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)2, ('24년)2, ('25년)1, ('26년)1
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             1
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+             □ 중장기 경영전략(전략과제)
+             <br>
+              <br>
+               ㅇ전략방향 1.
+              </br>
+             </br>
+            </span>
+            <span>
+             사각지대 없는 건설 및 지하 안전관리 선도
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             촘촘한 건설현장 안전망 구축
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             선제적 지하공간 안전관리 내실화
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             신속한 사고대응과 재발사고 예방
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 2. 지속가능한 시설물 안전관리 강화
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             예방중심 시설물 안전 및 성능관리 강화
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             시설물 유지관리 디지털화
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             국민참여형 건축물 관리체계 정착
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             국민 생활 속 건축품질 갈등 해소
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 3.
+            </span>
+            <span>
+            </span>
+            <span>
+             미래지향 국토안전 생태계 조성
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             국토안전산업 민간성장 지원 확대
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             국토안전 연구개발 및 안전정책 확산
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             디지털 플랫폼 및 신성장동력 확보
+             <br>
+              - 탄소중립 건축물 전환 지원 확대
+              <br>
+               <br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표4.
+            </span>
+            <span>
+             책임있는 경영혁신으로 국민 신뢰 확보
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             경영자원 효율화로 조직경쟁력 제고
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             일하는 방식 혁신과 상생문화 정착
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             공정하고 투명한 ESG 경영 실천
+            </span>
+           </td>
+           <td align="LEFT" height="3428" valign="MIDDLE" width="70">
+            중장기 경영목표(2023~2027) 변경
+           </td>
+           <td align="LEFT" height="3428" valign="MIDDLE" width="45">
+            23.08.31
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="76" valign="MIDDLE" width="57">
+            조직현황(조직도)
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="212">
+            기존 조직도
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="211">
+            변경 조직도
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="70">
+            조직개편
+           </td>
+           <td align="LEFT" height="76" valign="MIDDLE" width="45">
+            23.08.09
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="168" valign="MIDDLE" width="57">
+            기관연혁
+           </td>
+           <td align="LEFT" height="168" valign="MIDDLE" width="212">
+            신규
+           </td>
+           <td align="LEFT" height="168" valign="MIDDLE" width="211">
+            ㅇ'23.02.03 바닥충격음 성능검사기관 지정
+           </td>
+           <td align="LEFT" height="168" valign="MIDDLE" width="70">
+            국토교통부로부터 바닥충격음 성능검사기관 지정 고시
+           </td>
+           <td align="LEFT" height="168" valign="MIDDLE" width="45">
+            23.05.04
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="3472" valign="MIDDLE" width="57">
+            경영목표 및 전략
+           </td>
+           <td align="LEFT" height="3472" valign="MIDDLE" width="212">
+            □ 중장기 경영목표(2022∼2026)
+            <br>
+             <br>
+              ㅇ미션 : 안전하고 편리한 국토를 조성하여 국민의 행복을 책임진다
+              <br>
+               <br>
+                ㅇ비전 : 국민과 함께 행복을 열어가는 국토안전 지킴이
+                <br>
+                 <br>
+                  ㅇ공유가치
+                  <br>
+                   - 핵심가치 : 생명, 신뢰, 포용, 도전
+                   <br>
+                    - 경영방침 : 국민이 안심하는 안전관리, 국토안전 책임기관 위상확립, 국민과 소통하는 열린경영, 자율기반 혁신문화 조성
+                    <br>
+                     <br>
+                      <span>
+                       ㅇ전략목표
+                       <br>
+                       </br>
+                      </span>
+                      <span style="font-weight: bold;font-size:BTpt ;">
+                       -
+                      </span>
+                      <span>
+                       국민의 생명을 지키는 중대사고 예방
+                       <br>
+                       </br>
+                      </span>
+                      <span>
+                      </span>
+                      <span>
+                       - 국민이 안심하는 기반시설 구현
+                       <br>
+                       </br>
+                      </span>
+                      <span style="font-weight: bold;font-size:BTpt ;">
+                      </span>
+                      <span>
+                      </span>
+                      <span>
+                       - 국민이 편안한 생활환경 조성
+                       <br>
+                       </br>
+                      </span>
+                      <span>
+                       - 국민이 공감하는 경영혁신
+                       <br>
+                       </br>
+                      </span>
+                      <br>
+                       □ 연도별 경영목표(핵심성과지표)
+                       <br>
+                        ㅇ지표1. 건설현장사고 사망자 연 20% 감축
+                        <br>
+                         <span style="font-size:10pt ;">
+                          ·고용노동부의 산업재해현황 통계에 따른 건설업 사고사망자 수
+                         </span>
+                         <br>
+                          <span style="font-size:10pt ;">
+                           -
+                          </span>
+                          <span style="font-size:10pt ;">
+                           건설현장 사고사망자(명) :('22년)333, ('23년)266, ('24년)212, ('25년)169, ('26년)135
+                          </span>
+                          <span>
+                           <br>
+                            <br>
+                            </br>
+                           </br>
+                          </span>
+                          <span style="font-size:10pt ;">
+                          </span>
+                          ㅇ지표2. 건설안전 부실업체 연 20% 저감
+                          <br>
+                           <span style="font-size:10pt ;">
+                           </span>
+                           <span style="font-size:10pt ;">
+                           </span>
+                           <span style="font-size:10pt ;">
+                            ·
+                           </span>
+                           <span style="font-size:10pt ;">
+                            건설안전 부실업체 저감률 = (평가점수 60점 미만 최종평가 업체수/ 전체 평가 업체수)×100
+                            <br>
+                            </br>
+                           </span>
+                           <span style="font-size:10pt ;">
+                           </span>
+                           <span style="font-size:10pt ;">
+                            -
+                           </span>
+                           <span style="font-size:10pt ;">
+                            건설안전 부실업체 저감률(%) :('22년)37.3, ('23년)29.8, ('24년)23.9, ('25년)19.1, ('26년)15.3
+                            <br>
+                            </br>
+                           </span>
+                           <br>
+                            ㅇ지표3. 시설사고 사망자 제로화 유지
+                            <br>
+                             <span style="font-size:10pt ;">
+                              ·
+                             </span>
+                             <span style="font-size:10pt ;">
+                              시설물안전법 제7조에서 규정하고 있는 1·2·3종 시설물에서 시설물안전법 시행령 제37조
+                              <br>
+                               제1호에 따라 시설물이 붕괴되거나 쓰러지는 등 재시공이 필요한 사고로 인한 사망자
+                              </br>
+                             </span>
+                             <span style="font-size:10pt ;">
+                             </span>
+                             <span style="font-size:10pt ;">
+                              <br>
+                               - 시설사고 사망자 : ('22년) ~ ('26년)제로화 유지
+                               <br>
+                               </br>
+                              </br>
+                             </span>
+                             <br>
+                              ㅇ지표4. 안전관리 부실시설 연 20% 저감
+                              <br>
+                               <span style="font-size:10pt ;">
+                                ·
+                               </span>
+                               <span style="font-size:10pt ;">
+                                시설물 중대결함 저감률 = (중대결함 미조치 건수/ 조치대상 중대결함 수)×100
+                               </span>
+                               <br>
+                                <span style="font-size:10pt ;">
+                                 -
+                                </span>
+                                <span style="font-size:10pt ;">
+                                 시설물 중대결함 저감률(%) : ('22년)11.7, ('23년)9.4, ('24년)7.5, ('25년)6.0, ('26년)4.8
+                                 <br>
+                                 </br>
+                                </span>
+                                <span style="font-size:10pt ;">
+                                </span>
+                                <span style="font-size:10pt ;">
+                                 ·
+                                </span>
+                                <span style="font-size:10pt ;">
+                                 공동주택 부적정보고서 저감률 = (공동주택 부적정보고서 건수 / 공동주택 점검·진단 평가
+                                 <br>
+                                  건수)×100
+                                 </br>
+                                </span>
+                                <span style="font-size:10pt ;">
+                                 <br>
+                                 </br>
+                                </span>
+                                <span style="font-size:10pt ;">
+                                 -
+                                </span>
+                                <span style="font-size:10pt ;">
+                                 공동주택 부적정보고서 저감률(%) : ('22년)6.3, ('23년)5.1, ('24년)4.1, ('25년)3.2, ('26년)2.6
+                                 <br>
+                                 </br>
+                                </span>
+                                <br>
+                                 ㅇ지표5. 취약계층 이용시설 안전도 연 20% 향상
+                                 <br>
+                                  <span style="font-size:10pt ;">
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                   ·
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                   안전점검 확대율 : (관리원이 직접 수행한 안전점검 건수＋자율안전점검 건수)/ 전체 소규모
+                                   <br>
+                                    취약시설물 수 × 100
+                                    <br>
+                                     -
+                                    </br>
+                                   </br>
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                   안전점검 확대율(%) :('22년)6.4, ('23년)7.6, ('24년)9.1, ('25년)11.0, ('26년)13.2
+                                   <br>
+                                   </br>
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                   ·
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                   안
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                   전조치 완료율 : 안전등급 미흡·불량 시설물 중 관리원의 재점검 등 조치완료 확인을 통해
+                                   <br>
+                                    해당 시설물 취약요인 해소(3종시설물 편입 등) 및 등급이 양호 또는 보통으로 상향된 시설물 수
+                                    <br>
+                                    </br>
+                                   </br>
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                   -
+                                  </span>
+                                  <span style="font-size:10pt ;">
+                                   안전조치 완료율(%) : ('22년)33.3, ('23년)40.0, ('24년)48.0, ('25년)57.6, ('26년)69.1
+                                   <br>
+                                   </br>
+                                  </span>
+                                  <br>
+                                   ㅇ지표6. 에너지 성능개선 연 20% 확대
+                                   <br>
+                                    <span style="font-size:10pt ;">
+                                    </span>
+                                    <span style="font-size:10pt ;">
+                                    </span>
+                                    <span style="font-size:10pt ;">
+                                     ·
+                                    </span>
+                                    <span style="font-size:10pt ;">
+                                    </span>
+                                    <span style="font-size:10pt ;">
+                                     에
+                                    </span>
+                                    <span style="font-size:10pt ;">
+                                     너지소비량 검토 결과, 에너지 효율이 낮은 건축물에 대한 성능개선 요구 건
+                                     <br>
+                                      -
+                                     </br>
+                                    </span>
+                                    <span style="font-size:10pt ;">
+                                     에너지 성능개선(건) : ('22년)30, ('23년)36, ('24년)44, ('25년)53, ('26년)64
+                                     <br>
+                                     </br>
+                                    </span>
+                                    <br>
+                                     ㅇ지표7. 고객만족도 최고등급 달성
+                                     <br>
+                                      <span style="font-size:10pt ;">
+                                       ·기획재정부가 진단·발표하는 공공기관 "고객만족도" 의 평가 사업별 결과(S:만족, U:불만족)
+                                      </span>
+                                      <span style="font-size:10pt ;">
+                                      </span>
+                                      <span style="font-size:10pt ;">
+                                      </span>
+                                      <br>
+                                       <span style="font-size:10pt ;">
+                                       </span>
+                                       <span style="font-size:10pt ;">
+                                        -
+                                       </span>
+                                       <span style="font-size:10pt ;">
+                                        고객만족도 사업별 "S" 달성 개수(개) : ('22년)6, ('23년)7, ('24년)8, ('25년)9, ('26년)9
+                                        <br>
+                                        </br>
+                                       </span>
+                                       <br>
+                                        ㅇ지표8. 동반성장 평가 최고등급 달성
+                                        <br>
+                                         <span style="font-size:10pt ;">
+                                          ·중
+                                         </span>
+                                         <span style="font-size:10pt ;">
+                                          소벤처기업부가 평가·발표하는 "공공기관 동반성장 평가" 등급
+                                          <br>
+                                           (개선~최우수, 5등급으로 구분)
+                                          </br>
+                                         </span>
+                                         <br>
+                                          <span style="font-size:10pt ;">
+                                           - 동반성장 평가 등급 :
+                                          </span>
+                                          <span style="font-size:10pt ;">
+                                           ('22년)우수, ('23년)우수, ('24년)우수, ('25년)
+                                          </span>
+                                          <span style="font-size:10pt ;">
+                                           최우수, ('26년)최우수
+                                           <br>
+                                            <br>
+                                            </br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                           □ 장·단기 경영전략(전략과제)
+                                           <br>
+                                            ㅇ전략목표1.
+                                           </br>
+                                          </span>
+                                          <span>
+                                           국민의 생명을 지키는 중대사고 예방
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           - 건
+                                          </span>
+                                          <span>
+                                           설
+                                          </span>
+                                          <span>
+                                           안전 및 품질 관리체계 혁신
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                           -
+                                          </span>
+                                          <span>
+                                           건설 현장 안전관리 이행력 제고
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           <br>
+                                            -
+                                           </br>
+                                          </span>
+                                          <span>
+                                           선진화된 재난 및 사고관리체계 구축
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                           ㅇ전략목표2.
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           국민이 안심하는 기반시설 구현
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           -
+                                          </span>
+                                          <span>
+                                           기반시설 안전 관리체계 구축
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                           -
+                                          </span>
+                                          <span>
+                                           노
+                                          </span>
+                                          <span>
+                                           후
+                                          </span>
+                                          <span>
+                                           화에 대비한 시설물 안전 강화
+                                           <br>
+                                            -
+                                           </br>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           참여와 소통의 안전문화 확산
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           <br>
+                                            <br>
+                                            </br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                           ㅇ전략목표3.
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           국민이 편안한 생활환경 조성
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           -
+                                          </span>
+                                          <span>
+                                           건축물 생애주기 관리체계 구축
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                           -
+                                          </span>
+                                          <span>
+                                           생
+                                          </span>
+                                          <span>
+                                           활시설 안전관리 강화
+                                           <br>
+                                            -
+                                           </br>
+                                          </span>
+                                          <span>
+                                           건축물 성능개선으로 탄소중립 실현
+                                           <br>
+                                            <br>
+                                            </br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                           ㅇ전략목표4.
+                                          </span>
+                                          <span>
+                                           국민이 공감하는 경영혁신
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           -
+                                          </span>
+                                          <span>
+                                           자율과 책임의 경영혁신
+                                           <br>
+                                           </br>
+                                          </span>
+                                          <span>
+                                           -
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           신뢰와 존중의 인권·윤리 경영
+                                           <br>
+                                            -
+                                           </br>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                          </span>
+                                          <span>
+                                           상생협력 기반 동반성장 확산
+                                          </span>
+                                         </br>
+                                        </br>
+                                       </br>
+                                      </br>
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+           <td align="LEFT" height="3472" valign="MIDDLE" width="211">
+            <span>
+             □ 중장기 경영목표(2023∼2027)
+             <br>
+              <br>
+               ㅇ미션 : 안전하고 편리한 국토를 조성하여 국민의 행복을 책임진다
+               <br>
+                <br>
+                 ㅇ비전 : 국민의 안전한 삶을 만들어가는 국토안전 선도기관
+                 <br>
+                  <br>
+                   ㅇ핵심가치 : 안전, 소통, 신뢰, 전문성
+                   <br>
+                    <br>
+                     ㅇ경영방침 : 국민이 안심하는 안전관리, 국민과 소통하는 열린경영, 자율기반 혁신문화 조성, 국토안전 책임기관 위상확립
+                     <br>
+                      <br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략방향
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             국민 생명을 지키는 건설·지하 안전관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 안심하고 오래 사용하는 기반시설관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             - 안전하고 쾌적한 건축물 생애관리
+             <br>
+             </br>
+            </span>
+            <span>
+             - 국민이 공감하는 경영혁신
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              □ 경영목표(핵심성과지표)
+              <br>
+               <br>
+                ㅇ경영목표 1. 건설현장사고 감소
+                <br>
+                 <br>
+                  - 지표 1. 건설공사 사고사망자 감소
+                  <br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·건설공사 사고사망자 만인율=(근로자 사망자수+일반국민 사고사망자수)/전체 국민 수×10,000
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(만인율): ('23년)0.069, ('24년)0.065, ('25년)0.057, ('26년)0.054, ('27년)0.050
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 2. 건설안전 부실업체 연 20% 저감
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             건설안전 부실업체 저감률(%) = (평가점수 60점 미만 최종평가 업체수/전체 평가 업체수)×100
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)29.7, ('24년)23.7, ('25년)18.8, ('26년)15.0,
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             12.0
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 2. 기반시설 안전관리 강화
+              <br>
+               <br>
+                - 지표 3. 국가 주요시설물 A·B등급 95% 이상 확보
+                <br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             1·2종 국가 주요시설물의 안전관리 수준(안전등급 목표 달성도)을 95% 이상 유지
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표:
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년) ~ ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             1·2종 국가 주요시설물
+            </span>
+            <span style="font-size:10pt ;">
+             A·B등급 95% 이상 확보
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 4. 시설물 점검·진단 부실 시정률 99% 이상 확보
+              <br>
+              </br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             점검·진단 부실예방 투입 대비 성과×20% + 점검·진단 부실 시정률 개선×80%
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표:
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년) ~ ('27년) 시설물 점검·진단 부실 시정률 99% 이
+            </span>
+            <span style="font-size:10pt ;">
+             상 확보
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 3. 건축물 안전 및 사용가치 확대
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 5. 사회적 취약계층 이용 시설 안전도 향상
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·사회적 취약계층 이용 시설 안전도 향상(%) = 안전점검 시정률×50% + 안전조치 완료율×50%
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%): ('23년)39.7, ('24년)49.8, ('25년)65.5, ('26년)73.4, ('27년)75.7
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+              - 지표 6. 그린리모델링 에너지 성능 확보 및 복합 성능 개선
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             에너지 성능 확보 및 복합 성능 개선율(%)=녹색건축물 전환율×50% + 복합성능개선율×50%
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(%):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)28.8, ('24년)34.7, ('25년)41.7, ('26년)50.0
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             60.1
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              ㅇ경영목표 4. 국민신뢰 최고수준 달성
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             지표 7. 고객만족도 최고등급 달성
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             ·기획재정부 주관 고객만족도 평가에서 사업별 평가 모두 “S”(만족) 100% 달성
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(개) : ('23년)7, ('24년)8, ('25년)9, ('26년)9, ('27년)9
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+             <br>
+              - 지표 8. 청렴도 및 반부패 등급 상향
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+             국민권익위원회 주관 공공기관 청렴도 평가에서 전년 대비 등급 상향
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span style="font-size:10pt ;">
+             ·
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             연도별 목표(등급):
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+            </span>
+            <span style="font-size:10pt ;">
+             ('23년)2, ('24년)2, ('25년)1, ('26년)1
+            </span>
+            <span style="font-size:10pt ;">
+             ('27년)
+            </span>
+            <span style="font-size:10pt ;">
+             1
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+             </br>
+            </span>
+            <span style="font-size:10pt ;">
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             □ 중장기 경영전략(전략과제)
+             <br>
+              <br>
+               ㅇ전략방향 1.
+              </br>
+             </br>
+            </span>
+            <span>
+             국민 생명을 지키는 건설·지하 안전관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             건설안전과 품질을 책임지는 관리
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             현장중심 건설·지하안전 관리
+            </span>
+            <span>
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             재난·재해에도 빈틈없는 안전관리
+             <br>
+             </br>
+            </span>
+            <span>
+             <br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 2.
+            </span>
+            <span>
+            </span>
+            <span>
+             안심하고 오래 사용하는 기반시설관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             지속가능한 기반시설관리
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             스마트·데이터 기반 현장 이행력 강화
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             국민이 체감하는 안전문화 확산
+            </span>
+            <span>
+            </span>
+            <span>
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표 3.
+            </span>
+            <span>
+            </span>
+            <span>
+             안전하고 쾌적한 건축물 생애관리
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             건축물 안전관리체계 혁신
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             환경을 생각하는 건축물 성능관리
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             안전한 생활환경 조성과 분쟁 해소
+             <br>
+              <br>
+              </br>
+             </br>
+            </span>
+            <span>
+             ㅇ전략목표4.
+            </span>
+            <span>
+             국민이 공감하는 경영혁신
+             <br>
+             </br>
+            </span>
+            <span>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+             환경변화에 유연한 경영인프라 구축
+             <br>
+             </br>
+            </span>
+            <span>
+             -
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+             투명하고 청렴한 인권·윤리문화 확산
+             <br>
+              -
+             </br>
+            </span>
+            <span>
+             민·관 협력으로 안전산업과 지역경제 활성화
+            </span>
+           </td>
+           <td align="LEFT" height="3472" valign="MIDDLE" width="70">
+            중장기 경영목표(2023~2027) 수립
+           </td>
+           <td align="LEFT" height="3472" valign="MIDDLE" width="45">
+            23.05.04
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="pgbrk">
+        </p>
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="1. 일반현황">
+          1. 일반현황
+         </a>
+        </p>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="600">
+            (2023년 1/4분기)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            국토안전관리원
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="일반현황">
+          일반현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="31" valign="TOP" width="600">
+            ◈ 기관소개
+           </td>
+          </tr>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            - CI
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <img height="110" src="/upload/report/2024/01/05/2024010509910724/국토안전관리원ci.jpg" width="300">
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 기관설립일
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             2020년 12월 10일
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 설립근거
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             국토안전관리원법 제1조(목적)
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             <a href="javascript:report_attach_down('국토안전관리원법.hwp')">
+              국토안전관리원법.hwp
+             </a>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 설립목적
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="53" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="53" valign="TOP" width="577">
+             건설공사의 안전 및 품질 관리, 시설물의 안전 및 유지관리, 지하안전관리와 그 밖에 이와 관련된 사업을 효율적으로 수행함으로써 국민의 안전 보장 및 복리 증진에 기여
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 주무기관
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             국토교통부
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="30" valign="TOP" width="600">
+             - 홈페이지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             http://www.kalis.or.kr
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="13">
+            <col width="115">
+             <col width="445">
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="3" height="30" valign="TOP" width="600">
+             - 소재지
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="22">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="124">
+             경상남도
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="454">
+             진주시 에나로128번길 24 윤현빌딩
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             - 사업자번호
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             138-82-01426
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 기관연혁
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="952" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="952" valign="TOP" width="577">
+             <p>
+              ㅇ'95.01.05「시설물의 안전관리에 관한 특별법」공포(법률 제4922호)
+             </p>
+             <p>
+              ㅇ'95.04.19「시설안전기술공단」설립
+             </p>
+             <p>
+              ㅇ'96.03.15 건설안전분야 건설기술자 교육기관 지정(건설기술관리법시행령 제8조)
+              <br>
+               ㅇ'97.01.08 안전관리유공 국무총리표창 수상
+               <br>
+                ㅇ'00.06.28 "2000년도 공공부문 경영혁신" 기획예산처장관상 수상
+                <br>
+                 ㅇ'02.05.20 ISO 9001:2001 품질경영시스템 인증 취득
+                 <br>
+                  ㅇ'02.07.15「한국시설안전기술공단」으로 명칭 변경(시특법 개정)
+                  <br>
+                   ㅇ'06.03.17 2006 산업안전경영대상- 공공행정부문 시설안전관리대상 수상
+                   <br>
+                    ㅇ'06.10.31 2005 재난 안전관리 우수기관 대통령 표창 수상
+                    <br>
+                     ㅇ'07.12.11 제8회 공공혁신전국대회 업무성과 부문 대상
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </p>
+             <p>
+              ㅇ'08.03.21「한국시설안전공단」으로 명칭 변경(시특법 개정)
+              <br>
+               ㅇ'08.03.27 2008 산업안전경영대상- 시설안전관리대상 수상
+               <br>
+                ㅇ'09.12.15 "공공기관 재난관리 평가 우수기관" 행정안전부장관 표창
+                <br>
+                 ㅇ'10.10.04 "공공기관 재난관리 평가 우수기관" 국무총리 표창
+                </br>
+               </br>
+              </br>
+             </p>
+             <p>
+              ㅇ'10.10.06 하자심사·분쟁조정위원회 사무국 설치
+             </p>
+             <p>
+              ㅇ'11.02.15 시설안전 연구소 설립
+             </p>
+             <p>
+              ㅇ'12.01.01 특수교유지관리센터 설립
+              <br>
+               ㅇ'17.04.27 시설물의 안전 및 유지관리에 관한 특별법 전부개정 공포
+               <br>
+                (법률 제14545호)
+                <br>
+                 ㅇ'17.06.16 공공기관 경영평가 A등급 획득
+                </br>
+               </br>
+              </br>
+             </p>
+             <p>
+              ㅇ'17.06.30 진주혁신도시 지방이전 완료
+             </p>
+             <p>
+              ㅇ'17.09.29 시설물의안전및유지관리지원센터 신설
+              <br>
+               ㅇ'18.04.27 국가내진센터 신설
+               <br>
+                ㅇ'18.05.28 국가시설종합상황실 개소
+                <br>
+                 ㅇ'18.06.02 공공기관 경영평가 2년 연속 A등급 획득
+                 <br>
+                  ㅇ'18.06.26 재난관리평가 최우수기관 선정
+                  <br>
+                   ㅇ'20.02.24 건축물관리지원센터 신설
+                   <br>
+                    ㅇ'20.06.09「국토안전관리원법」공포(법률 제17447호)
+                    <br>
+                     ㅇ'20.07.01 기반시설본부(前 시설관리본부) 신설
+                     <br>
+                      ㅇ'20.12.10 국토안전관리원 출범 및 지사신설(수도권,중부,강원,영남,호남)
+                      <br>
+                       ㅇ'21.07.07 그린리모델링 창조센터 지정
+                       <br>
+                        ㅇ'21.08.01 재난안전본부(前 재난안전기획단),
+                        <br>
+                         시설안전관리단(前 안전진단본부) 신설
+                         <br>
+                          ㅇ'22.07.01 한국건설관리공사 고용승계 완료
+                          <br>
+                           ㅇ'23.02.03 바닥충격음 성능검사기관 지정
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </p>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 주요 기능 및 역할
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="250" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="250" valign="TOP" width="577">
+             <p>
+              ㅇ건설공사의 안전 및 품질관리에 관한 사업
+             </p>
+             <p>
+              ㅇ시설물의 안전 및 유지관리에 관한 사업
+             </p>
+             <p>
+              ㅇ지하안전관리에 관한 사업
+             </p>
+             <p>
+              ㅇ건설공사의 안전 및 품질관리, 시설물의 안전 및 유지관리, 지하안전관리에 관한
+              <br>
+               기술의 연구·개발·지도·보급 및 교육 사업
+               <br>
+                ㅇ건설공사의 안전 및 품질관리, 시설물의 안전 및 유지관리, 지하안전관리에 대한
+                <br>
+                 정보체계의 구축 및 통계에 관한 사업
+                 <br>
+                  ㅇ국가, 지방자치단체 및「공공기관의 운영에 관한 법률」에 따른 공공기관으로부터   위탁 받은 사업
+                 </br>
+                </br>
+               </br>
+              </br>
+             </p>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="568">
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="2" height="31" valign="TOP" width="600">
+             ◈ 경영목표 및 전략
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="1998" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="1998" valign="TOP" width="577">
+             <span>
+              □ 중장기 경영목표(2024∼2028)
+              <br>
+               <br>
+                ㅇ미션 : 안전하고 편리한 국토를 조성하여 국민의 행복을 책임진다
+                <br>
+                 <br>
+                  ㅇ비전 : 국민의 안전한 삶을 만들어가는 국토안전 선도기관
+                  <br>
+                   <br>
+                    ㅇ핵심가치 : 안전, 전문성, 상생, 신뢰
+                    <br>
+                     <br>
+                      ㅇ경영방침 : 현장중심, 창의혁신, 소통협력, 투명경영
+                      <br>
+                       <br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </span>
+             <span>
+              ㅇ전략방향
+              <br>
+               - 사각지대 없는 건설 및 지하 안전관리 선도
+               <br>
+                - 지속가능한 시설물 안전관리 강화
+                <br>
+                 - 미래지향 국토안전 생태계 조성
+                 <br>
+                  - 책임있는 경영혁신으로 국민신뢰 확보
+                 </br>
+                </br>
+               </br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span>
+              <br>
+               <br>
+                □ 경영목표(핵심성과지표)
+                <br>
+                 <br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </span>
+             <span>
+              ㅇ경영목표 1. 건설현장 안전사고 감축
+              <br>
+               <br>
+                - 지표 1. 건설공사 사고 사망자 절반 감축
+                <br>
+                </br>
+               </br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·건설공사 현장의 사고사망자 '23년 대비 50% 감축
+             </span>
+             <span>
+              <br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              연도별 목표(명): ('24년)318, ('25년)280, ('26년)238, ('27년)201
+             </span>
+             <span style="font-size:10pt ;">
+              , ('28년)181
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              <br>
+              </br>
+             </span>
+             <span>
+              <br>
+               - 지표 2. 공동(空洞) 발견 성과 2.5배 확대
+               <br>
+               </br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+              지하함몰 예방을 위하여 지반탐사를 통해 발견한 공동의 개수
+              <br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              연도별 목표(개):
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              ('24년)210, ('25년)252, ('26년)303,
+             </span>
+             <span style="font-size:10pt ;">
+              ('27년)
+             </span>
+             <span style="font-size:10pt ;">
+              363
+             </span>
+             <span style="font-size:10pt ;">
+              ,
+             </span>
+             <span style="font-size:10pt ;">
+              ('28년)
+             </span>
+             <span style="font-size:10pt ;">
+              363
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              <br>
+              </br>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+              <br>
+               ㅇ경영목표 2. 시설물 안전도 확보
+               <br>
+                <br>
+                 - 지표 3. 시설물 안전도 95% 달성
+                 <br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              「시설물안전법」에 따른 제1
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+              2종 시설물의 A
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+              B등급 시설물 95%, 제3종 시설물의 A·B등급 시설물 80% 이상 유지
+              <br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+              연도별 목표(%):
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              제
+             </span>
+             <span style="font-size:10pt ;">
+              1
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              ·2종 시설물 ('24년) ~
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              ('28년)
+             </span>
+             <span style="font-size:10pt ;">
+              95, 제3종시설물
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              ('24년)79, ('25년)80, ('26년)81
+             </span>
+             <span style="font-size:10pt ;">
+              , ('27년)82
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              , ('28년)82.5
+             </span>
+             <span style="font-size:10pt ;">
+              <br>
+               <br>
+               </br>
+              </br>
+             </span>
+             <span>
+              - 지표 4. 취약 시설물 안전율 2배 향상
+              <br>
+              </br>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+              소규모 취약시설의 안전조치 완료율
+              <br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+              연도별 목표(%): ('24년)55.56, ('25년)63.34, ('26년)69.04, ('27년)73.18
+             </span>
+             <span style="font-size:10pt ;">
+              , ('28년)76.11
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              <br>
+              </br>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+              <br>
+               ㅇ경영목표 3. 안전산업 민간성장 지원 선도
+               <br>
+               </br>
+              </br>
+             </span>
+             <span>
+              <br>
+               - 지표 5. 국토안전 빅데이터 플랫폼 활성화
+               <br>
+               </br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·국토안전 빅데이터 플랫폼 활성화를 위해 4가지 성과목표 (예산확보, 분석서비스 개발, 인프라 구축률, 데이터기반 행정실태점검)
+             </span>
+             <span>
+              달성률
+              <br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+              연도별 목표(비계량): 4가
+             </span>
+             <span style="font-size:10pt ;">
+              지 성과목표 연도별 로드맵에 따라 추진
+              <br>
+              </br>
+             </span>
+             <span>
+              <br>
+               - 지표 6. 동반성장 평가 최우수 유지
+               <br>
+               </br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+              중소벤처기업부 동반성장위원회 주관 공공기관 동반성장 평가 결과
+              <br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              연도별 목표(등급):
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              ('24년) ~
+             </span>
+             <span style="font-size:10pt ;">
+              ('28년)
+             </span>
+             <span style="font-size:10pt ;">
+              최
+             </span>
+             <span style="font-size:10pt ;">
+              우
+             </span>
+             <span>
+              수
+              <br>
+              </br>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+              <br>
+               ㅇ경영목표 4. 국민신뢰 최우수 기관
+               <br>
+               </br>
+              </br>
+             </span>
+             <span>
+              <br>
+               -
+              </br>
+             </span>
+             <span>
+              지표 7. 국민소통 S등급 달성
+              <br>
+              </br>
+             </span>
+             <span style="font-size:10pt ;">
+              ·기획재정부 고객만족도 평가 결과 “만족(S)” 달성 사업 비중
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+              <br>
+              </br>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+              연도별 목표(%) : ('24년)80, ('25년)90, ('26년)90, ('27년)100
+             </span>
+             <span style="font-size:10pt ;">
+              , ('28년)100
+             </span>
+             <span style="font-size:10pt ;">
+              <br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+              <br>
+               - 지표 8. 종합청렴도 1등급 달성
+               <br>
+               </br>
+              </br>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·국민권익위원회 주관 공공기관 청렴도 평가에서 1등급 달성
+              <br>
+              </br>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+              ·
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              연도별 목표(등급):
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              ('24년)2, ('25년)1, ('26년)1,
+             </span>
+             <span style="font-size:10pt ;">
+              ('27년)
+             </span>
+             <span style="font-size:10pt ;">
+              1
+             </span>
+             <span style="font-size:10pt ;">
+              ,
+             </span>
+             <span style="font-size:10pt ;">
+              ('28년)
+             </span>
+             <span style="font-size:10pt ;">
+              1
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span>
+             </span>
+             <span style="font-size:10pt ;">
+             </span>
+             <span style="font-size:10pt ;">
+              <br>
+               <br>
+                <br>
+                </br>
+               </br>
+              </br>
+             </span>
+             <span>
+              □ 중장기 경영전략(전략과제)
+              <br>
+               <br>
+                ㅇ전략방향 1. 사각지대 없는 건설 및 지하 안전관리 선도
+                <br>
+                 - 촘촘한 건설현장 안전망 구축
+                 <br>
+                  - 건설공사 품질관리 강화
+                  <br>
+                   - 선제적 지하공간 안전관리 내실화
+                   <br>
+                    - 신속한 사고대응과 재발사고 예방
+                    <br>
+                     <br>
+                      ㅇ전략목표 2. 지속가능한 시설물 안전관리 강화
+                      <br>
+                       - 예방중심 시설물 안전 및 성능관리 강화
+                       <br>
+                        - 시설물 유지관리 디지털화
+                        <br>
+                         - 국민참여형 건축물 관리체계 정착
+                         <br>
+                          - 국민 생활 속 건축품질 갈등 해소
+                          <br>
+                           <br>
+                            ㅇ전략목표 3. 미래지향 국토안전 생태계 조성
+                            <br>
+                             - 국토안전산업 민간성장 지원 확대
+                             <br>
+                              - 국토안전 연구개발 및 안전정책 확산
+                              <br>
+                               - 디지털 플랫폼 및 신성장동력 확보
+                               <br>
+                                - 탄소중립 건축물 전환 지원 확대
+                                <br>
+                                 <br>
+                                  ㅇ전략목표4. 책임있는 경영혁신으로 국민 신뢰 확보
+                                  <br>
+                                   - 경영자원 효율화로 조직경쟁력 제고
+                                   <br>
+                                    - 일하는 방식 혁신과 상생문화 정착
+                                    <br>
+                                     - 공정하고 투명한 ESG 경영 실천
+                                     <br>
+                                     </br>
+                                    </br>
+                                   </br>
+                                  </br>
+                                 </br>
+                                </br>
+                               </br>
+                              </br>
+                             </br>
+                            </br>
+                           </br>
+                          </br>
+                         </br>
+                        </br>
+                       </br>
+                      </br>
+                     </br>
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </span>
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="577">
+             주요사업에 대해서는 공시항목 &lt;36. 주요사업&gt;을 참고하시기 바랍니다.
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="14">
+            <col width="81">
+             <col width="47">
+              <col width="265">
+               <col width="148">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" colspan="5" height="31" valign="TOP" width="600">
+             ◈ 기관장
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" height="30" valign="MIDDLE" width="90">
+             김일환
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="56">
+             (임기:
+            </td>
+            <td align="CENTER" height="30" valign="MIDDLE" width="274">
+             2022.02.24 ~ 2025.02.23
+            </td>
+            <td align="LEFT" height="30" valign="TOP" width="157">
+             )
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="30" valign="TOP" width="577">
+             [주요경력]
+            </td>
+           </tr>
+           <tr>
+            <td align="LEFT" height="191" valign="TOP" width="23">
+            </td>
+            <td align="LEFT" colspan="4" height="191" valign="TOP" width="577">
+             ㅇ 국토안전관리원 원장
+             <br>
+              ㅇ 새만금개발청 차장
+              <br>
+               ㅇ 국토교통부 중앙토지수용위원회 상임위원
+               <br>
+                ㅇ 국토교통부 대전지방국토관리청 청장
+                <br>
+                 ㅇ 행정중심복합도시건설청 공공건축추진단장
+                 <br>
+                  ㅇ 국토교통부 신도시개발과장
+                  <br>
+                   ㅇ 국토교통부 건축기획과장
+                   <br>
+                    ㅇ 국토교통부 주택정비과장
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="21">
+          <colgroup>
+           <col width="12">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="30" valign="TOP" width="21">
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <table class="nb" width="600">
+          <colgroup>
+           <col width="591">
+           </col>
+          </colgroup>
+          <tbody>
+           <tr>
+            <td align="LEFT" height="32" valign="TOP" width="600">
+             ◈ 조직현황
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         <img height="600" src="/upload/report/2024/01/05/2024010509910724/국토안전관리원 조직도.jpg" width="600">
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="599">
+           <colgroup>
+            <col width="141">
+             <col width="141">
+              <col width="141">
+               <col width="140">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              기준일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="150">
+              2024년 01월 01일
+             </td>
+             <td align="CENTER" height="30" valign="TOP" width="150">
+              제출일
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="149">
+              2024년 01월 05일
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="21">
+           <colgroup>
+            <col width="12">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="21">
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table class="nb" width="600">
+           <colgroup>
+            <col width="591">
+            </col>
+           </colgroup>
+           <tbody>
+            <tr>
+             <td align="LEFT" height="30" valign="TOP" width="600">
+              기관 공시 담당자
+             </td>
+            </tr>
+           </tbody>
+          </table>
+          <table border="1" width="601">
+           <colgroup>
+            <col width="96">
+             <col width="111">
+              <col width="228">
+               <col width="130">
+               </col>
+              </col>
+             </col>
+            </col>
+           </colgroup>
+           <thead>
+            <tr>
+             <th align="CENTER" height="31" valign="MIDDLE" width="105">
+              구분
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="120">
+              담당자명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="237">
+              부서명
+             </th>
+             <th align="CENTER" height="31" valign="MIDDLE" width="139">
+              전화번호
+             </th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              작성자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              박대훈
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              기획조정실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              055-771-4685
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              감독자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              김범준
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              혁신성과실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              055-771-4651
+             </td>
+            </tr>
+            <tr>
+             <td align="CENTER" height="30" valign="MIDDLE" width="105">
+              확인자
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="120">
+              문동현
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="237">
+              감사실
+             </td>
+             <td align="CENTER" height="30" valign="MIDDLE" width="139">
+              055-771-4614
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </img>
+        </img>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2024010509910724"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0225",
+                	disclosureNo:"2024010502741976",
+                	reportFormRootNo:"10101"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

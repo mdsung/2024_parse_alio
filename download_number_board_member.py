@@ -47,7 +47,9 @@ def get_a_dataframe(apbaId):
 
 
 def save_a_dataframe(dataframe, apbaNa):
-    dataframe.to_csv(f"data/processed/{apbaNa}.csv", index=False, encoding="utf-8-sig")
+    dataframe.to_csv(
+        f"data/raw/임직원수/{apbaNa}.csv", index=False, encoding="utf-8-sig"
+    )
 
 
 def main():
