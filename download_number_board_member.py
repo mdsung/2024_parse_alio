@@ -11,7 +11,7 @@ driver = webdriver.Edge()
 
 
 def read_json():
-    with open("apba.json") as f:
+    with open("data/raw/apba.json") as f:
         data = json.load(f)
     return data
 
@@ -22,11 +22,13 @@ def create_url(apbaId):
 
 def get_html(url):
     driver.get(url)
+    time.sleep(1)
     return BeautifulSoup(driver.page_source, "html.parser")
 
 
 def get_table(soup):
     tables = soup.find_all("table")
+    print(len(tables))
     return tables[5]  # 6번째 테이블이 임직원 정보 테이블임
 
 
@@ -37,7 +39,10 @@ def transform_table(table):
 def get_a_dataframe(apbaId):
     url = create_url(apbaId)
     soup = get_html(url)
+    print("=" * 100)
+    print(soup)
     table = get_table(soup)
+    print(table)
     return transform_table(table)
 
 
@@ -50,10 +55,10 @@ def main():
     for d in jsons:
         apbaId = d["apbaId"]
         apbaNa = d["apbaNa"]
+        print(apbaNa)
         dataframe = get_a_dataframe(apbaId)
         save_a_dataframe(dataframe, apbaNa)
-        time.sleep(1)  # for preventing server block
-        # break
+        # time.sleep(1)  # for preventing server block
     driver.quit()
 
 
