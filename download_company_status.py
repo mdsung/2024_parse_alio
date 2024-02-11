@@ -1,16 +1,16 @@
 import collections
-import datetime
 import json
 import time
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from tqdm import tqdm
 
-collections.Callable = collections.abc.Callable
+collections.Callable = (
+    collections.abc.Callable
+)  # BeutifulSoup의 기능을 사용하기 위해서 필요한 코드
 driver = webdriver.Edge()
 
 
@@ -36,7 +36,9 @@ def click_nolink_for_scrollDown(driver, scrollDown_num=100):
 def get_html(url):
     driver.get(url)
     time.sleep(0.5)
-    click_nolink_for_scrollDown(driver, 10)
+    click_nolink_for_scrollDown(
+        driver, 10
+    )  # 아랫까지 모두 로딩하기 위해서 scroll down을 최대한 한 상태에서 parsing을 한다.
     return BeautifulSoup(driver.page_source, "html.parser")
 
 
