@@ -1,0 +1,1824 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="강원대학교병원" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2023/05/08/2023050809778381/ci.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        강원대학교병원
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        임원현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2024년
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <div id="other">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="4. 임원 현황">
+              4. 임원 현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="임원 현황">
+              임원 현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="4. 임원 현황">
+          4. 임원 현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            강원대학교병원
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="임원 현황">
+          임원 현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="623">
+         <colgroup>
+          <col width="129">
+           <col width="109">
+            <col width="109">
+             <col width="240">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="60" valign="MIDDLE" width="138">
+            직위
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="118">
+            변경 전
+            <br>
+             성명
+            </br>
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="118">
+            변경 후
+            <br>
+             성명
+            </br>
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="249">
+            변경사유
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            이해숙
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            구연희
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            교육부 직제개편
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="62">
+            <col width="101">
+             <col width="40">
+              <col width="62">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            김헌영
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            이사장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="159">
+            2020년 06월 07일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            재직기간
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            (현)강원대학교 총장
+            <br>
+             (현)아이디어펙토리-강원 사업단장
+             <br>
+              (전)강원의료융합인재양성센터장
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            이사장 당연직 (국립대학병원설치법)
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="62">
+            <col width="101">
+             <col width="40">
+              <col width="62">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            상임기관장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남우동
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            병원장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="159">
+            2021년 07월 30일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            재직기간
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            (현)강원대학교병원장
+            <br>
+             (전)강원대학교병원 기획조정실장
+             <br>
+              (전)강원대학교병원 교육수련실장
+              <br>
+               (전)강원대학교병원 정형외과
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            강원대학교병원장 이사 당연직 (국립대학병원설치법)
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="62">
+            <col width="101">
+             <col width="40">
+              <col width="62">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            류세민
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            이사(의학전문대학원장)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="159">
+            2023년 09월 01일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            재직기간
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="91" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="91" valign="TOP" width="480">
+            <p>
+             (현)강원대 의과대학장 및 의학전문대학원장
+            </p>
+            <p>
+             (전)강원대학교병원 기획조정실장
+            </p>
+            <p>
+             (전)강원대학교병원 흉부외과장
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            의전원장 당연직이사 (국립대학병원설치법)
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="62">
+            <col width="101">
+             <col width="40">
+              <col width="62">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            조용범
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="159">
+            2023년 08월 03일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            재직기간
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            (현)기획재정부 사회예산심의관
+            <br>
+             (전)대통령비서실 경제정책비서관실 선임행정관
+             <br>
+              (전)기획재정부 예산총괄과장
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            기획재정부 당연직이사 (국립대학병원설치법)
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="62">
+            <col width="101">
+             <col width="40">
+              <col width="62">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            구연희
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="159">
+            2024년 01월 01일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            재직기간
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="91" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="91" valign="TOP" width="480">
+            <p>
+             (현)교육부 지역인재정책관
+             <br>
+              (전)강원대학교 사무국장
+             </br>
+            </p>
+            <p>
+             (전)교육부 평생미래교육국장
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            교육부 당연직이사 (국립대학병원설치법)
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="62">
+            <col width="101">
+             <col width="40">
+              <col width="62">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            정통령
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="159">
+            2023년 12월 13일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            재직기간
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="91" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="91" valign="TOP" width="480">
+            <p>
+             (현)보건복지부 공공보건정책관
+            </p>
+            <p>
+             (전)감염병위기대응국 위기대응총괄과장
+            </p>
+            <p>
+             (전)보건복지부 건강보험정책국 보험급여과장
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            보건복지부 당연직이사 (국립대학병원설치법)
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="62">
+            <col width="101">
+             <col width="40">
+              <col width="62">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            김명선
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="159">
+            2022년 08월 12일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            재직기간
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            (현)강원특별자치도 행정부지사
+            <br>
+             (전)강원도 기획조정실장
+             <br>
+              (전)자치분권위원회 자치분권국장
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            강원특별자치도 당연직이사 (국립대학병원설치법)
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            최황규
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 05월 14일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 05월 13일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            (현) 강원대학교 교수
+            <br>
+             (전) 강원대학교 산학연구부총장
+             <br>
+              (전) 강원대학교 교육연구부총장
+              <br>
+               (전) 강원대학교 IT대학 학장
+               <br>
+                (전) 강원대학교 서울본부 본부장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            이사회 추천→교육부장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            길천수
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 08월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 08월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            (현)한국기후변화연구원 비상임감사
+            <br>
+             (전)대한적십자사강원도지사 재정감독
+             <br>
+              (전)농협중앙회 춘천시지부장
+              <br>
+               (전)농협중앙회 강원지역본부 부본부장
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            이사회추천→교육부장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            송세언
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 08월 27일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 08월 26일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="63" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="63" valign="TOP" width="480">
+            <p>
+             (전)초당출판사 대표
+            </p>
+            <p>
+             (전)한국승강기안전공단 교육홍보이사
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            이사회추천→교육부장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="162">
+            <col width="101">
+             <col width="190">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="171">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="110">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="199">
+            공석
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="3" height="53" valign="TOP" width="480">
+            이사회추천→교육부장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="3" height="53" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="38" valign="MIDDLE" width="120">
+            당연직여부
+           </td>
+           <td align="LEFT" colspan="3" height="38" valign="TOP" width="480">
+            선임직
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="162">
+            <col width="101">
+             <col width="190">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="171">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="110">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="199">
+            공석
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="3" height="53" valign="TOP" width="480">
+            이사회추천→교육부장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="3" height="53" valign="TOP" width="480">
+            국립대학병원설치법 제10조
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="38" valign="MIDDLE" width="120">
+            당연직여부
+           </td>
+           <td align="LEFT" colspan="3" height="38" valign="TOP" width="480">
+            선임직
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="599">
+         <colgroup>
+          <col width="141">
+           <col width="141">
+            <col width="141">
+             <col width="140">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="150">
+            기준일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="150">
+            2024년 01월 01일
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="150">
+            제출일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="149">
+            2024년 01월 15일
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            기관 공시 담당자
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="601">
+         <colgroup>
+          <col width="96">
+           <col width="111">
+            <col width="228">
+             <col width="130">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="31" valign="MIDDLE" width="105">
+            구분
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="120">
+            담당자명
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="237">
+            부서명
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="139">
+            전화번호
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            작성자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            유정선
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            기획예산과
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            033-258-9341
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            감독자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            송민정
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            기획예산과
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            033-258-9340
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            확인자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            황석중
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            감사실
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            033-258-9311
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2024011509917485"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0004",
+                	disclosureNo:"2024011602748061",
+                	reportFormRootNo:"20305"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

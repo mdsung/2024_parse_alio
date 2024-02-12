@@ -1,0 +1,2122 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="대한무역투자진흥공사" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2024/02/01/2024020109924041/kotra ci.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        대한무역투자진흥공사
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        임원현황_대한무역투자진흥공사
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2024년
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <div id="other">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="4. 임원 현황">
+              4. 임원 현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="임원 현황">
+              임원 현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="4. 임원 현황">
+          4. 임원 현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            대한무역투자진흥공사
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="임원 현황">
+          임원 현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="623">
+         <colgroup>
+          <col width="129">
+           <col width="109">
+            <col width="109">
+             <col width="240">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="60" valign="MIDDLE" width="138">
+            직위
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="118">
+            변경 전
+            <br>
+             성명
+            </br>
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="118">
+            변경 후
+            <br>
+             성명
+            </br>
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="249">
+            변경사유
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            김기중
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            공석
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            노동이사 정년퇴직('23.12.31.)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임기관장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            유정열
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            사장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 05월 20일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 05월 19일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            대통령비서실 경제수석실 산업통상비서관
+            <br>
+             산업통상자원부 산업혁신실 산업정책실 실장
+             <br>
+              방위사업청 본부 차장
+              <br>
+               산업통상자원부 소재부품정책관
+               <br>
+                외교부 주일본대사관 공사참사관
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            임원추천위원회 복수추천 → 산업통상자원부장관 제청 → 대통령 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            박원동
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 11월 14일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2025년 11월 13일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            현대엔지니어링 경영지원본부 자문역
+            <br>
+             국가정보원 국장
+             <br>
+              국회사무처 파견관(전문위원)
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            임원추천위원회 복수추천 → 운영위원회 심의/의결 → 기획재정부 장관 제청 → 대통령 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            김윤태
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            부사장겸 경영지원본부장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 08월 25일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2023년 08월 24일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            중소중견기업본부장
+            <br>
+             전시컨벤션실장
+             <br>
+              해외진출상담센터장
+              <br>
+               유럽지역본부장겸 프랑크푸르트무역관장
+               <br>
+                런던무역관장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            사장이 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            전춘우
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            중소중견기업본부장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2022년 10월 25일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 24일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            기획조정실장
+            <br>
+             미래전략실장
+             <br>
+              디지털혁신실장
+              <br>
+               방콕무역관장
+               <br>
+                비서실장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            사장이 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            정외영
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            혁신성장본부장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 12월 31일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2023년 12월 30일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            일본지역본부장겸 도쿄무역관장
+            <br>
+             로스앤젤레스무역관장
+             <br>
+              해외진출상담센터장
+              <br>
+               수출기업화지원실 수출첫걸음지원팀장
+               <br>
+                알마티무역관장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            사장이 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이지형
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            경제통상협력본부장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 16일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2025년 06월 15일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            투자기획실장
+            <br>
+             북미지역본부장겸 뉴욕무역관장
+             <br>
+              실리콘밸리무역관장
+              <br>
+               투자기획실 투자전략팀장
+               <br>
+                투자유치실 유치총괄팀장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            사장이 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이정훈
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            디지털무역투자본부장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 16일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2025년 06월 15일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            CIS지역본부장겸 모스크바무역관장
+            <br>
+             해외시장정보실장
+             <br>
+              글로벌일자리실 해외취업팀장
+              <br>
+               멜버른무역관장
+               <br>
+                수출지원실 수출유망기업팀장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            사장이 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이상현
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 08월 17일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2023년 08월 16일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            청와대 국가안보실(외교정책비서관실) 선임행정관
+            <br>
+             청와대 정무수석실(정무, 자치발전 비서관실) 선임행정관
+             <br>
+              국회의원 보좌관
+              <br>
+               (주)타임홀딩스 상무
+               <br>
+                (주)유니온 네트웍스 이사
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            임원추천위원회 추천 → 산업통상자원부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이은정
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 08월 17일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2023년 08월 16일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            한국맥널티 대표이사
+            <br>
+             국가산학협력위원회 위원
+             <br>
+              동반성장위원회 위원
+              <br>
+               경찰청 성과평가위원회 위원
+               <br>
+                여성가족부 정책자문위원회 위원
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            임원추천위원회 추천 → 산업통상자원부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="162">
+            <col width="101">
+             <col width="190">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="171">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="110">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="199">
+            공석
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="3" height="30" valign="TOP" width="480">
+            임원추천위원회 추천 → 산업통상자원부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="3" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            당연직여부
+           </td>
+           <td align="LEFT" colspan="3" height="30" valign="TOP" width="480">
+            선임직
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="62">
+            <col width="101">
+             <col width="40">
+              <col width="62">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            조익노
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="159">
+            2023년 09월 08일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            재직기간
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="145" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="145" valign="TOP" width="480">
+            산업통상자원부 무역정책관
+            <br>
+             산업통상자원부 고위공무원(2050 탄소중립녹색성장위원회 사무처 파견)
+             <br>
+              <span>
+               산업통상자원부 운영지원과장
+               <br>
+                산업통상자원부 반도체디스플레이과장
+                <br>
+                 산업통상자원부 수출입과장
+                </br>
+               </br>
+              </span>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            당연직
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            노재연
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 10월 23일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2025년 10월 22일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            영남대학교 무역학부 조교수
+            <br>
+             국제원산지정보원 정책연구팀 팀장
+             <br>
+              서울대학교 아시아연구소 객원연구원
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            임원추천위원회 추천 → 산업통상자원부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이순열
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 10월 23일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2025년 10월 22일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            김·장 법률사무소 외국변호사
+            <br>
+             Davis Polk &amp; Wardwell LLP 미국변호사
+             <br>
+              법무법인 세종 외국변호사
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            임원추천위원회 추천 → 산업통상자원부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            장명수
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 10월 23일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2025년 10월 22일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="142" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="142" valign="TOP" width="480">
+            <p>
+             주아르헨티나대사
+             <br>
+              충청북도 국제관계대사
+             </br>
+            </p>
+            <p>
+             주콜롬비아대사
+             <br>
+              외교부 중남미국장
+             </br>
+            </p>
+            <p>
+             외교통상부 경제기구과장
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            임원추천위원회 추천 → 산업통상자원부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제8조(임원의 임면)
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="599">
+         <colgroup>
+          <col width="141">
+           <col width="141">
+            <col width="141">
+             <col width="140">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="150">
+            기준일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="150">
+            2023년 12월 31일
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="150">
+            제출일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="149">
+            2024년 01월 10일
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            기관 공시 담당자
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="601">
+         <colgroup>
+          <col width="96">
+           <col width="111">
+            <col width="228">
+             <col width="130">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="31" valign="MIDDLE" width="105">
+            구분
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="120">
+            담당자명
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="237">
+            부서명
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="139">
+            전화번호
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            작성자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            이한나
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            인사팀
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            02-3460-7036
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            감독자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            이금하
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            기획조정실
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            02-3460-7060
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            확인자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            전미호
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            감사실
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            02-3460-7010
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2024011009915507"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0054",
+                	disclosureNo:"2024011102746444",
+                	reportFormRootNo:"20305"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

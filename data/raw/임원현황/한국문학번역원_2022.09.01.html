@@ -1,0 +1,2313 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="한국문학번역원" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2023/04/05/2023040509744920/한국문학번역원 ci 기본형.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        한국문학번역원
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        임원현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2022년
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <div id="other">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="3. 임원 현황">
+              3. 임원 현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="임원 현황">
+              임원 현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="3. 임원 현황">
+          3. 임원 현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            한국문학번역원
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="임원 현황">
+          임원 현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="623">
+         <colgroup>
+          <col width="129">
+           <col width="109">
+            <col width="109">
+             <col width="240">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="60" valign="MIDDLE" width="138">
+            직위
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="118">
+            변경 전
+            <br>
+             성명
+            </br>
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="118">
+            변경 후
+            <br>
+             성명
+            </br>
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="249">
+            변경사유
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="76" valign="TOP" width="118">
+            <br>
+             윤성천
+            </br>
+           </td>
+           <td align="CENTER" height="76" valign="TOP" width="118">
+            <br>
+             이은복
+            </br>
+           </td>
+           <td align="CENTER" height="76" valign="TOP" width="249">
+            문체부 예술정책관 정부인사발령
+            <br>
+             통지에 따라 당연직 이사 변경
+             <br>
+              (2022. 8. 22.)
+             </br>
+            </br>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            상임기관장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            곽효환
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            원장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 05월 14일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 05월 13일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            대산문화재단 상무
+            <br>
+             경기대학교 한류문화대학원 겸임교수
+             <br>
+              문체부 문학진흥정책위원회 위원/부위원장
+              <br>
+               (사)한국작가회의 이사
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조 제1항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            송기정
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            이화여자대학교 불어불문학과 교수
+            <br>
+             전북대학교 불문학과 전임강사
+             <br>
+              파리제3대학교 비교문학과/대학원 초빙교수
+              <br>
+               한국프랑스학회장(2011), 한국불어불문학회장(2018)
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            한기욱
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            인제대학교 영문과 교수, 평론가, 번역가
+            <br>
+             계간 『창작과비평』 주간(2016~현재)
+             <br>
+              계간 『창작과비평』 상임편집위원(2001~2015)
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            백원담
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            성공회대학교 중어중문학과 교수, 번역가
+            <br>
+             성공회대학교 동아시아 연구소장(2003~현재)
+             <br>
+              중국 상하이대학 대학원 문화연구학과 해외교수(2007~현재)
+              <br>
+               계간 『황해문화』편집위원(2003~현재)
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            권순예
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            문화융성위원(2013~2015)
+            <br>
+             동해대학교 국문과 전임교수(2002)
+             <br>
+              이상문학상 대상(2002), 동인문학상(2005)
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            서덕순
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            경희대학교 국어국문학과 교수, 소설가
+            <br>
+             인천재능대학 문예창작과 교수(1999~2003)
+             <br>
+              한무숙문학상, 김준성문학상, 백신애문학상 수상
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            우찬제
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            서강대학교 국어국문학과 교수, 평론가
+            <br>
+             국제비교한국학회 회장(2020.8.~현재)
+             <br>
+              대산문학상, 팔봉비평문학상, 김환태평론문학상 등 수상
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            함정임
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            동아대학교 한국어문과 교수, 소설가
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            유성호
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            한양대학교 국어국문학과 교수, 평론가
+            <br>
+             &lt;대산문화&gt; 편집자문위원(2010~2015)
+             <br>
+              팔봉비평문학상, 김환태평론문학상, 대산문학상 등 수상
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            정끝별
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            이화여자대학교 국어국문학과 교수, 시인
+            <br>
+             명지대학교 국어국문학과 교수(2004~2014)
+             <br>
+              유심작품상, 소월시문학상, 청마문학상 수상
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            오형엽
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            고려대학교 국어국문학과 교수, 평론가
+            <br>
+             수원대학교 국어국문학과 조교수, 부교수(2005~2013)
+             <br>
+              김달진문학상(2013), 편운문학상(2011) 평론부문 수상 등
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            박종소
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            서울대학교 노어노문학과 교수, 번역가
+            <br>
+             한국 슬라브유라시아학회 학술이사(2010.1.~2011.12.)
+             <br>
+              서울대학교 러시아연구소 소장(2008.9.~2010.8.)
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            주효진
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            가톨릭관동대학교 의학과 교수
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            홍순철
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            BC에이전시 대표
+            <br>
+             북코스모스 저작권팀장(2000~2007)
+             <br>
+              한-EU 문화협력위원회 국내자문위원(2019~2021)
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            장온균
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 10월 02일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 10월 01일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            삼일회계법인 파트너(전무)
+            <br>
+             한국공인회계사회 평위원(현)
+             <br>
+              사단법인 온실가스검증협회 비상임 감사(전)
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            기관장 제청 → 문화체육관광부 장관 임명
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 2항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="62">
+            <col width="101">
+             <col width="40">
+              <col width="62">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이은복
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="181">
+            문체부 예술정책관
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="120">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="159">
+            2022년 08월 22일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="71">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            재직기간
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            문체부 예술정책관(현)
+            <br>
+             문체부 예술정책과장, 한류지원협력과장(전)
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            문화체육관광부 예술정책관 임명시
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            한국문학번역원 정관 제6조(임원의 임명) 3항
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="599">
+         <colgroup>
+          <col width="141">
+           <col width="141">
+            <col width="141">
+             <col width="140">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="150">
+            기준일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="150">
+            2022년 08월 22일
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="150">
+            제출일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="149">
+            2022년 09월 01일
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            기관 공시 담당자
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="601">
+         <colgroup>
+          <col width="96">
+           <col width="111">
+            <col width="228">
+             <col width="130">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="31" valign="MIDDLE" width="105">
+            구분
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="120">
+            담당자명
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="237">
+            부서명
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="139">
+            전화번호
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            작성자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            김지은
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            정책기획팀
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            02-6919-7713
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            감독자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임지원
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            정책기획팀
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            02-6919-7710
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            확인자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            이정근
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            경영기획본부
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            02-6919-7701
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2022090109632268"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0188",
+                	disclosureNo:"2022090102493356",
+                	reportFormRootNo:"20305"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>

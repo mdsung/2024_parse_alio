@@ -1,0 +1,4392 @@
+<html lang="ko">
+ <head>
+  <meta charset="utf-8">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0" name="viewport">
+     <meta content="" name="Description">
+      <meta content="website" property="og:type">
+       <meta content="" property="og:title">
+        <meta content="" property="og:description">
+         <meta content="" property="og:image">
+          <meta content="" property="og:url">
+           <meta content="" property="og:site_name">
+            <meta content="" name="Keywords">
+             <meta content="" name="Author">
+              <meta content="" name="robots">
+               <meta content="telephone=no" name="format-detection">
+                <title>
+                 ALIO : 공공기관 경영정보 공개시스템
+                </title>
+                <style>
+                 [v-cloak] > * {
+			display: none;
+		}
+                </style>
+                <script>
+                 //global 변수 정의
+        var GB_ctPath = "";			// 컨텍스트 경로
+        var GB_ctResPath = "/resources";		// 컨텍스트 + 리소스 경로
+        var GB_resPath = "";
+        var GB_alioYear = "2023"; // 알리오년도
+                </script>
+                <script src="/resources/js/jquery/jquery-1.11.1.min.js">
+                </script>
+                <script src="/resources/js/lib/slick.js">
+                </script>
+                <script src="/resources/vue/manifest.js?v=202109131">
+                </script>
+                <script src="/resources/vue/vendor.js?v=202109131">
+                </script>
+                <script src="/resources/vue/app.js?v=20230811">
+                </script>
+                <script src="/resources/js/page/portal/alioUtils.js?v=20220714">
+                </script>
+                <script src="/resources/js/page/portal/downloadUtils.js?v=202109131">
+                </script>
+                <script src="/resources/js/lib/jquery-ui.js">
+                </script>
+                <script src="/resources/js/lib/select2.min.js">
+                </script>
+                <link href="/resources/portal/css/lib/slick.css" rel="stylesheet" type="text/css">
+                 <link href="/resources/portal/css/common.css" rel="stylesheet" type="text/css">
+                  <!-- 공시 상세보고서 스타일적용시 필요 -->
+                  <link href="/resources/portal/css/report_new.css" rel="stylesheet" type="text/css">
+                   <link href="/resources/portal/css/lib/select2.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                     Vue.config.devtools = true;
+                    </script>
+                   </link>
+                  </link>
+                 </link>
+                </link>
+               </meta>
+              </meta>
+             </meta>
+            </meta>
+           </meta>
+          </meta>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <!-- head Start -->
+  <!-- head End -->
+  <!-- body Start -->
+  <div class="report_popup" id="report_popup">
+   <div id="p_header_wrap">
+    <div class="hl_area">
+     <h1>
+      <img alt="ALIO 공공기관 경영정보 공개시스템 All Public Information In-One" src="/resources/portal/images/common/report_logo.gif"/>
+     </h1>
+     <div class="org_name">
+      <span class="logo">
+       <img alt="한국사회복지협의회" onerror="this.src='/resources/portal/images/common/no_image.jpg'" src="/upload/report/2023/04/05/2023040509746232/1_ ci.jpg" style="width: 1000px;"/>
+      </span>
+      <div class="logo-txt">
+       <span>
+        한국사회복지협의회
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="hr_area">
+     <dl class="info01">
+      <dt>
+       보고서명
+      </dt>
+      <dd>
+       <span>
+        임원현황
+       </span>
+       <a class="btn_p01" href="javascript:void(0);">
+        PDF 다운로드
+       </a>
+      </dd>
+     </dl>
+     <dl class="info02">
+      <dt>
+       첨부파일
+      </dt>
+      <dd>
+       <select id="reportFileDown" name="reportFileDown" style="width: 400px;" title="검색조건을 선택하세요">
+        <option value="">
+         선택하세요
+        </option>
+       </select>
+       <a class="btn_p01" href="javascript:void(0);">
+        파일다운로드
+       </a>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div id="p_container_wrap" style="height: 100%;">
+    <div id="p_left_menu" style="width: 238px;">
+     <div class="menu_list">
+      <div class="quarter">
+       <select id="selectedDisclosureNo" name="selectedDisclosureNo" style="width: 100%;" title="분기를 선택하세요">
+        <option selected="selected">
+         2023년
+        </option>
+       </select>
+      </div>
+      <h3>
+       문서목차
+      </h3>
+      <div class="list02" style="overflow: hidden auto;">
+       <div>
+        <ul class="code_list">
+         <div id="other">
+          <div>
+           <ul class="code_list">
+            <li>
+             <a href="#toc-122" title="4. 임원 현황">
+              4. 임원 현황
+             </a>
+            </li>
+            <li>
+             <a href="#toc-123" title="임원 현황">
+              임원 현황
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </ul>
+       </div>
+      </div>
+      <a class="btn_close" href="#self" style="left: 238px;">
+      </a>
+     </div>
+    </div>
+    <div id="p_content" style="margin-left: 238px;">
+     <div class="txt_area" style="overflow: auto;">
+      <div class="disclosureNoClass doc_con">
+       <div id="doc-">
+        <p class="cover-title">
+         <a class="toc" href="#toc-122" name="toc-122" title="4. 임원 현황">
+          4. 임원 현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="RIGHT" height="30" valign="TOP" width="600">
+            한국사회복지협의회
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <p class="SECTION-1">
+         <a class="toc" href="#toc-123" name="toc-123" title="임원 현황">
+          임원 현황
+         </a>
+        </p>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="623">
+         <colgroup>
+          <col width="129">
+           <col width="109">
+            <col width="109">
+             <col width="240">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="60" valign="MIDDLE" width="138">
+            직위
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="118">
+            변경 전
+            <br>
+             성명
+            </br>
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="118">
+            변경 후
+            <br>
+             성명
+            </br>
+           </td>
+           <td align="CENTER" height="60" valign="MIDDLE" width="249">
+            변경사유
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임감사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            구본혁
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            윤한술
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임감사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            김현훈
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            장창수
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            노진영
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            조성철
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            자격 상실
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            이병관
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            하정두
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            자격 상실
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            최일섭
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            김영기
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            황진수
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            나춘균
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            강영신
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            남세도
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            이성희
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            박노숙
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            권태엽
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            박선원
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            문재철
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            박성욱
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            강기태
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            박원
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            이무승
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            양옥경
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            정태춘
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            오준
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            길호섭
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            유화영
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            송정부
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            이정기
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            이동모
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            정성기
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            임기 만료
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            공석
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            정제욱
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            신규 선임
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            공석
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            조범기
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            신규 선임
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            공석
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            황영기
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            신규 선임
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="138">
+            비상임이사
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            공석
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="118">
+            김현훈
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="249">
+            신규 선임
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임기관장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            김성이
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            회장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 01월 01일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2025년 12월 31일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            이화여자대학교 사회복지대학원 명예교수(현)
+            <br>
+             사회복지법인 자광재단 이사장(현)
+             <br>
+              제46대 보건복지부 장관
+              <br>
+               제16대 한국사회복지사협회 회장
+               <br>
+                제24대 한국사회복지교육협의회 회장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선출 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            김현훈
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            부회장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            서울시사회복지협의회장(현)
+            <br>
+             사회복지법인 행복창조 이사장(현)
+             <br>
+              한국재가노인복지협회장
+              <br>
+               은평구사회복지협의회장
+               <br>
+                일본 슈치인 대학 겸임교수
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            총회 선출 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            송미호
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            부회장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            나자레원 원장(현)
+            <br>
+             우봉복지재단 상임이사
+             <br>
+              경북사회복지협의회 부회장
+              <br>
+               한국노인복지시설협회 부회장
+               <br>
+                한국노인복지중앙회 부회장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            신정찬
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 06월 16일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 06월 15일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="115" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="115" valign="TOP" width="480">
+            <p>
+             한국아동복지협회 회장(현)
+            </p>
+            <p>
+             성민보육원 원장(현)
+            </p>
+            <p>
+             진주보건대학교 외래교수
+            </p>
+            <p>
+             함양군사회복지협의회 위원
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이봉주
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="88" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="88" valign="TOP" width="480">
+            <p>
+             서울대학교 사회복지학과 교수(현)
+            </p>
+            <p>
+             시카고 대학교 부교수
+            </p>
+            <p>
+             보스턴 대학교 사회복지대학원 조교수
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이종윤
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            부회장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="142" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="142" valign="TOP" width="480">
+            <p>
+             건강보험분쟁조정위원회 위원장
+            </p>
+            <p>
+             한국장례문화진흥원 이사장
+            </p>
+            <p>
+             홀트아동복지회장
+            </p>
+            <p>
+             보건복지부 차관
+            </p>
+            <p>
+             행정고시 13회
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            정무성
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            부회장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="88" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="88" valign="TOP" width="480">
+            <p>
+             숭실대 사회복지학과 교수(현)
+             <br>
+              숭실사이버대 총장
+              <br>
+               한국사회복지학회 회장
+              </br>
+             </br>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            조성철
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            부회장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            사회복지법인 인애복지재단 대표이사(현)
+            <br>
+             한국사회복지공제회 이사장
+             <br>
+              한국사회복지사협회 회장
+              <br>
+               한국재가노인복지협회 회장
+               <br>
+                경상남도사회복지관협회 회장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            하정두
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            부회장
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="76" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="76" valign="TOP" width="480">
+            한국정신요양시설협회 회장(현)
+            <br>
+             전라북도사회복지협의회 이사
+             <br>
+              사회복지법인 풍박복지재단 스마일빌
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            홍기종
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="115" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="115" valign="TOP" width="480">
+            <p>
+             강원도사회복지협의회 회장(현)
+            </p>
+            <p>
+             한국장애인복지시설협회 강원도협회장
+            </p>
+            <p>
+             제16대, 제17대 강원도사회복지사협회 회장
+            </p>
+            <p>
+             인구보건협회 강원도지회 부회장
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            김영기
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            광주광역시사회복지협의회 회장(현)
+            <br>
+             광주광역시사회복지협의회 수석부회장
+             <br>
+              패밀리전문요양원 원장
+              <br>
+               사단법인 한우리 이사장
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            나춘균
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            전라북도사회복지협의회 회장(현)
+            <br>
+             플러스건걸 대표이사(현)
+             <br>
+              한국CBMC 중앙회 수석부회장
+              <br>
+               민주평화통일자문회의 전주협의회장
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남세도
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            (사)전국지역아동센터협의회 이사장(현)
+            <br>
+             낙원지역아동센터 시설장(현)
+             <br>
+              (사)전국지역아동센터협의회 전남지부장
+              <br>
+               (사)전국지역아동센터협의회 호남권 이사
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            박노숙
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            한국노인복지관협회 회장(현)
+            <br>
+             한국사회복지사협회 이사
+             <br>
+              한국사회복지공제회 이사
+              <br>
+               경기복지재단 이사
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            박선원
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            인천광역시사회복지협의회 회장(현)
+            <br>
+             재단법인 옹진복지재단 이사
+             <br>
+              연세대학교 사회복지대학원 겸임교수
+              <br>
+               한국행동분석학회 이사
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            박성욱
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            경상남도사회복지협의회 회장(현)
+            <br>
+             경상남도사회복지사협회 회장
+             <br>
+              경상남도사회복지공동모금회 운영위원
+              <br>
+               한국사회복지공제회 대의원
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            박원
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            한국노인장기요양기관협회 회장(현)
+            <br>
+             원하트노인전문요양센터 시설장(현)
+             <br>
+              (주)플러스원종합건설 대표이사
+              <br>
+               용인시사회복지협의회 부회장
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            양옥경
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            이화여자대학교 교수(현)
+            <br>
+             한국여성사회복지사회 회장
+             <br>
+              사회복지법인 초록우산 어린이재단 이사
+              <br>
+               현대중공업1%나눔재단 이사
+               <br>
+                사회복지공동모금회 이사
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            오준
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            세이브더칠드런 이사장(현)
+            <br>
+             유엔 대사
+             <br>
+              싱가포르 대사
+              <br>
+               외교부 다자외교조정관
+               <br>
+                한국아동단체협의회 회장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            유화영
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            여
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            원불교사회복지협의회 회장(현)
+            <br>
+             원광종합사회복지관 관장
+             <br>
+              전라북도사회복지협의회 부회장
+              <br>
+               사회복지법인 삼동회 이사장
+               <br>
+                한국종교계사회복지협의회 회장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이상근
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="88" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="88" valign="TOP" width="480">
+            <p>
+             경상북도사회복지협의회 회장(현)
+            </p>
+            <p>
+             경상북도아동복지협회 회장(현)
+            </p>
+            <p>
+             한국아동복지협회 회장
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이상석
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="142" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="142" valign="TOP" width="480">
+            <p>
+             한국글로벌의약산업협회 상근부회장
+            </p>
+            <p>
+             대한병원협회 상근부회장
+            </p>
+            <p>
+             한국보건복지인력개발원 원장
+            </p>
+            <p>
+             보건복지부 사회복지정책실장
+            </p>
+            <p>
+             행정고시 23회
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            이정기
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="115" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="115" valign="TOP" width="480">
+            <p>
+             충청남도사회복지협의회 회장(현)
+             <br>
+              계룡시사회복지협의회 회장(현)
+              <br>
+               계룡시 초대 및 4대 시의원
+               <br>
+                계룡 새마을금고 이사
+               </br>
+              </br>
+             </br>
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            장순욱
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2021년 06월 16일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2024년 06월 15일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="115" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="115" valign="TOP" width="480">
+            <p>
+             서울특별시 동작구의회 의원(현)
+             <br>
+              한국장애인복지관협회 회장
+             </br>
+            </p>
+            <p>
+             서울시립남부장애인종합복지관 관장
+            </p>
+            <p>
+             서울시장애인복지관협회 회장
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            정덕환
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            행복일자리운동본부 회장(현)
+            <br>
+             에덴복지재단 이사장
+             <br>
+              한국장애인직업재활시설협회 회장
+              <br>
+               유네스코 한국위원회 장애인 평화인권 홍보대사
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            정석왕
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="115" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="115" valign="TOP" width="480">
+            <p>
+             한국장애인복지시설협회장(현)
+            </p>
+            <p>
+             제주장애인요양원 원장(현)
+            </p>
+            <p>
+             신원복지재단 이사장
+            </p>
+            <p>
+             제주시지역사회복지협의체 실무협의체 위원장
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            정성기
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            한국사회복지관협회 회장(현)
+            <br>
+             부천 상동종합사회복지관 관장(현)
+             <br>
+              경기도사회복지협의회 이사
+              <br>
+               경기도사회복지연대 공동대표
+               <br>
+                한국사회적기업진흥원 중앙운영위원
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            정제욱
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            한국노숙인복지시설협회 회장(현)
+            <br>
+             사회복지법인 노숙인재활시설 동명원 시설장
+             <br>
+              기독교대한성결교회 총회본부 교단유지재단 실장
+              <br>
+               법무부 목포범죄예방위원회 위원
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            조범기
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            한국시니어클럽협회 회장(현)
+            <br>
+             한국사회복지시설단체협의회 공동대표
+             <br>
+              서울은평시니어클럽 관장
+              <br>
+               은평어르신일자리센터 센터장
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            황영기
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            이사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2026년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="122" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="122" valign="TOP" width="480">
+            초록우산 어린이재단 회장(현)
+            <br>
+             한국금융투자협회 제3대 회장
+             <br>
+              KB금융지주 회장
+              <br>
+               우리은행 은행장 및 우리금융지주회사 회장
+               <br>
+                삼성증권 대표이사 사장
+               </br>
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="53" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="53" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            윤한술
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2025년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            세정회계법인 이사(현)
+            <br>
+             한빛회계법인 대표이사
+             <br>
+              한국전기공사업협회 서울 중부회 고문
+              <br>
+               씨제이이엔엠 영화투자 세무와 회계 자문
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="600">
+         <colgroup>
+          <col width="111">
+           <col width="61">
+            <col width="101">
+             <col width="43">
+              <col width="60">
+               <col width="170">
+               </col>
+              </col>
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직위
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            비상임감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성명
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            장창수
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            직책
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="180">
+            감사
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="121">
+            성별
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            남
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            임기
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="70">
+            (시작일)
+           </td>
+           <td align="CENTER" colspan="2" height="30" valign="MIDDLE" width="162">
+            2023년 06월 05일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="69">
+            (종료일)
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="179">
+            2025년 06월 04일
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="99" valign="MIDDLE" width="120">
+            주요경력
+           </td>
+           <td align="LEFT" colspan="5" height="99" valign="TOP" width="480">
+            대전광역시사회복지협의회 회장(현)
+            <br>
+             용문종합사회복지관 관장
+             <br>
+              대전광역시사회복지사협회 회장
+              <br>
+               대전시 서구청 지방7급 사회복지전담 공무원
+              </br>
+             </br>
+            </br>
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            총회선임 → 보건복지부 보고
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            선임절차규정
+           </td>
+           <td align="LEFT" colspan="5" height="30" valign="TOP" width="480">
+            정관 제19조
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="599">
+         <colgroup>
+          <col width="141">
+           <col width="141">
+            <col width="141">
+             <col width="140">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="150">
+            기준일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="150">
+            2023년 06월 22일
+           </td>
+           <td align="CENTER" height="30" valign="TOP" width="150">
+            제출일
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="149">
+            2023년 07월 04일
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="21">
+         <colgroup>
+          <col width="12">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="21">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table class="nb" width="600">
+         <colgroup>
+          <col width="591">
+          </col>
+         </colgroup>
+         <tbody>
+          <tr>
+           <td align="LEFT" height="30" valign="TOP" width="600">
+            기관 공시 담당자
+           </td>
+          </tr>
+         </tbody>
+        </table>
+        <table border="1" width="601">
+         <colgroup>
+          <col width="96">
+           <col width="111">
+            <col width="228">
+             <col width="130">
+             </col>
+            </col>
+           </col>
+          </col>
+         </colgroup>
+         <thead>
+          <tr>
+           <th align="CENTER" height="31" valign="MIDDLE" width="105">
+            구분
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="120">
+            담당자명
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="237">
+            부서명
+           </th>
+           <th align="CENTER" height="31" valign="MIDDLE" width="139">
+            전화번호
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            작성자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            김재원
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            경영지원실
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            02-2077-3906
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            감독자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            김민우
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            전략기획실
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            02-2077-3913
+           </td>
+          </tr>
+          <tr>
+           <td align="CENTER" height="30" valign="MIDDLE" width="105">
+            확인자
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="120">
+            오상호
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="237">
+            감사팀
+           </td>
+           <td align="CENTER" height="30" valign="MIDDLE" width="139">
+            02-2077-3997
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <input id="submission_no" name="submission_no" type="hidden" value="2023070409809028"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="/resources/js/design_common.js">
+  </script>
+  <script>
+   //컨텐츠에 첨부된 파일 클릭시 다운로드
+    var report_attach_down = function(fileName) {
+        var $submissionNo = $("#p_content #submission_no").val();
+        downReportContentFile(fileName, $submissionNo);
+    }
+
+    // 왼쪽 목차 중복 처리 함수
+    var leftListDisplay = function () {
+        // console.log('leftListDisplay');
+
+        if ($(".searchCl div > .code_list").length > 0) {
+       		for (var i = 0; $(".searchCl div > .code_list").length > i; i++) {
+       			$(".searchCl div > .code_list").eq(i).children("li").eq(0).hide();
+       			if ($(".searchCl div > .code_list").eq(i).children("li").children("a").prop("title") == "수 정 공 시") {
+       				$(".searchCl div > .code_list").eq(i).children("li").eq(1).hide();
+       			}
+       		}
+       	} else {
+       		//$(".code_list li").eq(0).hide();
+       		if ($(".code_list li").eq(0).children("a").attr("title") == "수 정 공 시") {
+       			$(".code_list li").eq(1).hide();
+       		}
+       	}
+    }
+
+    $(document).ready(function() {
+        var _leftState = false;
+        $(".btn_close").on("click", function(){
+            if ( _leftState === false ){
+                $(this).animate({left : 0}, 300);
+                $(this).addClass("open");
+                $("#p_left_menu").animate({width : 0}, 300);
+                $("#p_content").animate({marginLeft : 0}, 300);
+                _leftState = true;
+                return false;
+            } else {
+                $(this).animate({left : "238px"}, 300);
+                $(this).removeClass("open");
+                $("#p_left_menu").animate({width : "238px"}, 300);
+                $("#p_content").animate({marginLeft : "238px"}, 300);
+                _leftState = false;
+                return false;
+            }
+        });
+
+        setTimeout(function () {
+            /* 이미지 레이어 팝업 관련 이벤튼 */
+            $("img").on("click",function() {
+                if( $(this).attr("src").indexOf("/upload/") > -1 ){
+                    $("#imgpreview").html('<img src="' + $(this).attr("src") + '">');
+                    var imgObj	= new Image();
+                    imgObj.src  = $(this).attr("src");
+
+                    $("#imgpreview").css("top", Math.max(0, (($(window).height() - imgObj.height ) / 2) + $(window).scrollTop()) + "px");
+                    $("#imgpreview").css("left", Math.max(0, (($(window).width() - imgObj.width ) / 2) + $(window).scrollLeft()) + "px");
+
+                    $('#imgpopup').fadeTo("slow",1.0);
+                    $("#imgpopup").show();
+                }
+            });
+
+            $("#imgpopup").on("click",function() {
+                $("#imgpreview").html("");
+                $("#imgpopup").hide();
+            });
+        }, 1000);
+
+    });
+  </script>
+  <script>
+   var app = new Vue({
+            el: "#report_popup",
+            data: function () {
+                return {
+                	apbaId:"C0377",
+                	disclosureNo:"2023070502651923",
+                	reportFormRootNo:"20305"
+                }
+            },
+            created: function () {
+            },
+            methods: {
+            	//보고서 다운로드.
+            	downReportPdfFile: function(){
+                	if(this.disclosureNo != null && this.disclosureNo != ''){
+	            		$('#loadingBar').show();
+	                	setCookie('pdfDown', 'START', 1);
+	                	
+	                	var interval = setInterval(function(){
+	                		var cookie_val = getCookie("pdfDown");
+	            			if(cookie_val == 'END'){
+	            				$('#loadingBar').hide();
+	            				clearInterval(interval);
+	            			}
+	            		}, 2000);
+	                	
+	            		downItemReport(this.disclosureNo);
+                	}else{
+                		alert('해당 사항이 없는 항목입니다.');
+                	}
+            	},
+            	//첨부파일 다운로드.
+            	downReportSelectedFiles: function () {
+                	var fileNo = $("#reportFileDown option:selected").val();
+                	
+                    //파일다운로드
+                    if (!fileNo) {
+                        alert('파일을 선택해주세요.');
+                        return false;
+                    }
+                    downReportAttachFile(this.disclosureNo, fileNo);
+                },
+                //항목 보고서 open
+                goReportTermView : function(){
+
+                	var arrValue = $("#selectedDisclosureNo option:selected").val().split('|');
+                	
+                    //파일다운로드
+                    if (!arrValue) {
+                        return false;
+                    }
+                    this.formLocation("/item/itemReportTerm.do?apbaId=" + this.apbaId + "&reportFormRootNo=" + this.reportFormRootNo+"&disclosureNo="+arrValue[0]+"&nowYear="+arrValue[1]+"&nowQuarter="+arrValue[2]);
+            				
+                },
+                //항목상세 right 변경
+                goReportTermRight : function(pNo){
+                	//console.log(this.$refs['left_'+pNo]);
+                	$("li[id^='leftList_']").css({'display':'none'});
+                	$("li[id=leftList_"+pNo+"]").css({'display':''});
+                	
+                	this.disclosureNo = pNo;
+                	
+                    //오른쪽 보고서 가져오기
+                    this.axios.get("/item/itemReportRight.do", {params: {disclosureNo: pNo}})
+                        .then(function (res) {
+                        	//console.log(res);
+                        	$(".disclosureNoClass").html(res);
+                        }.bind(this));
+                    
+                    //첨부파일 변경.
+                    this.axios.get("/item/itemReportFiles.json", {params: {disclosureNo: pNo}})
+                    .then(function (res) {
+        				var html = '<option value="">선택하세요</option>';
+
+        				$('#reportFileDown').html('');
+        				
+        				for(var i=0; i<res.data.length; i++) {
+        					var m = res.data[i];
+        					html += '<option value="'+m.fileNo+'">'+m.orcpFileNa+'</option>'
+        				}
+        				
+        				$('#reportFileDown').html(html);
+                    }.bind(this));
+                    
+                }
+            }
+        });
+  </script>
+  <div id="imgpopup" style="display: none;">
+   <div id="imgpreview">
+   </div>
+  </div>
+  <!-- body Start -->
+  <!-- footer Start -->
+  <div id="loadingBar" style="transition: none 0s ease 0s; opacity: 1; display:none;">
+   <div class="bar" role="bar" style="transform: translate3d(-92%, 0px, 0px); transition: all 200ms ease 0s;">
+    <div class="peg">
+    </div>
+   </div>
+   <div class="spinner" role="spinner">
+    <div class="spinner-icon">
+    </div>
+    <button class="cancel-bt" id="nprogressCancelBt" type="button">
+     취소하기
+    </button>
+   </div>
+  </div>
+  <!-- footer Start -->
+ </body>
+</html>
